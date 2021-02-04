@@ -1,6 +1,6 @@
 # Algorithms-Part-II
 
-![Algorithms-Part-I](https://miro.medium.com/max/2400/1*UbmoVoZeN81DQBHqtJCY3g.png)
+![Algorithms-Part-II](https://i.ytimg.com/vi/60BKdKQzLbo/maxresdefault.jpg)
 
 Essential information that every serious programmer needs to know about algorithms and data structures, with emphasis on applications and scientific performance analysis of Java implementations. Designed in accordance with Princeton University MOOC (Coursera) and programmed in Java.
 
