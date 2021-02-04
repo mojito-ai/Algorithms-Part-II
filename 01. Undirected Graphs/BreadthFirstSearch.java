@@ -4,10 +4,10 @@
 * <li> Repeat until queue is empty
 * <li> Remove vertex v from queue
 * <li> Add to queue, all unmarked vertices adjacent to v and mark them
-* 
+* <li> BFS computes shortest paths(fewest number of edges) from s to other vertices in graph in time ~ E+V
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   04-02-2021
 * 
 */
