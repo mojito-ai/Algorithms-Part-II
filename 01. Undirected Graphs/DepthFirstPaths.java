@@ -6,8 +6,9 @@
 * <li>Thesus was instructed by Ariadne to use a ball of string when going to fight the Minotaur in the labyrinth.
 * <li>Claude Shannon used mice in maze exploration
 * 
+* <li> DFS marks all vertices connected to s in time proportional to sum of their degrees. -> Proof: Every vertex connected to s is visited once
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   04-02-2021
 * 
 */
@@ -37,7 +38,7 @@ public class DepthFirstPaths {
 	private void dfs(Graph G, int v)
 	{
 		marked[v]=true;
-		for(int w:G.adj(v))
+		for(int w: G.adj(v))
 			if(!marked[w])
 			{
 				dfs(G,w);
@@ -59,5 +60,17 @@ public class DepthFirstPaths {
 		path.push(s);
 		return path;
 	}
+	
+	/*
+	 * Application: Flood Fill (Photoshop magic wand)
+	 * Assumption: Picture has millions to billions of pixels
+	 * 
+	 * 1. Build a grid graph
+	 * 2. Vertex=pixel
+	 * 3. Edge=Between two adjacent grey pixels
+	 * 4. Blob=All pixels connected to given pixel.
+	 * 
+	 * When you click a pixel, it does DFS to find all connected pixels of similar color
+	 */
 
 }
