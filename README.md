@@ -27,6 +27,6 @@ The git-repo includes algorithms used widely in computational science, computati
 
 Proper care has been taken to ensure that the speed analysis and the space analysis is done. There is a classic space/time tradeoff and the author has ensured to ensure fast processing algorithms in accordance with Moore's Law. Still there might be several errors or performance bugs at some places. Users are welcomed to create PR's or fork the repository to create better performing algorithms.
 
-> An algorithm must be seen to be believed. - Sir Donald Knuth
+> Algorithms: A common language for Nature, Human & Computer. - Avi Widgerson
 
->For me, great algorithms are the poetry of computation. Just like verse, they can be terse, allusive, dense, and even mysterious. But once unlocked, they cast a brilliant new light on some aspect of computing. - Francis Sullivan
+> Beware of bugs in the above code; I have only proved it correct, not tried it. - Sir Donald Knuth
