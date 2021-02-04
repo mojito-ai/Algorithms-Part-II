@@ -14,7 +14,7 @@ import edu.princeton.cs.algs4.Bag;
 * <li> Graph=Neural Network, Vertex=Neuron, Edge=Synapse
 * 
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   04-02-2021
 * 
 */
@@ -35,6 +35,19 @@ import edu.princeton.cs.algs4.Bag;
  */
 
 public class Graph {
+	/*
+	 * Representation:
+	 * 
+	 * 1. Maintain a list of edges (linked list or array) = Leads to inefficiency
+	 * 2. Adjacency matrix graph representation (maintain a v*v boolean array) = inefficient if V is large
+	 * 3. Adjacency List graph representation = Maintain vertex indexed array of lists.
+	 * 
+	 * Representation			Space			Add edge 			edge btw v & w		iterate over vertex
+	 * List of edges			  E					1						E					E
+	 * Adjacency matrix			  V^2				1 						1					V
+	 * Adjacency List			  E+V				1				    degree(V)			degree(V)
+	 * 
+	 */
 	private Bag<Integer> [] adj;
 	private final int V;
 	/**
