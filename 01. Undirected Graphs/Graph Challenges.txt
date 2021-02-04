@@ -23,4 +23,10 @@ Solution: No one knows! Can try all ways to name vertices but N! ways possible.
 
 6. Lay out a graph in a plane without any crossing edges
 Solution: Linear time DFS based algorithm discovered by Tarjan in 1970s
+
+7. Non-recursive DFS 
+Solution: 
+		- Use an explicit stack
+		- Use a stack instead of a queue in BFS 
+
  
