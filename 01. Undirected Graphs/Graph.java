@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.Bag;
+
 /**
 * <h1>Undirected Graphs: Set of vertices connected pairwise by edges. Challenging branch of computer science</h1>
 * 
@@ -17,6 +19,71 @@
 * 
 */
 
+/*
+ * Graph Terminology:
+ * 
+ * 1. Path: Sequence of vertices connected by edges. Is there a path between s & t?
+ * 2. Cycle: Path whose first and last vertices are the same. Is there a cycle in the graph?
+ * 3. Shortest path: What is the shortest path between s & t?
+ * 4. Euler Tour: Is there a cycle that uses each edge exactly once?
+ * 5. Hamilton Tour: Is there a cycle that uses each vertex exactly once?
+ * 6. Connectivity: Is there a way to connect all of the verteices?
+ * 7. MST: What is the best way to connect all of the vertices?
+ * 8. Biconnectivity: Is there a vertex whose removal disconnects the graph?
+ * 9. Planarity: Can you draw the graph with no crossing edges?
+ * 10. Graph Isomerism: Do two adjacency list represent the same graph?
+ */
+
 public class Graph {
+	private Bag<Integer> [] adj;
+	private final int V;
+	/**
+	 * Create an empty graph with V-vertices
+	 * @param V
+	 */
+	
+	@SuppressWarnings("unchecked")
+	public Graph(int V)
+	{
+		this.V=V;
+		adj=(Bag<Integer> []) new Bag[V];
+		for(int i=0;i<V;i++)
+			adj[i]=new Bag<Integer>();
+	}
+	
+	/**
+	 * Add an edge v-w
+	 * @param v
+	 * @param w
+	 */
+	void addEdge(int v, int w) 
+	{
+		adj[v].add(w);
+		adj[w].add(v);
+	}
+	
+	/**
+	 * Vertices adjacent to v
+	 * @param v
+	 * @return
+	 */
+	Iterable<Integer> adj(int v)
+	{
+		return adj[v];
+	}
+	
+	/**
+	 * Number of vertices
+	 * @return
+	 */
+	public int V() 
+	{
+		return V;
+	}
+	
+	/**
+	 * Number of edges
+	 * @return
+	 */
 
 }
