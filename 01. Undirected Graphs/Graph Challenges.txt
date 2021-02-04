@@ -1,0 +1,26 @@
+1. Is a graph bipartite?
+Problem: You can divide the vertices into two disjoint subsets with the property that every edge connects a vertex from one subset to a vertex in another
+Solution: Simple DFS based solution
+
+2. Find a Cycle?
+Problem: Is there a path whose first and last vertices are the same.
+Solution: Simple DFS based solution
+
+3. Euler Tour
+Problem: "... in Konigsberg Prussia, there is an island A, called the Knelphof; the river which surrounds it is divided into
+		  two branches...And these branches are crossed by seven bridges. Concerning these bridges, it was asked whether
+		  anyone could arrange a route in such a way that he coult cross each bridge exactly once and once only.
+		  
+Solution: Eulerian Tour (A connected graph is Eulerian iff all vertices have EVEN degree)
+
+4. Hamilton Tour (Travelling Salesman Problem)
+Problem: Find a cycle which visits each vertex exactly once
+Solution: Intractable (Classic NP-hard problem)
+
+5. Graph Isomerism
+Problem: Are two graphs identical except for vertex names?
+Solution: No one knows! Can try all ways to name vertices but N! ways possible.
+
+6. Lay out a graph in a plane without any crossing edges
+Solution: Linear time DFS based algorithm discovered by Tarjan in 1970s
+ 
