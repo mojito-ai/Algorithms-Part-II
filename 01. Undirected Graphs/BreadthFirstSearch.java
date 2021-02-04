@@ -18,6 +18,14 @@ public class BreadthFirstSearch {
 	private Integer [] edgeTo; //edgeTo[v]=previous vertex on path from s to v
 	private int s;
 	
+	/**
+	 * BFS examines vertices in increasing distance from s
+	 * 
+	 * <li> Queue always consists of zero or more vertices of distance k from s, followed by 0 or more vertices of distance k+1
+	 * <li> Each vertex connected to s is visited once.
+	 * @param G
+	 * @param s
+	 */
 	BreadthFirstSearch(Graph G, int s)
 	{
 		Queue<Integer> q=new Queue<>();
@@ -56,4 +64,13 @@ public class BreadthFirstSearch {
 		path.push(s);
 		return path;
 	}
+	
+	/*
+	 * Applications:
+	 * 
+	 * 1. Routing: Fewest number of hops in a communication network [ARPANET]
+	 * 2. Kevin Bacon Numbers: Include one vertex for each performer and one for each movie. Connect a movie to all performers that appear in the movie.
+	 * 3. Erdos Numbers
+	 * 
+	 */
 }
