@@ -14,7 +14,7 @@ import edu.princeton.cs.algs4.Bag;
 * <li> Graph=Neural Network, Vertex=Neuron, Edge=Synapse
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   04-02-2021
 * 
 */
@@ -29,7 +29,7 @@ import edu.princeton.cs.algs4.Bag;
  * 5. Hamilton Tour: Is there a cycle that uses each vertex exactly once?
  * 6. Connectivity: Is there a way to connect all of the verteices?
  * 7. MST: What is the best way to connect all of the vertices?
- * 8. Biconnectivity: Is there a vertex whose removal disconnects the graph?
+ * 8. Bi-connectivity: Is there a vertex whose removal disconnects the graph?
  * 9. Planarity: Can you draw the graph with no crossing edges?
  * 10. Graph Isomerism: Do two adjacency list represent the same graph?
  */
@@ -47,8 +47,8 @@ public class Graph {
 	{
 		this.V=V;
 		adj=(Bag<Integer> []) new Bag[V];
-		for(int i=0;i<V;i++)
-			adj[i]=new Bag<Integer>();
+		for(int v=0;v<V;v++)
+			adj[v]=new Bag<Integer>();
 	}
 	
 	/**
@@ -85,5 +85,16 @@ public class Graph {
 	 * Number of edges
 	 * @return
 	 */
+	public int E() 
+	{
+		int edges=0;
+		for(int v=0;v<V;v++)
+		{
+			Bag<Integer> bag=(Bag<Integer>) adj(v);
+			//edges+=((Bag<Integer>)adj(v)).size();
+			edges+=bag.size();
+		}
+		return edges/2;
+	}
 
 }
