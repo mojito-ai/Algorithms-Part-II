@@ -7,7 +7,7 @@
 * <li> DFS marks all vertices connected to s in time proportional to sum of their degrees. -> Proof: Every vertex connected to s is visited once
 * 
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   05-02-2021
 * 
 */
@@ -83,6 +83,9 @@ public class DirectedDFS {
 	 * 		a. Reachable Objects: Objects indirectly accessible by programs(starting at the root & following a chain of pointers)
 	 * 		b. Mark Sweep Algorithm [McCarthy, 1960]: Mark all reachable objects & Sweep if the object is unmarked (garbage collect)
 	 * 											      Memory Cost: Uses 1 extra bit per object (plus DFS stack)
+	 * 
+	 * 3. Path Finding, Topological Sort, Directed Cycle Detection, Strongly connected components, Directed Euler Path
+	 * 
 	 */
 	
 }
