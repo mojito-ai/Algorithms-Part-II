@@ -1,3 +1,5 @@
+import java.util.Set;
+
 /**
 * <h1>Breadth First Search: Put unvisited vertices on a queue. BFS is a digraph algorithm</h1>
 * 
@@ -69,6 +71,40 @@ public class DirectedBFS {
 			path.push(i);
 		path.push(s);
 		return path;
+	}
+	
+	
+	/**
+	 * Multiple source shortest paths: Given a digraph and a set of source vertices, find shortest path from any vertex in the set to each other vertex
+	 * <li>Implement a multi-source constructor: Use BFS, but initialize by en-queuing all source vertices.
+	 * 
+	 * @param G
+	 * @param s
+	 */
+	DirectedBFS(Digraph G, Set<Integer> s)
+	{
+		
+		marked=new boolean[G.V()];
+		edgeTo=new Integer[G.V()];
+		Queue<Integer> q=new Queue<>();
+		for(Integer i: s)
+		{
+			q.enqueue(i);
+			marked[i]=true;
+		}
+		while(!q.isEmpty())
+		{
+			int v=q.dequeue();
+			for(int w:G.adj(v))
+			{
+				if(!marked[w])
+				{
+					marked[w]=true;
+					edgeTo[w]=v;
+					q.enqueue(w);
+				}
+			}
+		}
 	}
 	
 }
