@@ -19,7 +19,26 @@
 * 
 */
 
+/*
+ * Q. How many different Digraphs can be made if there are V vertices? (Allow self loops but not parallel edges)
+ * A. 2^(V*V) different Digraphs
+ * 
+ */
 public class Digraph {
+	/*
+	 * Representation:
+	 * 
+	 * 1. Maintain a list of edges (linked list or array) = Leads to inefficiency
+	 * 2. Adjacency matrix graph representation (maintain a v*v boolean array) = inefficient if V is large
+	 * 3. Adjacency List graph representation = Maintain vertex indexed array of lists.
+	 * 
+	 * Representation			Space			Add edge 			  edge from v->w	iterate over vertices
+	 * List of edges			  E					1						E					E
+	 * Adjacency matrix			  V^2				1 						1					V
+	 * Adjacency List			  E+V				1				   outdegree(V)			outdegree(V)
+	 * 
+	 */
+	
 	private int V;
 	private Bag<Integer> [] adj; 
 	
