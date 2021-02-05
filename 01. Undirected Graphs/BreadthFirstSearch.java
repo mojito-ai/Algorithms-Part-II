@@ -7,7 +7,7 @@
 * <li> BFS computes shortest paths(fewest number of edges) from s to other vertices in graph in time ~ E+V
 * 
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   04-02-2021
 * 
 */
@@ -28,11 +28,16 @@ public class BreadthFirstSearch {
 	 */
 	BreadthFirstSearch(Graph G, int s)
 	{
-		Queue<Integer> q=new Queue<>();
+		
 		marked=new boolean[G.V()];
 		edgeTo=new Integer[G.V()];
 		this.s=s;
-		
+		bfs(G,s);
+	}
+	
+	private void bfs(Graph G, int s)
+	{
+		Queue<Integer> q=new Queue<>();
 		q.enqueue(s);
 		marked[s]=true;
 		while(!q.isEmpty())
