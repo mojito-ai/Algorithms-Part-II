@@ -8,7 +8,7 @@
 * <li> Kosaraju Sharir algorithm computes strong components of a digraph in time ~E+V
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   05-02-2021
 * 
 */
@@ -32,7 +32,42 @@ public class KosarajuSharirSCC {
 	 */
 	KosarajuSharirSCC(Digraph G)
 	{
+		marked=new boolean[G.V()];
+		id=new int[G.V()];
+		count=0;
 		
+		DepthFirstOrder dfs=new DepthFirstOrder(G.reverse());
+		for(int v: dfs.reversePost())
+		{
+			if(!marked[v])
+			{
+				dfs(G,v);
+				count++;
+			}
+
+		}
+	}
+	
+	private void dfs(Digraph G, int v)
+	{
+		id[v]=count;
+		marked[v]=true;
+		for(int w:G.adj(v))
+		{
+			if(!marked[v])
+				dfs(G,w);
+		}
+	}
+	
+	/**
+	 * Are v & w in the same strong component?
+	 * @param v
+	 * @param w
+	 * @return
+	 */
+	public boolean stronglyconnected(int v, int w)
+	{
+		return id[v]==id[w];
 	}
 	
 	/*
