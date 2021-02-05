@@ -1,6 +1,5 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import edu.princeton.cs.algs4.In;
 
 /**
@@ -14,7 +13,7 @@ import edu.princeton.cs.algs4.In;
 * <li> Why not DFS? Internet is not fixed (some pages generate new ones when visited and this could trap search)
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   05-02-2021
 * 
 */
