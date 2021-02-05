@@ -112,7 +112,12 @@ public class Digraph {
 	 */
 	Digraph reverse()
 	{
-		return null;
-		
+		Digraph G=new Digraph(V);
+		for(int v=0;v<V;v++)
+		{
+			for(int w:adj(v))
+				G.addEdge(w, v);
+		}
+		return G;
 	}
 }
