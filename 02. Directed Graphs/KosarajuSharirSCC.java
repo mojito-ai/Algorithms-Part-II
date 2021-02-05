@@ -30,4 +30,22 @@ public class KosarajuSharirSCC {
 	 * 	- Approach 2: Use to improve design
 	 * 
 	 */
+	
+	/*
+	 *History:
+	 *	
+	 *1. 1960s: Core OR Problem
+	 *			Widely studied-some practical applications, complexity not understood 
+	 *
+	 *2. 1972: Linear time DFS algorithm (Tarjan)
+	 *		   Classic algorithm & moderately difficult. Demonstrated importance of DFS.
+	 *
+	 *3. 1980s: Easy two pass linear time algorithm (Kosaraju-Sharir)
+	 *			Forgot notes for lecture; developed algorithm in order to teach it.
+	 *
+	 *4. 1990s: More easy linear time algorithms
+	 *			Gabow: Fixed old OR Algorithm
+	 *			Cheriyan-Mehlhorn: Needed one pass for LEDA
+	 * 
+	 */
 }
