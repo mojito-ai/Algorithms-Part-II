@@ -7,11 +7,27 @@
 * <li> A DAG with V vertices, E edges has V strongly connected components.
 * 
 * @author  Mohit Sharma
-* @version 3.0
+* @version 1.0
 * @since   05-02-2021
 * 
 */
 
 public class KosarajuSharirSCC {
 
+	
+	/*
+	 * Applications: 
+	 * 
+	 * 1. Ecological Food Webs: Vertex=Species, 
+	 * 							Edge=From producer to consumer, 
+	 * 							Strong Component=Subset of species with common energy flow.
+	 * 
+	 * 2. Software Modules: Vertex=Software Module
+	 * 						Edge=From module to dependency
+	 * 						Strong component=Subset of mutually interacting modules
+	 * 
+	 * 	- Approach 1: Package strong components together
+	 * 	- Approach 2: Use to improve design
+	 * 
+	 */
 }
