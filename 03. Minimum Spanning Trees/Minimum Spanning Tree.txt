@@ -3,3 +3,18 @@ Introduction to MSTs:
 1. Given: An undirected graph G with positive edge weights (connected)
 2. Define: A spanning Tree of G is a subgraph T that is both a tree (connected and acyclic) and spanning (includes all of the edges)
 3. Goal: Find a minimum weight spanning tree
+
+Applications:
+	a. MST of bicycle routes in North Seattle (Network Design)
+	b. MST of random graph (Models of nature)
+	c. MST describes arrangement of nuclei in the epithelium for cancer research (Medical Image Processing)
+	d. MST dithering (Remove Fuzziness in medical analysis)
+	e. Cluster Analysis
+	f. Max Bottleneck paths
+	g. Real time face verification
+	h. Image registration with Renyl entropy
+	i. LDPC codes for error corrections
+	j. Find road networks in satellite and ariel imagery
+	k. Autoconfig protocol for Ethernet bridging to avoid cycles in a network.
+	l. Approximation Alogrithms for NP-hard problems (TSP, Steiner Tree)
+	m. Network Design (Communication, electrical, computer, road, hydraulic)
