@@ -66,5 +66,16 @@ public class DirectedDFS {
 		return path;
 	}
 	
+	/*
+	 * Applications of Reachability:
+	 * 
+	 * 1. Program Control Flow Analysis: Every program is a digraph
+	 * 		- Vertex: Basic block of instructions (straight line programs)
+	 * 		- Edge: Jump
+	 * 
+	 * 		a. Dead Code Elimination: Find and remove unreachable code.
+	 * 		b. Infinite Loop Detection: Determine whether exit is unreachable
+	 * 
+	 */
 	
 }
