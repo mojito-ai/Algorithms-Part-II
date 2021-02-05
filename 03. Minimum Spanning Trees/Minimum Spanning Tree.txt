@@ -1,10 +1,11 @@
 Introduction to MSTs: 
 
-1. Given: An undirected graph G with positive edge weights (connected)
-2. Define: A spanning Tree of G is a subgraph T that is both a tree (connected and acyclic) and spanning (includes all of the edges)
-3. Goal: Find a minimum weight spanning tree
+	1. Given: An undirected graph G with positive edge weights (connected)
+	2. Define: A spanning Tree of G is a subgraph T that is both a tree (connected and acyclic) and spanning (includes all of the edges)
+	3. Goal: Find a minimum weight spanning tree
 
 Applications:
+
 	a. MST of bicycle routes in North Seattle (Network Design)
 	b. MST of random graph (Models of nature)
 	c. MST describes arrangement of nuclei in the epithelium for cancer research (Medical Image Processing)
@@ -18,3 +19,11 @@ Applications:
 	k. Autoconfig protocol for Ethernet bridging to avoid cycles in a network.
 	l. Approximation Alogrithms for NP-hard problems (TSP, Steiner Tree)
 	m. Network Design (Communication, electrical, computer, road, hydraulic)
+	
+Greedy Algorithm: (General Principle & Algorithm Design)
+	
+	i. Simplifying Assumptions (Edge weights are distinct & graph is connected) -> MST exists and is unique
+	ii. Cut Property:
+				- A cut in a graph is a partition of the vertices into two non empty sets.
+				- A crossing edge connects a vertex from one set with a vertex in the other.
+				- Given any cut, the crossing edge with minimum weight lies in the MST.
