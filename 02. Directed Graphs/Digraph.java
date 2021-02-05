@@ -20,5 +20,20 @@
 */
 
 public class Digraph {
+	
+	/**
+	 * Problems:
+	 * 
+	 * <li> Path: Is there a path from s to t?
+	 * <li> Shortest Path: What is the shortest directed path from s to t?
+	 * <li> Topological Sort: Can you draw the digraph with all the edges pointing upwards?
+	 * <li> Transitive Closure: For which vertices v & w, is there a path from v to w?
+	 * <li> Page Rank: What is the importance of a web page?
+	 * @param V
+	 */
+	Digraph(int V)
+	{
+		
+	}
 
 }
