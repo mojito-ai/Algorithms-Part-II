@@ -26,6 +26,10 @@ public class DirectedDFS {
 	 * @param s
 	 */
 	
+	/*
+	 * Q. During DFS of Digraph G, dfs(v) is called after dfs(w) is called, but returns before dfs(w) returns
+	 * A. There exists a directed path from w to v.
+	 */
 	DirectedDFS(Digraph G, int s)
 	{
 		marked=new boolean[G.V()];
