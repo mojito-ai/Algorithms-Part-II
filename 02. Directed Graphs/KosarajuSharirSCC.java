@@ -8,7 +8,7 @@
 * <li> Kosaraju Sharir algorithm computes strong components of a digraph in time ~E+V
 * 
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   05-02-2021
 * 
 */
@@ -36,6 +36,13 @@ public class KosarajuSharirSCC {
 		id=new int[G.V()];
 		count=0;
 		
+		/*
+		 * Working methods:
+		 * 1. DFS in G-reverse, BFS in G
+		 * 2. DFS in G, BFS in G-reverse
+		 * 3. DFS in G, DFS in G-reverse
+		 * 
+		 */
 		DepthFirstOrder dfs=new DepthFirstOrder(G.reverse());
 		for(int v: dfs.reversePost())
 		{
