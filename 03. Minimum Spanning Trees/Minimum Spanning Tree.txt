@@ -45,3 +45,12 @@ Greedy Algorithm: (General Principle & Algorithm Design)
 	v. A spanning tree of Graph G (V vertices, E edges) has V vertices and V-1 edges.
 	
 Implementations:
+
+	> Kruskal's Algorithm
+	> Prim's Algorithm
+	> Boruvka's Algorithm
+	
+Removing the Simplifying assumptions:
+
+	~ What if edge weights are not all distinct? (Multiple MSTs exist)
+	~ What if the graph is not connected? (Minimum spanning forest - MST of each component)
