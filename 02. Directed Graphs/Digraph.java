@@ -14,16 +14,19 @@
 * <li> Web (vertex=web page, edge=hyperlink)
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   04-02-2021
 * 
 */
 
 public class Digraph {
+	private int V;
+	private Bag<Integer> [] adj; 
 	
 	/**
-	 * Problems:
+	 * Create an empty digraph with V vertices using adjacency list approach
 	 * 
+	 * <li>Problems:
 	 * <li> Path: Is there a path from s to t?
 	 * <li> Shortest Path: What is the shortest directed path from s to t?
 	 * <li> Topological Sort: Can you draw the digraph with all the edges pointing upwards?
@@ -31,9 +34,66 @@ public class Digraph {
 	 * <li> Page Rank: What is the importance of a web page?
 	 * @param V
 	 */
+	@SuppressWarnings("unchecked")
 	Digraph(int V)
 	{
+		this.V=V;
+		adj=(Bag<Integer> [])new Bag[V];
+		for(int v=0;v<V;v++)
+		{
+			adj[v]=new Bag<Integer>();
+		}
 		
 	}
-
+	
+	/**
+	 * Add a directed edge v->w
+	 * @param v
+	 * @param w
+	 */
+	void addEdge(int v, int w)
+	{
+		adj[v].add(w);
+	}
+	
+	/**
+	 * Vertices pointing from v
+	 * @param v
+	 * @return
+	 */
+	Iterable<Integer> adj(int v)
+	{
+		return adj[v];
+	}
+	
+	/**
+	 * Number of vertices
+	 * @return
+	 */
+	int V()
+	{
+		return V;
+	}
+	
+	/**
+	 * Number of edges
+	 * @return
+	 */
+	int E()
+	{
+		int edges=0;
+		for(int v=0;v<V;v++)
+			edges+=((Bag<Integer>)adj(v)).size();
+		return edges;
+	}
+	
+	/**
+	 * Reverse of this graph
+	 * @return
+	 */
+	Digraph reverse()
+	{
+		return null;
+		
+	}
 }
