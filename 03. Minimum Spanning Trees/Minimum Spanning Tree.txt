@@ -27,3 +27,10 @@ Greedy Algorithm: (General Principle & Algorithm Design)
 				- A cut in a graph is a partition of the vertices into two non empty sets.
 				- A crossing edge connects a vertex from one set with a vertex in the other.
 				- Given any cut, the crossing edge with minimum weight lies in the MST.
+	iii. Correctness Proof:
+				- Suppose minimum weight cross edge e does not lie in the MST
+				- Adding e would create a cycle
+				- Some other edge f in cycle must be a crossing edge.
+				- Removing f & adding e is also a spanning tree.
+				- Since weight of e is less that the weight of f, the spanning tree is of lower weight.
+				- Contradiction to the original Spanning Tree.
