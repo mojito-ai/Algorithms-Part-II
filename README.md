@@ -2,11 +2,11 @@
 
 ![Algorithms-Part-II](https://i.ytimg.com/vi/60BKdKQzLbo/maxresdefault.jpg)
 
-Essential information that every serious programmer needs to know about algorithms and data structures, with emphasis on applications and scientific performance analysis of Java implementations. Designed in accordance with Princeton University MOOC (Coursera) and programmed in Java.
+#### Essential information that every serious programmer needs to know about algorithms and data structures, with emphasis on applications and scientific performance analysis of Java implementations. Designed in accordance with Princeton University MOOC (Coursera) and programmed in Java.
 
 [Link to the course](https://online.princeton.edu/node/166)
 
-The git-repo includes algorithms used widely in computational science, computational biology and in all IT sectors. The algorithms are divided into the following categories:
+#### The git-repo includes algorithms used widely in computational science, computational biology and in all IT sectors. The algorithms are divided into the following categories:
 
 1. **Undirected Graphs:** We define an undirected graph API and consider the adjacency-matrix and adjacency-lists representations. We introduce two classic algorithms for searching a graph—depth-first search and breadth-first search. We also consider the problem of computing connected components and conclude with related problems and applications.
 
@@ -27,8 +27,8 @@ The git-repo includes algorithms used widely in computational science, computati
 ## **Author: Mohit Sharma**
 ## **Email: msharma3@me.iitr.ac.in**
 
-Proper care has been taken to ensure that the speed analysis and the space analysis is done. There is a classic space/time tradeoff and the author has ensured to ensure fast processing algorithms in accordance with Moore's Law. Still there might be several errors or performance bugs at some places. Users are welcomed to create PR's or fork the repository to create better performing algorithms.
+#### Proper care has been taken to ensure that the speed analysis and the space analysis is done. There is a classic space/time tradeoff and the author has ensured to ensure fast processing algorithms in accordance with Moore's Law. Still there might be several errors or performance bugs at some places. Users are welcomed to create PR's or fork the repository to create better performing algorithms.
 
-> Algorithms: A common language for Nature, Human & Computer. - Avi Widgerson
+### > Algorithms: A common language for Nature, Human & Computer. - Avi Widgerson
 
-> Beware of bugs in the above code; I have only proved it correct, not tried it. - Sir Donald Knuth
+### > Beware of bugs in the above code; I have only proved it correct, not tried it. - Sir Donald Knuth
