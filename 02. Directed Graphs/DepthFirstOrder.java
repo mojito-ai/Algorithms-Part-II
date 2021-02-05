@@ -8,7 +8,7 @@
 * <li> DFS Based solution
 * 
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   05-02-2021
 * 
 */
@@ -60,5 +60,26 @@ public class DepthFirstOrder {
 	{
 		return reversePost;
 	}
+	
+	/*
+	 * Applications:
+	 * 
+	 * 1. Directed Cycle Detection: A Digraph has a topological sort iff no directed cycle.
+	 * Proof: If directed cycle, topological order impossible.
+	 * 		  If no directed cycle, DFS based algorithm finds a topological order.
+	 * 
+	 * 2. Precedence Scheduling: Given a set of tasks to be done with precedence constraints, in which order should be schedule the tasks.
+	 * 
+	 * 3. Cyclic Inheritance:
+	 * 
+	 * 				public class A extends B
+	 * 				{			 			}
+	 * 				public class B extends C
+	 * 				{ 						}
+	 * 				public class C extends A
+	 * 				{ 						}
+	 * 
+	 * cyclic inheritance involving A
+	 */
 
 }
