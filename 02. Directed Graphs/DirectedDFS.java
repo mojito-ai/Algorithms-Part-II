@@ -76,6 +76,13 @@ public class DirectedDFS {
 	 * 		a. Dead Code Elimination: Find and remove unreachable code.
 	 * 		b. Infinite Loop Detection: Determine whether exit is unreachable
 	 * 
+	 * 2. Mark Sweep Garbage Collector: Every data structure is a digraph
+	 * 		-Vertex: Object
+	 * 		-Edge: Reference
+	 * 
+	 * 		a. Reachable Objects: Objects indirectly accessible by programs(starting at the root & following a chain of pointers)
+	 * 		b. Mark Sweep Algorithm [McCarthy, 1960]: Mark all reachable objects & Sweep if the object is unmarked (garbage collect)
+	 * 											      Memory Cost: Uses 1 extra bit per object (plus DFS stack)
 	 */
 	
 }
