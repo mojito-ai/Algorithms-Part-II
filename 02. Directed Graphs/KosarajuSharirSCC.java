@@ -5,6 +5,7 @@
 * <li> It is an equivalence relation: Reflexive, Transitive, Symmetric
 * <li> A strong component is a maximal subset of strongly connected vertices.
 * <li> A DAG with V vertices, E edges has V strongly connected components.
+* <li> Kosaraju Sharir algorithm computes strong components of a digraph in time ~E+V
 * 
 * @author  Mohit Sharma
 * @version 1.0
@@ -13,7 +14,26 @@
 */
 
 public class KosarajuSharirSCC {
-
+	/**
+	 * Kosaraju Sharir Algorithm: 
+	 * <li> Reverse Graph-Strong components in G are same as in G-reverse.
+	 * <li> Kernel DAG-Contract each strong component into a single vertex.
+	 * 
+	 */
+	private boolean [] marked;
+	private int [] id;
+	private int count;
+	
+	/**
+	 * Idea: 
+	 * <li> Phase 1: Compute reverse postorder in G-reverse. (Compute topological order in kernel DAG)
+	 * <li> Phase 2: Run DFS in G, visiting unmarked vertices in reverse postorder of G-reverse
+	 * @param G
+	 */
+	KosarajuSharirSCC(Digraph G)
+	{
+		
+	}
 	
 	/*
 	 * Applications: 
