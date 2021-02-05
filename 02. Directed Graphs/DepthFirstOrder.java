@@ -8,13 +8,21 @@
 * <li> DFS Based solution
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   05-02-2021
 * 
 */
 
 public class DepthFirstOrder {
 	
+	/**
+	 * Topological Sort in a DAG: Reverse Post order (DFS) of a DAG is a topological order.
+	 * <li> Consider any edge v->w, when dfs(v) is called :
+	 * <li> Case 1: dfs(w) has been called and returned. Thus, w was done before v.
+	 * <li> Case 2: dfs(w) has not been called. dfs(w) will get called directly or indirectly by dfs(v) and will finish before dfs(v). Thus w will be done before v.
+	 * <li> Case 3: dfs(w) has already been called but not yet returned. Can't happen in a DAG as function call stack contains path from w->v, so v->w would complete a cycle.
+	 * 
+	 */
 	private boolean [] marked;
 	private Stack<Integer> reversePost;
 	
