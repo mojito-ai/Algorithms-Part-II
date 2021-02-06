@@ -10,3 +10,11 @@
 	2002			optimal					Pettie-Ramachandran
 	
 	Linear time randomized MST algorithm (Karger-Klein-Tarjan 1995)
+
+2. Euclidean MST: Given N points in a plane, find MST connecting them, where the distances between point pairs are their 
+				  Euclidean distances.
+				 
+	- Brute Force: Calculate ~N^2/2 distances and run Prim's algorithm
+	- Ingenuity: Exploit geometry (Voronoi diagram, or the Delaunay triangulation) and do it in ~cNlogN
+				 Idea: Build a subgraph where each point is connected to certain number of points that are close to it.
+				 	   MST is a subgraph of Delaunay triangulation.
