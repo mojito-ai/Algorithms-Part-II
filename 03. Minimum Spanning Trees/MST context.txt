@@ -32,3 +32,11 @@
 4. Single Link Clustering: 
 							- Single Link: Distance between two clusters equal the distance between the two closest objects (one in each cluster)
 							- Single Link clustering: Given an integer k, find a k-clustering that maximizes the distance between two closest clusters.
+							
+5. Algorithm:
+				- Form V clusters of one object each.
+				- Find the closest pair of objects such that each object is in different cluster, and merge the two clusters.
+				- Repeat until there are exactly k clusters.
+				
+				Observation: This is Kruskal's Algorithm (stop when k connected components)
+				Alternative: Run Prim's algorithm & delete K-1 max weight edges.
