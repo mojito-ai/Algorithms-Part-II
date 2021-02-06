@@ -11,6 +11,16 @@
 
 public class KruskalMST {
 	
+	/**
+	 * Kruskal's Algorithm computes the MST (Correctness Proof):
+	 * 
+	 * <li> Kruskal Algorithm is a special case of Greedy MST algorithm.
+	 * <li> Suppose Kruskal's Algorithm colors edge e=v-w black.
+	 * <li> Cut=Set of vertices connected to v in tree T.
+	 * <li> No crossing edge is black.
+	 * <li> No crossing edge is of lower weight. (As edges in ascending order) 
+	 * @param G
+	 */
 	KruskalMST(EdgeWeightedGraph G)
 	{
 		
