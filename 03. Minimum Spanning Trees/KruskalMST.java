@@ -42,6 +42,13 @@ public class KruskalMST {
 		for(Edge w: G.edges())
 			pq.insert(w);
 		
+		/*
+		 * Union Find: Would adding edge v-w to tree T create a cycle? If not add it.
+		 * 1. Maintain a set for each connected component in T.
+		 * 2. If v & w are in the same set, then adding v-w would create a cycle.
+		 * 3. To add v-w to T, merge sets containing v & w
+		 * 
+		 */
 		UF uf=new UF(G.V());
 		while(!pq.isEmpty() && mst.size()<G.V()-1)
 		{
