@@ -20,36 +20,36 @@ import edu.princeton.cs.algs4.MinPQ;
 
 
 public class LazyPrimMST {
-	private Queue<Edge> mst=new Queue<>();
+	private Queue<Edge> mst=new Queue<>();	//MST edges
 	private	double weight;
-	private boolean [] marked;
-	private MinPQ<Edge> pq;
+	private boolean [] marked;	//MST vertices
+	private MinPQ<Edge> pq;	//PQ of edges
 	
 	LazyPrimMST(EdgeWeightedGraph G)
 	{
 		marked=new boolean[G.V()];
 		pq=new MinPQ<>();
-		visit(G,0);
+		visit(G,0);		//Assume G is connected
 		
 		while(!pq.isEmpty() && mst.size()<G.V()-1)
 		{
-			Edge e=pq.delMin();
+			Edge e=pq.delMin();		//Repeatedly delete the minimum weight edge e=v-w from PQ
 			int v=e.either();
 			int w=e.other(v);
-			if(marked[v] && marked[w])	continue;
+			if(marked[v] && marked[w])	continue;	//ignore if both endpoints in T
 			
-			mst.enqueue(e);
-			if(!marked[v])	visit(G,v);
+			mst.enqueue(e);	//Add edge e to tree
+			if(!marked[v])	visit(G,v);	//add v or w to tree
 			if(!marked[w])	visit(G,w);
 		}
 	}
 	
 	private void visit(EdgeWeightedGraph G, int v)
 	{
-		marked[v]=true;
+		marked[v]=true;		//Add v to tree
 		for(Edge e: G.adj(v))
 			if(!marked[e.other(v)])
-				pq.insert(e);
+				pq.insert(e);	//for each edge e=v-w, add to PQ if w not already in T
 	}
 	
 	Iterable<Edge> edges()
