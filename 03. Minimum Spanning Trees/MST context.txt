@@ -18,3 +18,13 @@
 	- Ingenuity: Exploit geometry (Voronoi diagram, or the Delaunay triangulation) and do it in ~cNlogN
 				 Idea: Build a subgraph where each point is connected to certain number of points that are close to it.
 				 	   MST is a subgraph of Delaunay triangulation.
+				 	   
+3. Clustering: 
+				-K clustering: Divide a set of objects and classify into k coherent groups.
+				-Distance function: Numeric value specifying "closeness" of two objects.
+				-Goal: Divide into clusters so that objects in different clusters are far apart.
+				
+				-Applications: Rounting in ad-hoc networks
+							   Document categorization for web search
+							   Similarity searching in medical image databases
+							   Skycat: Cluster 10^9 sky objects into stars, quasars, galaxies.
