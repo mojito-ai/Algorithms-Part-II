@@ -1,0 +1,12 @@
+1. Does a linear time algorithm exist? 
+
+	Year			worst-case				discovered by
+	1975			EloglogV					Yao
+	1976			EloglogV				Cheritan-Tarjan
+	1984			Elog*V, E+VlogV			Fredman-Tarjan
+	1986			Elog(log*V)				Gabow-Galil-Spencer-Tarjan
+	1997			Eα(V) logα(V)			  Chazelle
+	2000			Eα(V)					  Chazelle
+	2002			optimal					Pettie-Ramachandran
+	
+	Linear time randomized MST algorithm (Karger-Klein-Tarjan 1995)
