@@ -28,3 +28,7 @@
 							   Document categorization for web search
 							   Similarity searching in medical image databases
 							   Skycat: Cluster 10^9 sky objects into stars, quasars, galaxies.
+							  
+4. Single Link Clustering: 
+							- Single Link: Distance between two clusters equal the distance between the two closest objects (one in each cluster)
+							- Single Link clustering: Given an integer k, find a k-clustering that maximizes the distance between two closest clusters.
