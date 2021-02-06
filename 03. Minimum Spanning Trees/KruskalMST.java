@@ -5,9 +5,17 @@ import edu.princeton.cs.algs4.UF;
 * <h1>Kruskal's Algorithm: Consider edges in ascending order of weight. Add edge to tree T unless doing so would create a cycle</h1>
 * 
 * <li> In visualisation, its taking the small edges and they coalless together in little clusters & eventually get longer and longer and connect together
+* <li> Running Time: Kruskal Algorithm computes the MST in time ~ElgE (worst case)
+* <li> Operation		frequency		time per op
+* <li>	build pq			1				E
+* <li>	delete min			E				lgE
+* <li>	union				V				log*V
+* <li>	connnected			E				log*V
+* 
+* <li> If edges are already sorted, order of growth is Elog*V
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   06-02-2021
 * 
 */
