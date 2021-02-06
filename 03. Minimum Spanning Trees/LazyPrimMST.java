@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.MinPQ;
+
 /**
 * <h1>Lazy Prim's Algorithm: We allow stuff on the priority queue even when we know it's obselete. The PQ contains
 * 							 all of the edges that cross the cut, plus possibly some edges with both endpoints in the tree.</h1>
@@ -18,5 +20,48 @@
 
 
 public class LazyPrimMST {
-
+	private Queue<Edge> mst=new Queue<>();
+	private	double weight;
+	private boolean [] marked;
+	private MinPQ<Edge> pq;
+	
+	LazyPrimMST(EdgeWeightedGraph G)
+	{
+		marked=new boolean[G.V()];
+		pq=new MinPQ<>();
+		visit(G,0);
+		
+		while(!pq.isEmpty() && mst.size()<G.V()-1)
+		{
+			Edge e=pq.delMin();
+			int v=e.either();
+			int w=e.other(v);
+			if(marked[v] && marked[w])	continue;
+			
+			mst.enqueue(e);
+			if(!marked[v])	visit(G,v);
+			if(!marked[w])	visit(G,w);
+		}
+	}
+	
+	private void visit(EdgeWeightedGraph G, int v)
+	{
+		marked[v]=true;
+		for(Edge e: G.adj(v))
+			if(!marked[e.other(v)])
+				pq.insert(e);
+	}
+	
+	Iterable<Edge> edges()
+	{
+		return mst;
+	}
+	
+	double weight()
+	{
+		weight=0;
+		for(Edge e: mst)
+			weight+=e.weight();
+		return weight;
+	}
 }
