@@ -1,3 +1,6 @@
+import edu.princeton.cs.algs4.MinPQ;
+import edu.princeton.cs.algs4.UF;
+
 /**
 * <h1>Kruskal's Algorithm: Consider edges in ascending order of weight. Add edge to tree T unless doing so would create a cycle</h1>
 * 
@@ -11,6 +14,9 @@
 
 public class KruskalMST {
 	
+	private double weight;
+	private Queue<Edge> mst=new Queue<>();
+	
 	/**
 	 * Kruskal's Algorithm computes the MST (Correctness Proof):
 	 * 
@@ -21,9 +27,25 @@ public class KruskalMST {
 	 * <li> No crossing edge is of lower weight. (As edges in ascending order) 
 	 * @param G
 	 */
+	@SuppressWarnings("deprecation")
 	KruskalMST(EdgeWeightedGraph G)
 	{
+		MinPQ<Edge> pq=new MinPQ<>();
+		for(Edge w: G.edges())
+			pq.insert(w);
 		
+		UF uf=new UF(G.V());
+		while(!pq.isEmpty() && mst.size()<G.V()-1)
+		{
+			Edge e=pq.delMin();
+			int v=e.either();
+			int w=e.other(v);
+			if(!uf.connected(v, w))
+			{
+				uf.union(v, w);
+				mst.enqueue(e);
+			}
+		}	
 	}
 	
 	Iterable<Edge> edges()
