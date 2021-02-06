@@ -20,5 +20,20 @@
 */
 
 public class EagerPrimMST {
+	
+	EagerPrimMST(EdgeWeightedGraph G)
+	{
+		
+	}
+	
+	Iterable<Edge> edges()
+	{
+		
+	}
+	
+	double weight()
+	{
+		
+	}
 
 }
