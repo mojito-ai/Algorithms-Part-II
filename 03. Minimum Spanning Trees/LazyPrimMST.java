@@ -13,7 +13,7 @@ import edu.princeton.cs.algs4.MinPQ;
 * <li> Add w to T
 * 
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   06-02-2021
 * 
 */
@@ -25,6 +25,14 @@ public class LazyPrimMST {
 	private boolean [] marked;	//MST vertices
 	private MinPQ<Edge> pq;	//PQ of edges
 	
+	/**
+	 * Running Time Analysis: Lazy Prim algorithm computes the MST in time ~ElgE & extra space ~ E (in worst case)
+	 * <li> Operation	Frequency	Binary Heap
+	 * <li> delete min		E			lgE
+	 * <li> insert			E			lgE
+	 * 
+	 * @param G
+	 */
 	LazyPrimMST(EdgeWeightedGraph G)
 	{
 		marked=new boolean[G.V()];
