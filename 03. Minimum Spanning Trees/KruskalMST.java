@@ -30,32 +30,35 @@ public class KruskalMST {
 	@SuppressWarnings("deprecation")
 	KruskalMST(EdgeWeightedGraph G)
 	{
-		MinPQ<Edge> pq=new MinPQ<>();
+		MinPQ<Edge> pq=new MinPQ<>();		//build priority queue
 		for(Edge w: G.edges())
 			pq.insert(w);
 		
 		UF uf=new UF(G.V());
 		while(!pq.isEmpty() && mst.size()<G.V()-1)
 		{
-			Edge e=pq.delMin();
+			Edge e=pq.delMin();		//greedily add edges to MST
 			int v=e.either();
 			int w=e.other(v);
-			if(!uf.connected(v, w))
-			{
-				uf.union(v, w);
-				mst.enqueue(e);
+			if(!uf.connected(v, w))	//edge e does not create a cycle
+			{	
+				uf.union(v, w);		//merge sets
+				mst.enqueue(e);		//add edge to MST
 			}
 		}	
 	}
 	
 	Iterable<Edge> edges()
 	{
-		
+		return mst;
 	}
 	
 	double weight()
 	{
-		
+		weight=0;
+		for(Edge e: mst)
+			weight+=e.weight();
+		return weight;
 	}
 
 }
