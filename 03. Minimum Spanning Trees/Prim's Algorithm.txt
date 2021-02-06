@@ -4,3 +4,10 @@ Prim's Algorithm:
 	- Add to T the minimum weight edge having exactly one endpoint in T.
 	- Repeat until T-1 edges.
 	
+Proof of correctness: [Jarnik 1930, Dijkstra 1957, Prim 1959]
+	
+	- Prim's algorithm is a special case of Greedy MST algorithm
+	- Suppose edge e=min weight edge connecting a vertex on the tree to a vertex not on the tree
+	- Cut=Set of vertices on the tree (connected)
+	- No crossing edge is black
+	- No edge has a lower weight
