@@ -12,7 +12,8 @@
 
 2. **Directed Graphs:** We begin with depth-first search and breadth-first search in digraphs and describe applications ranging from garbage collection to web crawling. Next, we introduce a depth-first search based algorithm for computing the topological order of an acyclic digraph. Finally, we implement the Kosaraju-Sharir algorithm for computing the strong components of a digraph.
 
-3. #### **Minimum Spanning Trees**
+3. **Minimum Spanning Trees:** We study the minimum spanning tree problem. We begin by considering a generic greedy algorithm for the problem. Next, we consider and implement two classic algorithm for the problem—Kruskal's algorithm and Prim's algorithm. We conclude with some applications and open problems.
+
 4. #### **Shortest Paths**
 5. #### **Maximum Flow and Minimum Cut**
 6. #### **Radix Sorts**
