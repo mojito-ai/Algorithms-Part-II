@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.IndexMinPQ;
+
 /**
 * <h1>Eager Prim's Algorithm: Maintain a PQ of vertices connected by an edge to Tree T, where the priority of vertex v=
 * 							  weight of shortest edge connecting v to T </h1>
@@ -14,7 +16,7 @@
 * 
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 3.0
 * @since   09-02-2021
 * 
 */
@@ -31,7 +33,38 @@ public class EagerPrimMST {
 		weight=0;
 		pq=new IndexMinPQ<>(G.V());
 		marked=new boolean[G.V()];
+		visit(G,0);
+		marked[0]=true;
 		
+		while(!pq.isEmpty() && mst.size()<G.V()-1)
+		{
+			Edge e=pq.minKey();
+			int v=e.either();
+			int w=e.other(v);
+
+			mst.enqueue(e);
+			
+			if(!marked[v])	visit(G,v);
+			if(!marked[w])	visit(G,w);
+			marked[w]=true;
+		}
+		
+	}
+	
+	private void visit(EdgeWeightedGraph G, int v)
+	{
+		for(Edge e: G.adj(v)) 
+		{
+			int w=e.other(v);
+			if(!marked[w] && !pq.contains(w))
+				pq.insert(v, e);
+			
+			else if(!marked[w] && pq.contains(w))
+				pq.decreaseKey(w, e);
+			
+			else
+				continue;
+		}
 	}
 	
 	Iterable<Edge> edges()
