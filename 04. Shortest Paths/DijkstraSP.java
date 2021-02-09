@@ -1,3 +1,4 @@
+import edu.princeton.cs.algs4.IndexMinPQ;
 /**
 * <h1>Dijkstra's Algorithm</h1>
 * <li> Consider vertices in increasing order of distance from s (non tree vertex with the lowest distTo[] value)
@@ -19,5 +20,41 @@
  * 6. Object-oriented programming is an exceptionally bad idea which could only have originated in California.
  */
 public class DijkstraSP {
+	private final double [] distTo;
+	private final DirectedEdge [] edgeTo;
+	private final IndexMinPQ<Integer> pq;
+	
+	DijkstraSP(EdgeWeightedDigraph G, int s)
+	{
+		distTo=new double[G.V()];
+		edgeTo=new DirectedEdge[G.V()];
+		pq=new IndexMinPQ<>(G.V());
+		for(int v=0;v<G.V();v++)
+			distTo[v]=Double.POSITIVE_INFINITY;
+		distTo[s]=0.0;
+		
+		for(int w: G.adj(s))
+			relax(G,w);
+	}
+	
+	
+	
+	Iterable<DirectedEdge> pathTo(int v)
+	{
+		Stack<DirectedEdge> path=new Stack<>();
+		for(DirectedEdge e=edgeTo[v]; e!=null; e=edgeTo[e.from()])
+			path.push(e);
+		return path;
+	}
+	
+	double distTo(int v)
+	{
+		return distTo[v];
+	}
+	
+	boolean hasPathTo(int v)
+	{
+		return distTo[v]!=Double.POSITIVE_INFINITY;
+	}
 
 }
