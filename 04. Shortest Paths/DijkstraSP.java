@@ -22,7 +22,7 @@ import edu.princeton.cs.algs4.IndexMinPQ;
 public class DijkstraSP {
 	private final double [] distTo;
 	private final DirectedEdge [] edgeTo;
-	private final IndexMinPQ<Integer> pq;
+	private final IndexMinPQ<Double> pq;
 	
 	DijkstraSP(EdgeWeightedDigraph G, int s)
 	{
@@ -33,11 +33,27 @@ public class DijkstraSP {
 			distTo[v]=Double.POSITIVE_INFINITY;
 		distTo[s]=0.0;
 		
-		for(int w: G.adj(s))
-			relax(G,w);
+		pq.insert(s, 0.0);
+		while(!pq.isEmpty()) 
+		{
+			int v=pq.delMin();
+			for(DirectedEdge e: G.adj(v))
+				relax(e);
+		}
 	}
 	
-	
+	private void relax(DirectedEdge e)
+	{
+		int v=e.from();
+		int w=e.to();
+		if(distTo[w]>distTo[v]+e.weight())
+		{
+			distTo[w]=distTo[v]+e.weight();
+			edgeTo[w]=e;
+			if(!pq.contains(w))	pq.insert(w, distTo[w]);
+			else				pq.decreaseKey(w, distTo[w]);
+		}
+	}
 	
 	Iterable<DirectedEdge> pathTo(int v)
 	{
