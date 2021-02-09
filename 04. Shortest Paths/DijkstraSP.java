@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.IndexMinPQ;
 * <li> Add vertex to tree and relax all edges pointing from that vertex
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   09-02-2021
 * 
 */
@@ -24,6 +24,17 @@ public class DijkstraSP {
 	private final DirectedEdge [] edgeTo;
 	private final IndexMinPQ<Double> pq;
 	
+	/**
+	 * Correctness Proof:
+	 * <li> Proposition: Dijkstra's algorithm computes a SPT in any edge-weighted digraph with non-negative weights.
+	 * <li> Proof: Each edge e=v->w is relaxed exactly once (when v is relaxed), leaving distTo[w]<=distTo[v]+e.weight()
+	 * <li> Inequality holds until algorithm terminates because:
+	 * <li> distTo[w] cannot increase -> distTo[] values are monotonically decreasing
+	 * <li> distTo[v] will not change -> edge weights are non negative & we chose lowest distTo[] value at each step
+	 * 
+	 * @param G
+	 * @param s
+	 */
 	DijkstraSP(EdgeWeightedDigraph G, int s)
 	{
 		distTo=new double[G.V()];
@@ -83,7 +94,7 @@ public class DijkstraSP {
 	 * 		-Prim's: Closest vertex to the tree (via an undirected edge)
 	 * 		-Dijkstra's: Closest vertex to the source (via a directed path)
 	 * 
-	 * 
+	 * Note: DFS & BFS are also in this family of algorithms
 	 */
 
 }
