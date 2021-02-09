@@ -82,5 +82,13 @@ public class SP
 	{
 		return edgeTo[v].weight()!=Double.POSITIVE_INFINITY;
 	}
-
+	
+	/*
+	 * Optimality Conditions: Let G be an edge-weighted digraph. Then distTo[] is the shortest path distances from s iff:
+	 * 
+	 * 		1. distTo[s]=0;
+	 * 		2. For each vertex v, distTo[v] is the length of some path from s to v
+	 * 		3. For each edge e=v->w, distTo[w]<=distTo[v]+e.weight()
+	 * 
+	 */
 }
