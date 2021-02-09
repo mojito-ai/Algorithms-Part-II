@@ -90,5 +90,20 @@ public class SP
 	 * 		2. For each vertex v, distTo[v] is the length of some path from s to v
 	 * 		3. For each edge e=v->w, distTo[w]<=distTo[v]+e.weight()
 	 * 
+	 * Proof: Suppose that distTo[w]>distTo[v]+e.weight() for some edge e=v->w. Then e gives a path from s to w (via v) of length less than distTo[w].
+	 * 
+	 * Proof: Suppose that s=v0->v1->v2->....->vk=w is a shortest path from s to w
+	 * 			
+	 * 			distTo[v0]<=distTo[v1]+e1.weight() ; ei= ith edge on shortest path from s to w
+	 *			distTo[v1]<=distTo[v2]+e2.weight()
+	 *		    ...............................
+	 *		    distTo[vk]<=distTo[vk-1]+ek.weight()
+	 *
+	 *Add inequalities: simplify distTo[v0]=distTo[s]=0
+	 *			
+	 *			distTo[w]=distTo[vk]<=e1.weight()+e2.weight()+......+ek.weight()
+	 *
+	 *Thus distTo[w] is the weight of the shortest path from s to w.
+	 * 
 	 */
 }
