@@ -1,0 +1,17 @@
+Shortest Paths in an edge-weighted-digraph: Given an edge-weighted-digraph, find the shortest path from s to t.
+
+Applications:
+	1. Google Maps
+	2. Car Navigation
+	3. PERT/CPM
+	4. Map Routing
+	5. Seam Carving
+	6. Robot Navigation
+	7. Robot Navigation
+	8. Texture Mapping
+	9. Typesetting in Tex
+	10. Urban Traffic Planning
+	11. Optimal pipelining in VLSI chip
+	12. Telemarketer operator scheduling
+	13. Network Routing protocols (OSBF, BGP, RIP)
+	14. Exploiting arbitrage opportunities in currency exchange.
