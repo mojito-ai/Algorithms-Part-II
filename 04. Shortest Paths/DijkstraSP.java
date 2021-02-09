@@ -3,6 +3,7 @@ import edu.princeton.cs.algs4.IndexMinPQ;
 * <h1>Dijkstra's Algorithm</h1>
 * <li> Consider vertices in increasing order of distance from s (non tree vertex with the lowest distTo[] value)
 * <li> Add vertex to tree and relax all edges pointing from that vertex
+* <li> Running time: Depends on PQ implementation -> unordered array, binary heap, d-way heap, Fibonnaci Heap
 * 
 * @author  Mohit Sharma
 * @version 2.0
