@@ -15,25 +15,33 @@
 * 
 * @author  Mohit Sharma
 * @version 1.0
-* @since   06-02-2021
+* @since   09-02-2021
 * 
 */
 
 public class EagerPrimMST {
+	private Queue<Edge> mst;
+	private double weight;
+	private IndexMinPQ<Edge> pq;
+	private boolean [] marked;
 	
 	EagerPrimMST(EdgeWeightedGraph G)
 	{
+		mst=new Queue<>();
+		weight=0;
+		pq=new IndexMinPQ<>(G.V());
+		marked=new boolean[G.V()];
 		
 	}
 	
 	Iterable<Edge> edges()
 	{
-		
+		return mst;
 	}
 	
 	double weight()
 	{
-		
+		return weight;
 	}
 
 }
