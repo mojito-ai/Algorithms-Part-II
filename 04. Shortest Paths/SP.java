@@ -1,10 +1,15 @@
 /**
 * <h1>Single-source shortest paths API: Find the shortest path from s to every other vertex.</h1>
 * 
-* <li>
+* <li> Generic Algorithm: To compute SPT from s
+* <li> Initialise distTo[s]=0 & distTo[v]=infinity for all other vertices
+* <li> Repeat until optimality conditions reached: Relax any edge
+* <li> Proof: Throughout algorithm, distTo[v] is the length of a simple path from s to v (and edgeTo[v] is the last edge on the path)
+* <li> Each successful relaxation decreases distTo[v] for some v
+* <li> The entry distTo[v] can decrease at most a finite number of times.
 * 
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   09-02-2021
 * 
 */
@@ -43,9 +48,9 @@ public class SP
 		distTo=new double[G.V()];
 		edgeTo=new DirectedEdge[G.V()];
 		/*
-		 * 1. Dijkstra's Algorithm
-		 * 2. Topological Sort
-		 * 3. Bellman-Ford Algorithm
+		 * 1. Dijkstra's Algorithm (Non-negative weights)
+		 * 2. Topological Sort (No directed cycles)
+		 * 3. Bellman-Ford Algorithm (No negative cycles)
 		 */
 	}
 	
