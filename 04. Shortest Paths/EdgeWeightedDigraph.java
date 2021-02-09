@@ -22,7 +22,7 @@ public class EdgeWeightedDigraph
 		for(int v=0;v<V;v++)
 			adj[v]=new Bag<DirectedEdge>();
 	}
-	
+	//Add edge e=v->w to only v's adjacency list
 	void addEdge(DirectedEdge e)
 	{
 		int v=e.from();
