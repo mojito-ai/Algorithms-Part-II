@@ -15,3 +15,18 @@ Applications:
 	12. Telemarketer operator scheduling
 	13. Network Routing protocols (OSBF, BGP, RIP)
 	14. Exploiting arbitrage opportunities in currency exchange.
+	
+Variants:
+	a. Which vertices?
+		- source-sink: From one vertex to another
+		- single-source: From one vertex to every other
+		- All pairs: Between all pairs of vertices
+		
+	b. Restriction on edge weights?
+		- Non-negative weights
+		- Arbitrary weights
+		- Euclidean weights
+	
+	c. Cycles?
+		- No "directed cycles"
+		- No "negative cycles"
