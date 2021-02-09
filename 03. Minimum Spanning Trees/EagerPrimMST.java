@@ -56,14 +56,15 @@ public class EagerPrimMST {
 		for(Edge e: G.adj(v)) 
 		{
 			int w=e.other(v);
+			
+			if(marked[w])
+				continue;
+			
 			if(!marked[w] && !pq.contains(w))
 				pq.insert(v, e);
 			
 			else if(!marked[w] && pq.contains(w))
 				pq.decreaseKey(w, e);
-			
-			else
-				continue;
 		}
 	}
 	
