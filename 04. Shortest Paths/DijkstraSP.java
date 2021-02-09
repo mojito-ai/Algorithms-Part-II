@@ -72,5 +72,18 @@ public class DijkstraSP {
 	{
 		return distTo[v]!=Double.POSITIVE_INFINITY;
 	}
+	
+	/*Computing spanning trees in graphs
+	 * 
+	 * 1. Dijkstra's algorithm seem familiar?
+	 * 		-Prim's algorithm is essentially the same algorithm
+	 * 		-Both are in a family of algorithms that compute graph's spanning tree.
+	 * 
+	 * 2. Main distinction: Rule to choose next vertex for the tree
+	 * 		-Prim's: Closest vertex to the tree (via an undirected edge)
+	 * 		-Dijkstra's: Closest vertex to the source (via a directed path)
+	 * 
+	 * 
+	 */
 
 }
