@@ -13,18 +13,28 @@ public class SP
 {
 	private double [] distTo;
 	private DirectedEdge [] edgeTo;
+	/**
+	 * Shortest paths from s in Graph G
+	 * @param G
+	 * @param s
+	 */
 	SP(EdgeWeightedDigraph G, int s)
 	{
 		distTo=new double[G.V()];
 		edgeTo=new DirectedEdge[G.V()];
-		
+		/*
+		 * 1. Dijkstra's Algorithm
+		 * 2. Topological Sort
+		 * 3. Bellman-Ford Algorithm
+		 */
 	}
-	
+	//length of shortest path from s to v
 	double distTo(int v)
 	{
 		return distTo[v];
 	}
 	
+	//shortest path from s to v
 	Iterable<DirectedEdge> pathTo(int v)
 	{
 		Stack<DirectedEdge> path=new Stack<>();
@@ -35,6 +45,7 @@ public class SP
 		return path;
 	}
 	
+	//is there a path from s to v
 	boolean hasPathTo(int v)
 	{
 		return edgeTo[v].weight()!=Double.POSITIVE_INFINITY;
