@@ -48,6 +48,18 @@ public class SP
 		 * 3. Bellman-Ford Algorithm
 		 */
 	}
+	
+	@SuppressWarnings("unused")
+	private void relax(DirectedEdge e)
+	{
+		int v=e.from();
+		int w=e.to();
+		if(distTo[w]>distTo[v]+e.weight())
+		{
+			distTo[w]=distTo[v]+e.weight();
+			edgeTo[w]=e;
+		}
+	}
 	//length of shortest path from s to v
 	double distTo(int v)
 	{
