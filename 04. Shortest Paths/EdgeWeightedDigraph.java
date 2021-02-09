@@ -11,34 +11,51 @@
 
 public class EdgeWeightedDigraph 
 {
+	private final int v;
+	private final Bag<DirectedEdge> [] adj;
+	
+	@SuppressWarnings("unchecked")
 	EdgeWeightedDigraph(int V)
 	{
-		
+		this.v=V;
+		adj=(Bag<DirectedEdge> [])new Bag[V];
+		for(int v=0;v<V;v++)
+			adj[v]=new Bag<DirectedEdge>();
 	}
 	
 	void addEdge(DirectedEdge e)
 	{
-		
+		int v=e.from();
+		adj[v].add(e);
 	}
 	
 	Iterable<DirectedEdge> adj(int v)
 	{
-		
+		return adj[v];
 	}
 	
 	int V()
 	{
-		
+		return v;
 	}
 	
+	@SuppressWarnings("unused")
 	int E()
 	{
-		
+		int E=0;
+		for(int v=0;v<V();v++)
+			for(DirectedEdge w:adj(v))
+				E++;
+		return E;
 	}
 	
 	Iterable<DirectedEdge> edges()
 	{
-		
+		Bag<DirectedEdge> bag=new Bag<>();
+		for(int v=0;v<V();v++)
+			for(DirectedEdge w:adj(v))
+				bag.add(w);
+		return bag;
 	}
 
 }
