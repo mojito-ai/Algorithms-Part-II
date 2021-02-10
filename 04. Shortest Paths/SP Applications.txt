@@ -8,3 +8,10 @@
 	-Weight of pixel=energy function of 8 neighbouring pixels
 	-Seam: Shortest path from top to bottom
 	-To remove vertical seam: Delete all pixels on seam (one in each row)
+	
+2. Parallel Job Scheduling (Longest Paths Application):
+
+	Given a set of jobs with durations and precedence constraints, schedule the jobs (by finding a start time for each) so
+	as to achieve the minimum completion time, while respecting the constraints.
+	
+	Critical Path Method: 
