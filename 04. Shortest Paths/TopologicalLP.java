@@ -17,6 +17,11 @@ public class TopologicalLP {
 	private final DirectedEdge [] edgeTo;
 	private final IndexMinPQ<Double> pq;
 	
+	/**
+	 * Topological sort algorithm even works with negative weights
+	 * @param G
+	 * @param s
+	 */
 	TopologicalLP(EdgeWeightedDigraph G, int s)
 	{
 		distTo=new double[G.V()];
