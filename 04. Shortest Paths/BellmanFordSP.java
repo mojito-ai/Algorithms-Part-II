@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.IndexMinPQ;
 * <li> Failed attempts: Add a constant to every edge weight doesen't work.
 *
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   10-02-2021
 * 
 */
@@ -89,5 +89,19 @@ public class BellmanFordSP {
 	 * Proposition: If any vertex v is updated in phase v (last phase) there exists a negative cycle (and can trace back edgeTo[v]
 	 * 				entries to find it)
 	 * 
+	 */
+	
+	/*
+	 * Single source shortest paths implementation cost summary:
+	 * 
+	 * Algorithm				restriction				typical case				worst case				extra space
+	 * Topological sort			no directed cycle			E+V							E+V						V
+	 * Dijkstra (Binary heap)	no negative weights			ElogV						ElogV					V
+	 * BellmanFord				no negative cycles			EV							EV						V
+	 * BellmanFord (Queue based)no negative cycles			E+V							EV						V
+	 * 
+	 * Directed cycle make the problem harder
+	 * Negative weights make the problem harder
+	 * Negative cycles make the problem intractable
 	 */
 }
