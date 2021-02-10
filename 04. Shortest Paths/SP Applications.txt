@@ -14,4 +14,14 @@
 	Given a set of jobs with durations and precedence constraints, schedule the jobs (by finding a start time for each) so
 	as to achieve the minimum completion time, while respecting the constraints.
 	
-	Critical Path Method: 
+	Critical Path Method: To solve a parallel job scheduling problem, create an edge weighted DAG
+						  -Source and sink vertices
+						  -Two vertices(begin and end) for each job
+						  -Three edges for each job
+						  		a. Begin to end (weighted by duration of the job)
+						  		b. source to begin (0 weight)
+						  		c. end to sink (0 weight)
+						  		
+						  - One edge for each precedence constraint (0 weight)
+						 
+	Use longest path from source to schedule each job
