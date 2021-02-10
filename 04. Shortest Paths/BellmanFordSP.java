@@ -18,7 +18,7 @@ public class BellmanFordSP {
 	
 	/**
 	 * Initialize distTo[s]=0 & distTo[v]=infinity for all other vertices
-	 * <li> Relax all edges
+	 * <li> Relax V times: Relax each edge
 	 * @param G
 	 * @param s
 	 */
