@@ -11,13 +11,22 @@ import edu.princeton.cs.algs4.IndexMinPQ;
 */
 
 public class BellmanFordSP {
-	
+	/*
+	 * Analysis: Dynamic Programming algorithm computes the SPT in any edge weighted digraph with no negative cycles in time ~ E*V
+	 * 
+	 * Proof: After pass i, found shortest path containing at most i edges.
+	 * Improvement: If distTo[v] does not change during pass i, no need to relax any edge pointing from v in pass i+1
+	 * 
+	 * FIFO Implementation: Maintain a queue of vertices whose distTo[] changed. Overall effect is that running time ~ E*V in worst case
+	 * 						But much faster than that in practise.
+	 * 
+	 */
 	private final double [] distTo;
 	private final DirectedEdge [] edgeTo;
 	private final IndexMinPQ<Double> pq;
 	
 	/**
-	 * Initialize distTo[s]=0 & distTo[v]=infinity for all other vertices
+	 * Initialise distTo[s]=0 & distTo[v]=infinity for all other vertices
 	 * <li> Relax V times: Relax each edge
 	 * @param G
 	 * @param s
