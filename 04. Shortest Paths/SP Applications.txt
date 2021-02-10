@@ -40,3 +40,11 @@
 	$1000 = 741 Euros = 1012.206 Canadian Dollars = $1007.14497
 	
 	Currency exchange graph: 
+		-vertex=currency
+		-Edge=translation, with weight equal to exchange rat
+		-Find a directed cycle whose product of edges is >=1
+		
+	To express as negative cycle detection problem: Model by taking logs
+		-Let weight of edge v->w be -ln(exchange rate of currency v to w)
+		-Multiplication turns into addition: >1 turns to <0
+		-Find a directed cycle whose sum of edge weights is <0 (negative cycle)
