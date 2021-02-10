@@ -3,7 +3,7 @@ import edu.princeton.cs.algs4.IndexMinPQ;
 * <h1> Negative weights: Shortest paths with negative weights is complex and sometimes intractable </h1>
 * <li> Failed attempts: Dijkstra doesen't work with negative weights
 * <li> Failed attempts: Add a constant to every edge weight doesen't work.
-* 
+*
 * @author  Mohit Sharma
 * @version 1.0
 * @since   10-02-2021
@@ -68,5 +68,17 @@ public class BellmanFordSP {
 	{
 		return distTo[v]!=Double.POSITIVE_INFINITY;
 	}
-
+	
+	/*
+	 * Negative Cycles: A negative cycle is a directed cycle whose sum of edge weights is negative. 
+	 * 
+	 * A SPT exists iff no negative cycles
+	 * 
+	 * Finding a negative cycle: If there is a negative cycle, BellmanFord gets stuck in loop updating distTo[] and edgeTo[] 
+	 * 							 entries of vertices in the cycle.
+	 * 
+	 * Proposition: If any vertex v is updated in phase v (last phase) there exists a negative cycle (and can trace back edgeTo[v]
+	 * 				entries to find it)
+	 * 
+	 */
 }
