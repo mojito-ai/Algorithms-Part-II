@@ -13,7 +13,7 @@ Def: The net flow across a cut (A,B) is the sum of the flows on its edges from A
 	 
 	 Corollary: Outflow from s = Inflow to t = value of flow 		
 	 
-Weak Duality: Let f be any flow and let (A,B) be any cut. Then the value of flow <= the capacity of the cut.
+Weak Duality: Let f be any flow and let (A,B) be any cut. Thghe value of flow <= the capacity of the cut.
 
 	 Proof: Value of flow f = net flow across cut (A,B) <= capacity of cut (A,B)
 	 
@@ -23,6 +23,7 @@ Weak-Duality Theorems:
 	
 	2. Maxflow-Mincut theoram: Value of maxflow=Capacity of mincut
 	
-	Proof: 
-	
-	
+	Proof: The following three conditions existing are equivalent for any flow f:
+		   -There exists a cut whose capacity equals the value of the flow f.
+		   -f is a maxflow.
+		   -There is no augmenting path with respect to f.
