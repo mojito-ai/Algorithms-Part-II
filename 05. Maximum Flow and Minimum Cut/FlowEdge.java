@@ -9,7 +9,7 @@
 * <li> Backward edge: Subtract Δ
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   11-02-2021
 * 
 */
@@ -46,9 +46,11 @@ public class FlowEdge {
 	}
 	
 	//other endpoint
-	int other(int v)
+	int other(int vertex)
 	{
-		
+		if(vertex==v)		return w;
+		else if(vertex==w)	return v;
+		else throw new RuntimeException("Illegal Endpoint");
 	}
 	
 	//capacity of this edge
@@ -64,15 +66,19 @@ public class FlowEdge {
 	}
 	
 	//residual capacity towards v
-	double residualCapacityTo(int v)
+	double residualCapacityTo(int vertex)
 	{
-		
+		if(vertex==w)	return capacity-flow;	//backward edge
+		else if(vertex==v)	return flow;		//forward edge
+		else throw new IllegalArgumentException();
 	}
 	
 	//add delta flow towards v
-	void addResidualFlowTo(int v, double delta)
+	void addResidualFlowTo(int vertex, double delta)
 	{
-		
+		if(vertex==w)	flow+=delta;
+		else if(vertex==v)	flow-=delta;
+		else throw new IllegalArgumentException();
 	}
 
 
