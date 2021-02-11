@@ -50,11 +50,25 @@ public class FordFulkerson {
 	 * 
 	 */
 	
-	FordFulkerson(FlowNetwork G, int s, int t)
+	public FordFulkerson(FlowNetwork G, int s, int t)
 	{
 		
 	}
 	
+	public double value()
+	{
+		
+	}
+	
+	public boolean inCut(int v)
+	{
+		
+	}
+	
+	private boolean hasAugmentingPath(FlowNetwork G, int s, int t)
+	{
+		
+	}
 	/*
 	 *Ford Fulkerson algorithm with integer capacities
 	 *
