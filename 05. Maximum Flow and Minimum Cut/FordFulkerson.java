@@ -13,7 +13,7 @@
 * <li> Empty backward edge
 * 
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   11-02-2021
 * 
 */
@@ -79,6 +79,13 @@ public class FordFulkerson {
 		return marked[v];
 	}
 	
+	/**
+	 * Here we can use BFS but can use anything like DFS or priority queue
+	 * @param G
+	 * @param s
+	 * @param t
+	 * @return
+	 */
 	private boolean hasAugmentingPath(FlowNetwork G, int s, int t)
 	{
 		edgeTo=new FlowEdge[G.V()];
