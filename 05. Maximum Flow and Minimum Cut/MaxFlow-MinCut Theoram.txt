@@ -37,3 +37,9 @@ Weak-Duality Theorems:
 			-Suppose that there is an augmenting path wrt f
 			-Can improve flow f by sending flow across this path
 			-Thus f is not a maxflow
+			
+			[iii => i]
+			-Suppose that there is no augmenting path wrt f
+			-Let (A,B) be a cut where A is the set of vertices connected to s by an undirected path with no full forward or empty backward edges
+			-By definition, s is in A; since no augmenting path, t is in B
+			-capacity of cut = net flow across cut = value of flow f
