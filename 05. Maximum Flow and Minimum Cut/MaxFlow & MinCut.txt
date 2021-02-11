@@ -34,3 +34,4 @@ MaxFlow Problem:
 		-Soviet Union Goal: Maximize flow of supplies to Eastern Europe
 		-"Free World" goal: Maximize flow of information to specified set of people.
 		
+Summary: MaxFlow and MinCut are Primal & Dual relationship
