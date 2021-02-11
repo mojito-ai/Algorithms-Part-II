@@ -15,3 +15,17 @@ MinCut Problem:
 		Rail network connecting Soviet Union with Eastern European countries (map declassified by Pentagon in 1999)
 		
 		-2010: Government-in-power's goal. Cut off communication to a set of people.
+		
+MaxFlow Problem:
+
+	Input: An edge weighted digraph, source vertex x, and target vertex t. (each edge has a positive capacity)
+	
+	Def: An st-flow (flow) is an assignment of values to the edges such that
+		
+		1. Capacity Constraint: 0 <= edge's flow <= edge's capacity 
+		2. Local Equilibrium: Inflow=Outflow at every vertex (except for s & t)
+		
+	Def: The value of a flow is the Inflow at t. (we assume no edge points from t or to s)
+	
+	Maximum st-flow (max-flow) problem : Find a flow of maximum value.
+		
