@@ -19,6 +19,9 @@
 */
 
 public class FordFulkerson {
+	private boolean [] marked;
+	private FlowEdge [] edgeTo;
+	private double value;
 	
 	/*
 	 * Ford-Fulkerson Algorithm: Start with 0 flow.
@@ -52,17 +55,28 @@ public class FordFulkerson {
 	
 	public FordFulkerson(FlowNetwork G, int s, int t)
 	{
-		
+		value=0.0;
+		while(hasAugmentingPath(G,s,t))
+		{
+			double bottle=Double.POSITIVE_INFINITY;
+			for(int v=t;v!=s;v=edgeTo[v].other(v))
+				bottle=Math.min(bottle, edgeTo[v].residualCapacityTo(v));
+			
+			for(int v=t;v!=s; v=edgeTo[v].other(v))
+				edgeTo[v].addResidualFlowTo(v, bottle);
+			
+			value+=bottle;
+		}
 	}
 	
 	public double value()
 	{
-		
+		return value;
 	}
 	
 	public boolean inCut(int v)
 	{
-		
+		return marked[v];
 	}
 	
 	private boolean hasAugmentingPath(FlowNetwork G, int s, int t)
