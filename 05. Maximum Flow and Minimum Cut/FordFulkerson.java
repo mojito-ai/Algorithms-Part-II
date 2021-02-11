@@ -19,5 +19,15 @@
 */
 
 public class FordFulkerson {
+	
+	/*
+	 * Ford-Fulkerson Algorithm: Start with 0 flow.
+	 * 
+	 * 1. While there exists an augmenting path:
+	 * 		-Find an augmenting path
+	 * 		-Compute the bottleneck capacity
+	 * 		-Increase flow on that path by bottleneck capacity
+	 * 
+	 */
 
 }
