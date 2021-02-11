@@ -21,4 +21,8 @@ Weak-Duality Theorems:
 	 
 	1. Augmenting Path Theorem: A flow f is a maxflow iff no augmenting paths.
 	
+	2. Maxflow-Mincut theoram: Value of maxflow=Capacity of mincut
+	
+	Proof: 
+	
 	
