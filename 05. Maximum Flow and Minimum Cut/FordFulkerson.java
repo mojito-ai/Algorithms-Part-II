@@ -80,7 +80,16 @@ public class FordFulkerson {
 	}
 	
 	/**
-	 * Here we can use BFS but can use anything like DFS or priority queue
+	 * Here we can use BFS but can use anything like DFS or priority queue as in Prim's or Dijkstra
+	 * <li> FF performance depends on choice of augmenting paths
+	 * <li> Augmenting Paths		Number of paths				Implementation 
+	 * <li> shortest path				~1/2EV					queue(BFS)
+	 * <li> fattest path				~Eln(EU)				priority queue
+	 * <li> random path					~EU						randomized queue
+	 * <li> DFS Path					~EU						Stack(DFS)
+	 * 
+	 * <li> Shortest path=augmenting path with fewest edges
+	 * <li> Fattest path=augmenting path with maximum bottleneck capacity
 	 * @param G
 	 * @param s
 	 * @param t
