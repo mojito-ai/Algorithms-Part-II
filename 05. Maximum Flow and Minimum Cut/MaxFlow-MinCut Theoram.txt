@@ -24,6 +24,16 @@ Weak-Duality Theorems:
 	2. Maxflow-Mincut theoram: Value of maxflow=Capacity of mincut
 	
 	Proof: The following three conditions existing are equivalent for any flow f:
-		   -There exists a cut whose capacity equals the value of the flow f.
-		   -f is a maxflow.
-		   -There is no augmenting path with respect to f.
+		    i. There exists a cut whose capacity equals the value of the flow f.
+		   ii. f is a maxflow.
+		  iii. There is no augmenting path with respect to f.
+		   
+			[i => ii]
+			-Suppose that (A,B) is a cut with capacity equal to the value of f
+			-Then the value of any flow f'<= capacity of cut (A,B) = value of flow f
+			-Thus f is a maxflow
+			
+			[ii => iii]		we prove contrapositive: ~iii => ~ii
+			-Suppose that there is an augmenting path wrt f
+			-Can improve flow f by sending flow across this path
+			-Thus f is not a maxflow
