@@ -3,6 +3,7 @@
 * 
 * <li> Residual Network: A useful view of a flow network
 * <li> Augmenting path in orignal network is equivalent to directed path in residual network.
+* <li> Allow self loops & parallel edges
 * 
 * @author  Mohit Sharma
 * @version 2.0
@@ -11,5 +12,35 @@
 */
 
 public class FlowNetwork {
+	
+	FlowNetwork(int V)
+	{
+		
+	}
+	
+	void addEdge(FlowEdge e)
+	{
+		
+	}
+	
+	Iterable<FlowEdge> adj(int v)
+	{
+		
+	}
+	
+	Iterable<FlowEdge> edges()
+	{
+		
+	}
+	
+	int V()
+	{
+		
+	}
+	
+	int E()
+	{
+		
+	}
 
 }
