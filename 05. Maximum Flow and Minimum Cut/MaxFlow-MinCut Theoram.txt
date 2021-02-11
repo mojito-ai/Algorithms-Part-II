@@ -1,0 +1,10 @@
+MaxFlow - MinCut Theoram:
+
+Relationship between flow and cuts:
+
+Def: The net flow across a cut (A,B) is the sum of the flows on its edges from A to B minus the sum of the flow on its edges 
+	 from B to A.
+	 
+	 Flow-value Lemma: Let f be any flow and let (A,B) be any cut. Then the net flow across cut (A,B) equals the value of f.
+	 
+	 
