@@ -1,0 +1,10 @@
+Introduction to MaxFlow & MinCut:
+
+MinCut Problem:
+	
+	Input: An edge weighted digraph, source vertex s, and target vertex t. (each edge has a positive capacity)
+	
+	Def: A st-cut(cut) is a partition of the vertices into two disjoint sets, with s in one Set A and t in the other set B.
+	Def: Its capacity is defined as the sum of the capacities of edges going from set A to B.
+	
+	Minimum st-cut (min-cut) problem : Find a cut of minimum capacity
