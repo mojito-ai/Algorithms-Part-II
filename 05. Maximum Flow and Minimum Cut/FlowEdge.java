@@ -15,5 +15,46 @@
 */
 
 public class FlowEdge {
+	
+	FlowEdge(int v, int w, double capacity)
+	{
+		
+	}
+	
+	int from()
+	{
+		
+	}
+	
+	int to()
+	{
+		
+	}
+	
+	int other(int v)
+	{
+		
+	}
+	
+	double capacity()
+	{
+		
+	}
+	
+	double flow()
+	{
+		
+	}
+	
+	double residualCapacityTo(int v)
+	{
+		
+	}
+	
+	void addResidualFlowTo(int v, double delta)
+	{
+		
+	}
+
 
 }
