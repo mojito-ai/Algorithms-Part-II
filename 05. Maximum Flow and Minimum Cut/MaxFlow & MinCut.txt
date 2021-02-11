@@ -28,4 +28,9 @@ MaxFlow Problem:
 	Def: The value of a flow is the Inflow at t. (we assume no edge points from t or to s)
 	
 	Maximum st-flow (max-flow) problem : Find a flow of maximum value.
+	
+	Applications: 
+	
+		-Soviet Union Goal: Maximize flow of supplies to Eastern Europe
+		-"Free World" goal: Maximize flow of information to specified set of people.
 		
