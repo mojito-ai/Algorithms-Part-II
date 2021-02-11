@@ -8,3 +8,10 @@ MinCut Problem:
 	Def: Its capacity is defined as the sum of the capacities of edges going from set A to B.
 	
 	Minimum st-cut (min-cut) problem : Find a cut of minimum capacity
+	
+	Applications: 
+		 
+		-1950s: Cut supplies (if Cold War turns into real war)
+		Rail network connecting Soviet Union with Eastern European countries (map declassified by Pentagon in 1999)
+		
+		-2010: Government-in-power's goal. Cut off communication to a set of people.
