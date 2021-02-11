@@ -32,7 +32,7 @@ public class FordFulkerson {
 	 * 		-How to find a mincut?
 	 * 			
 	 * 			To compute a mincut(A,B) from maxflow f
-	 * 			a. By augmenting path theoram, no augmenting paths wrt f
+	 * 			a. By augmenting path theorem, no augmenting paths wrt f
 	 * 			b. Compute A=set of vertices connected to s by an undirected path with no full forward or empty backward edges
 	 * 			c. Order of growth ~ V+E (Can be done in linear time by DFS or BFS)
 	 * 
@@ -47,6 +47,26 @@ public class FordFulkerson {
 	 * 		-Does FF always terminate? If so, after how many augmentations.
 	 * 
 	 * 			Yes. Provided edge weights capacities are integers (or augmenting paths chosen carefully)
+	 * 
+	 */
+	
+	FordFulkerson(FlowNetwork G, int s, int t)
+	{
+		
+	}
+	
+	/*
+	 *Ford Fulkerson algorithm with integer capacities
+	 *
+	 *1. Important special case - Edge capacities are integers between 1 & U
+	 *2. Invariant: The flow is integer-valued throughout Ford Fulkerson
+	 *
+	 *Proof: [by induction]
+	 *	-Bottleneck capacity is an integer
+	 *	-Flow on an edge increases/decreases by bottleneck capacity
+	 *
+	 *Proposition: Number of augmentations <= the value of the maxflow
+	 *Proof: Each augmentation increases the value by atleast 1
 	 * 
 	 */
 
