@@ -16,41 +16,55 @@
 
 public class FlowEdge {
 	
+	/**
+	 * Create a flow edge
+	 * <li> A flow edge should be able to process in both directions
+	 * @param v
+	 * @param w
+	 * @param capacity
+	 */
 	FlowEdge(int v, int w, double capacity)
 	{
 		
 	}
 	
+	//vertex this edge points from
 	int from()
 	{
 		
 	}
 	
+	//vertex this edge points to
 	int to()
 	{
 		
 	}
 	
+	//other endpoint
 	int other(int v)
 	{
 		
 	}
 	
+	//capacity of this edge
 	double capacity()
 	{
 		
 	}
 	
+	//flow of this edge
 	double flow()
 	{
 		
 	}
 	
+	//residual capacity towards v
 	double residualCapacityTo(int v)
 	{
 		
 	}
 	
+	//add delta flow towards v
 	void addResidualFlowTo(int v, double delta)
 	{
 		
