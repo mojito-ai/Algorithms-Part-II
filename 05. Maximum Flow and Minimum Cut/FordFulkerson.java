@@ -68,6 +68,9 @@ public class FordFulkerson {
 	 *Proposition: Number of augmentations <= the value of the maxflow
 	 *Proof: Each augmentation increases the value by atleast 1
 	 * 
+	 *3. Integrality Theorem: There exists an integer valued maxflow
+	 *
+	 *Proof: FF terminates and maxflow is integer valued
 	 */
 
 }
