@@ -28,6 +28,12 @@ public class FordFulkerson {
 	 * 		-Compute the bottleneck capacity
 	 * 		-Increase flow on that path by bottleneck capacity
 	 * 
+	 * 2. Questions:
+	 * 		-How to find a mincut?
+	 * 		-How to find an augmenting path?
+	 * 		-If FF terminates, does it always compute a maxflow?
+	 * 		-Does FF always terminate? If so, after how many augmentations.
+	 * 
 	 */
 
 }
