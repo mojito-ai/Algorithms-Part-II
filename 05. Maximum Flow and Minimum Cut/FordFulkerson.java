@@ -30,9 +30,23 @@ public class FordFulkerson {
 	 * 
 	 * 2. Questions:
 	 * 		-How to find a mincut?
+	 * 			
+	 * 			To compute a mincut(A,B) from maxflow f
+	 * 			a. By augmenting path theoram, no augmenting paths wrt f
+	 * 			b. Compute A=set of vertices connected to s by an undirected path with no full forward or empty backward edges
+	 * 			c. Order of growth ~ V+E (Can be done in linear time by DFS or BFS)
+	 * 
 	 * 		-How to find an augmenting path?
+	 * 
+	 * 			BFS works well
+	 * 
 	 * 		-If FF terminates, does it always compute a maxflow?
+	 * 
+	 * 			Yes
+	 * 
 	 * 		-Does FF always terminate? If so, after how many augmentations.
+	 * 
+	 * 			Yes. Provided edge weights capacities are integers (or augmenting paths chosen carefully)
 	 * 
 	 */
 
