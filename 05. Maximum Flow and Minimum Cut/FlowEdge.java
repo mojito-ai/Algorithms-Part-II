@@ -15,6 +15,9 @@
 */
 
 public class FlowEdge {
+	private final int v, w;
+	private final double capacity;
+	private double flow;
 	
 	/**
 	 * Create a flow edge
@@ -25,19 +28,21 @@ public class FlowEdge {
 	 */
 	FlowEdge(int v, int w, double capacity)
 	{
-		
+		this.v=v;
+		this.w=w;
+		this.capacity=capacity;
 	}
 	
 	//vertex this edge points from
 	int from()
 	{
-		
+		return v;
 	}
 	
 	//vertex this edge points to
 	int to()
 	{
-		
+		return w;
 	}
 	
 	//other endpoint
@@ -49,13 +54,13 @@ public class FlowEdge {
 	//capacity of this edge
 	double capacity()
 	{
-		
+		return capacity;
 	}
 	
 	//flow of this edge
 	double flow()
 	{
-		
+		return flow;
 	}
 	
 	//residual capacity towards v
