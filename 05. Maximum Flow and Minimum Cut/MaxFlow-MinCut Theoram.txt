@@ -7,4 +7,9 @@ Def: The net flow across a cut (A,B) is the sum of the flows on its edges from A
 	 
 	 Flow-value Lemma: Let f be any flow and let (A,B) be any cut. Then the net flow across cut (A,B) equals the value of f.
 	 
+	 Proof: By induction on size of B
+	 		1. Best Case : B={t}
+	 		2. Induction Step : Remains true by local equilibrium when moving any vertex from A to B.
+	 
+	 Corollary: Outflow from s = Inflow to t = value of flow 		
 	 
