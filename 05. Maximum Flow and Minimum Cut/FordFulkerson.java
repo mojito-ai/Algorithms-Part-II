@@ -13,7 +13,7 @@
 * <li> Empty backward edge
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   11-02-2021
 * 
 */
@@ -60,10 +60,10 @@ public class FordFulkerson {
 		{
 			double bottle=Double.POSITIVE_INFINITY;
 			for(int v=t;v!=s;v=edgeTo[v].other(v))
-				bottle=Math.min(bottle, edgeTo[v].residualCapacityTo(v));
+				bottle=Math.min(bottle, edgeTo[v].residualCapacityTo(v));	//compute bottleneck capacity
 			
 			for(int v=t;v!=s; v=edgeTo[v].other(v))
-				edgeTo[v].addResidualFlowTo(v, bottle);
+				edgeTo[v].addResidualFlowTo(v, bottle); //augment flow
 			
 			value+=bottle;
 		}
@@ -81,7 +81,27 @@ public class FordFulkerson {
 	
 	private boolean hasAugmentingPath(FlowNetwork G, int s, int t)
 	{
+		edgeTo=new FlowEdge[G.V()];
+		marked=new boolean[G.V()];
+		Queue<Integer> q=new Queue<>();
+		q.enqueue(s);
+		marked[s]=true;
 		
+		while(!q.isEmpty())
+		{
+			int v=q.dequeue();
+			for(FlowEdge e: G.adj(v))
+			{
+				int w=e.other(v);
+				if(e.residualCapacityTo(w)>0 && !marked[w]) //found path from s to w in residual network
+				{
+					marked[w]=true;	//mark w
+					edgeTo[w]=e;	//save last edge on path to w
+					q.enqueue(w);	//add w to the queue
+				}
+			}
+		}
+		return marked[t];	//is t reachable from s in residual network
 	}
 	/*
 	 *Ford Fulkerson algorithm with integer capacities
