@@ -75,3 +75,8 @@ Bipartite Matching:
 	- Let T=companies on s side of the cut
 	- Fact= |S|>|T|; students in S can be matched only to companies in T
 	
+	Bottom Line: When no perfect matching, mincut explains why
+	
+	Suppose that we run FF (using shortest path augmenting model), how many paths are needed in worst case (n student, n companies)
+	
+	
