@@ -60,3 +60,9 @@ Bipartite Matching:
 	- Is there a way to match all the students to jobs?
 	
 	Given a bipartite graph, find a perfect matching
+	
+	Network flow formulation of bipartite matching
+	- Create s,t, one vertex for each student, and one vertex for each job
+	- Add edge from s to each student (capacity 1)
+	- Add edge from each job to t (capacity 1)
+	- Add edge from student to each job offered (infinite capacity)
