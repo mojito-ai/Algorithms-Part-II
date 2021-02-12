@@ -70,4 +70,8 @@ Bipartite Matching:
 	* 1-1 correspondance between perfect matchings in bipartite graph and integer-valued maxflows of value N
 	
 	* What the mincut tells us?
+	- Mincut: consider mincut (A,B)
+	- Let S=students on s side of the cut
+	- Let T=companies on s side of the cut
+	- Fact= |S|>|T|; students in S can be matched only to companies in T
 	
