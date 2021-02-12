@@ -66,3 +66,8 @@ Bipartite Matching:
 	- Add edge from s to each student (capacity 1)
 	- Add edge from each job to t (capacity 1)
 	- Add edge from student to each job offered (infinite capacity)
+	
+	* 1-1 correspondance between perfect matchings in bipartite graph and integer-valued maxflows of value N
+	
+	* What the mincut tells us?
+	
