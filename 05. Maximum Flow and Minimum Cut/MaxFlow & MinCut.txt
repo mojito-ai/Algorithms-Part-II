@@ -53,3 +53,10 @@ Applications:
 	11. Multi camera scene restoration
 	12. Sensor placement for homeland security
 	13. Many, many more
+	
+Bipartite Matching:
+	- N students apply for N jobs
+	- Each gets several offers
+	- Is there a way to match all the students to jobs?
+	
+	Given a bipartite graph, find a perfect matching
