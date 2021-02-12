@@ -35,3 +35,21 @@ MaxFlow Problem:
 		-"Free World" goal: Maximize flow of information to specified set of people.
 		
 Summary: MaxFlow and MinCut are Primal & Dual relationship
+
+Applications:
+
+	Maxflow/Mincut is a widely applicable problem solving model
+	
+	1. Datamining
+	2. Openpit mining
+	3. Bipartite matching
+	4. Network reliability
+	5. Baseball elimination
+	6. Image segmentation (Liver and hepatic vascularization segmentation)
+	7. Network connectivity
+	8. Distributed computing
+	9. Egalitarian stable matching
+	10. Security of statistical data
+	11. Multi camera scene restoration
+	12. Sensor placement for homeland security
+	13. Many, many more
