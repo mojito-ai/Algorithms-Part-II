@@ -54,5 +54,15 @@ public class StringsBuilder {
 		return suffixes;
 	}
 	
+	public static String [] suffixes2(String s)
+	{
+		int N=s.length();
+		StringBuilder sb = new StringBuilder (s);
+		String [] suffixes = new String [N];
+		for(int i=0; i<N; i++)
+			suffixes[i]=sb.substring(i, N);			// Quadratic time and Quadratic space
+		return suffixes;
+	}
+	
 	
 }
