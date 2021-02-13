@@ -31,4 +31,21 @@ public class StringsBuilder {
 			rev.append(s.charAt(i));		//Linear Time
 		return rev.toString();
 	}
+	
+	/*Array of suffixes: How to effeciently form array of suffixes
+	 * 
+	 * Input string: a a c a a g
+	 * 				 0 1 2 3 4 5
+	 * 
+	 * Suffixes 	 0 | a a c a a g
+	 * 				 1 | a c a a g
+	 * 				 2 | c a a g
+	 * 				 3 | a a g
+	 * 				 4 | a g
+	 * 				 5 | g
+	 */
+	
+	
+	
+	
 }
