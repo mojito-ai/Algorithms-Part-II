@@ -42,16 +42,35 @@ public final class Strings implements Comparable<String> {
 		
 	}
 	
+	/**
+	 * Indexing - Get the ith character
+	 * @param i
+	 * @return
+	 */
 	public char charAt(int i)
 	{
 		
 	}
 	
-	private String(int offset, int length, char [] value)
+	/**
+	 * The string data type: Sequence of characters (immutable)
+	 * 
+	 * <li> String concatenation: Append one character at the end of another string
+	 * @param offset
+	 * @param length is the number of characters
+	 * @param value
+	 */
+	private Strings(int offset, int length, char [] value)
 	{
 		
 	}
 	
+	/**
+	 * Substring extraction: Get a contiguous subsequence of characters
+	 * @param from
+	 * @param to
+	 * @return
+	 */
 	public String substring(int from, int to)
 	{
 		
