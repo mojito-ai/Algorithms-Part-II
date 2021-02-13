@@ -73,6 +73,13 @@ public class StringsBuilder {
 	 * 				p r e f i x
 	 */
 	
+	/**
+	 * Running time: Proportional to length D of longest common prefix
+	 * <li> Also can compute compareTo() in sublinear time
+	 * @param s
+	 * @param t
+	 * @return
+	 */
 	public static int lcp(String s, String t)
 	{
 		int N=Math.min(s.length(), t.length());
