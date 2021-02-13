@@ -34,7 +34,7 @@ public final class Strings implements Comparable<String> {
 	 * 2. Now-a-days people use UNICODE where a character is a 16-bit-integer
 	 * 
 	 * 3. Java char data type: A 16-bit unsigned integer
-	 * 						  - Supports orignal 16 bit UNICODE
+	 * 						  - Supports original 16 bit UNICODE
 	 * 					      - Supports 21 bit UNICODE v3.0 (awkwardly)
 	 */
 	
@@ -70,6 +70,7 @@ public final class Strings implements Comparable<String> {
 	
 	/**
 	 * Substring extraction: Get a contiguous subsequence of characters
+	 * <li> Fact that makes substring constant time = copy of reference to original array passed.
 	 * @param from
 	 * @param to
 	 * @return
