@@ -17,5 +17,38 @@
 */
 
 public class KeyIndexedCounting {
+	
+	/*
+	 *1. Assumption: Keys are integers between 0 & R-1
+	 *2. Implication: Can use key as an array index
+	 *
+	 *3. Applications: 
+	 *					- Sort string by first letter
+	 *					- Sort class roster by section
+	 *					- Sort phone number by area code
+	 *					- Subroutine in a sorting algorithm
+	 *
+	 *4. Remark: Keys may have associated data => Can't just count the number of keys of each value.
+	 *
+	 */
+	
+	public static String [] sort(String [] a, int R)
+	{
+		int N=a.length;
+		int [] count = new int [R+1];
+		String [] aux=new String [N];
+		
+		for(int i=0; i<N; i++)
+			count[a[i].charAt(0)+1]++;
+		
+		for(int r=0; r<R; r++)
+			count[r+1]+=count[r];
+		
+		for(int i=0; i<N; i++)
+			aux[count[a[i].charAt(0)]++]=a[i];
+		
+		for(int i=0; i<N; i++)
+			a[i]=aux[i];
+	}
 
 }
