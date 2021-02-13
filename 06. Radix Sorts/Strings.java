@@ -21,6 +21,7 @@ public final class Strings implements Comparable<String> {
 	private char [] value;	//characters
 	private int offset;		//index of first character in array
 	private int length;		//length of string
+	@SuppressWarnings("unused")
 	private int hash;		//cache of hashCode()
 
 	/*
@@ -39,7 +40,7 @@ public final class Strings implements Comparable<String> {
 	
 	public int length()
 	{
-		
+		return length;
 	}
 	
 	/**
@@ -49,7 +50,7 @@ public final class Strings implements Comparable<String> {
 	 */
 	public char charAt(int i)
 	{
-		
+		return value[offset+i];
 	}
 	
 	/**
@@ -62,7 +63,9 @@ public final class Strings implements Comparable<String> {
 	 */
 	private Strings(int offset, int length, char [] value)
 	{
-		
+		this.offset=offset;
+		this.length=length;
+		this.value=value;
 	}
 	
 	/**
@@ -71,9 +74,9 @@ public final class Strings implements Comparable<String> {
 	 * @param to
 	 * @return
 	 */
-	public String substring(int from, int to)
+	public Strings substring(int from, int to)
 	{
-		
+		return new Strings(offset+from, to-from, value);
 	}
 	
 	@Override
