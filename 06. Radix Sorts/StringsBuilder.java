@@ -64,5 +64,14 @@ public class StringsBuilder {
 		return suffixes;
 	}
 	
+	/*Longest Common Prefix: How to compute the longest common prefix?
+	 * 
+	 * E.g. 		p r e f e t c h
+	 * 
+	 * 				0 1 2 3 4 5 6 7
+	 * 
+	 * 				p r e f i x
+	 */
+	
 	
 }
