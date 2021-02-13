@@ -95,6 +95,25 @@ public class FordFulkerson {
 	 * @param t
 	 * @return
 	 */
+	
+	/*
+	 * Theory: Yet another holy grail for theoretical computer scientists
+	 * 
+	 * Year		Method						Worst Case				Discovered By
+	 * 1951		Simplex						 UE^3 					Dantzig
+	 * 1955		Augmenting path				 UE^2					Ford-Fulkerson
+	 * 1970		Shortest augmenting path	 E^3					Dinitz, Edmonds-Keep
+	 * 1970		Fattest augmenting path		 E^2 logE log(EU)		Dinitz, Edmonds-Keep
+	 * 1977		blocking flow				 E^(5/2)				Cherkasky
+	 * 1978		blocking flow				 E^(7/3)				Galil
+	 * 1983		dynamic trees				 E^2logE				Sleator-Tarjan
+	 * 1985		capacity scaling			 E^2logU				Gabow
+	 * 1997		length function				 E^(3/2) LogE logU		Goldberg-Rao
+	 * 2012		compact network				 E^2/logE				Orlin
+	 * 
+	 * Maxflow algorithms for sparse digraphs with E edges and integer capacities (max U)
+	 * 
+	 */
 	private boolean hasAugmentingPath(FlowNetwork G, int s, int t)
 	{
 		edgeTo=new FlowEdge[G.V()];
