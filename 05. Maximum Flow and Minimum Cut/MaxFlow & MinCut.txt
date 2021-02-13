@@ -116,3 +116,14 @@ Baseball Elimination:
 	> Avg team in R wins = 305/4 = 76.25 wins
 	>				     (278 + 27)
 	
+	Maxflow Formulation:
+	
+	Intuition: Remaining games flow from s to t
+	Team 4 not eliminated iff all edegs pointing from s are full in maxflow
+	
+	- games vertices (each pair of teams other than 4)
+	- team vertices (each team other than 4)
+	- source to game vertices (capacity = games left between team i and j)
+	- game vertex to team vertex (capacity = infinity)
+	- team vertex to target (capacity = w₄ + r₄ - w₂) // for each team make sure they do not win more games than team 4 i.e. the team of our interest
+	
