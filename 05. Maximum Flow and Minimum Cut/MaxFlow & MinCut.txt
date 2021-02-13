@@ -83,4 +83,22 @@ Bipartite Matching:
 	  augmenting paths are needed since each augmenting path delivers 1 unit of flow to t)
 	> We also note that a more refined version of the shortest path augmenting model leads to E(V)^0.5 running time.
 	
+Baseball Elimination:
+	- Which teams have a chance of finishing the season with the most wins?
+	
+	i		team		wins		losses			to play			ATL	PHI	NYM	MON
+	0		Atlanta		83			71					8			0	1	6	1
+	1		Philly		80			79					3			1	0	0	2
+	2 		New York	78			78					6			6	0	0	0
+	3		Montreal	77			82					3			1	2	0	0
+	
+	i. Montreal is mathematically eliminated
+	> Montreal finishes <=80
+	> Atlanta already has 83 wins
+	
+	ii. Philadelphia is mathematically eliminated
+	> Philly finishes with <=83 wins
+	> Either New York or Atlanta will finish with >=84 wins
+	 
+	
 	
