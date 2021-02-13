@@ -24,4 +24,11 @@ public class StringsBuilder {
 		return rev;
 	}
 
+	public static String reverse2(String s)
+	{
+		StringBuilder rev=new StringBuilder();
+		for(int i=s.length()-1;i>=0;i--)
+			rev.append(s.charAt(i));		//Linear Time
+		return rev.toString();
+	}
 }
