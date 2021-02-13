@@ -99,6 +99,20 @@ Baseball Elimination:
 	ii. Philadelphia is mathematically eliminated
 	> Philly finishes with <=83 wins
 	> Either New York or Atlanta will finish with >=84 wins
-	 
 	
+	Answer depends not only on how many games already won and left to play, but on whom they're against.
+	
+	i		team		wins		losses			to play			NYY	BAL	BOS	TOR DET
+	0		New York	75			59					28			0	3	8	7	3	
+	1		Baltimore	71			63					28			3	0	2	7	4	
+	2 		Boston		69			66					27			8	2	0	0	0
+	3		Toronto		63			72					27			7	7	0	0	0
+	4		Detroit		49			86					27			3	4	0	0	0
+	
+	i. Detroit is mathematically eliminated
+	> Detroit finishes with <=76 wins
+	> Wins for R (remaining) = { NYY, BAL, BOS, TOR }=278
+	> remaining games among = { NYY, BAL, BOS, TOR	}=3+8+7+2+7=27
+	> Avg team in R wins = 305/4 = 76.25 wins
+	>				     (278 + 27)
 	
