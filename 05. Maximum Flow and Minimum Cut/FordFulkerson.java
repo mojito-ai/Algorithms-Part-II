@@ -113,6 +113,9 @@ public class FordFulkerson {
 	 * 
 	 * Maxflow algorithms for sparse digraphs with E edges and integer capacities (max U)
 	 * 
+	 * Warning: Worst case order of growth is generally not useful for predicting or comparing maxflow algorithm performance in practise.
+	 * 
+	 * Best in practise: Push relabel method with gap relabeling ; E^(3/2)
 	 */
 	private boolean hasAugmentingPath(FlowNetwork G, int s, int t)
 	{
