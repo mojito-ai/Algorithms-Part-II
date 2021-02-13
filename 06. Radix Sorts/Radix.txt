@@ -1,2 +1,16 @@
 Digital Key: Sequence of digits over fixed alphabet
 Radix: Number of digits R in alphabet
+
+Name				R()				lgR()				Characters
+BINARY				2				1					01
+OCTAL				8				3					01234567
+DECIMAL				10				4					0123456789
+HEXADECIMAL			16				4					0123456789ABCEDF
+DNA					4				2					ACTG
+LOWERCASE			26				5					abcdefghijklmnopqrstuvwxyz
+UPPERCASE			26				5					ABCDEFGHIJKLMNOPQRSTUVWXYZ
+PROTEIN				20				5					ABCDEFHIKLMNPQRSTVWY
+BASE_64				64				6					ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+ASCII				128				7
+EXTENDED_ASCII		256				8
+UNICODE				65546			16
