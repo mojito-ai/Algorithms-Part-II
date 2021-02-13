@@ -62,5 +62,13 @@ public class KeyIndexedCounting {
 		
 		return a;
 	}
+	
+	/*
+	 * Running Time analysis: Key indexed counting uses ~11N+4R array accesses to sort N items whose keys are integers 
+	 * 						  between 0 & R-1
+	 * 
+	 * Key indexed counting uses extra space ~ N+R
+	 * 
+	 */
 
 }
