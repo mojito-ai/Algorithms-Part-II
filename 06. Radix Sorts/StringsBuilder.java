@@ -12,5 +12,16 @@
 */
 
 public class StringsBuilder {
+	//String vs StringBuilder
+	
+	
+	//How to effecienty reverse a string
+	public static String reverse(String s)
+	{
+		String rev="";
+		for(int i=s.length()-1;i>=0;i--)
+			rev+=s.charAt(i);				//Quadratic time
+		return rev;
+	}
 
 }
