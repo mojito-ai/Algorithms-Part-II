@@ -78,7 +78,9 @@ Bipartite Matching:
 	Bottom Line: When no perfect matching, mincut explains why
 	
 	Suppose that we run FF (using shortest path augmenting model), how many paths are needed in worst case (n student, n companies)
-	N paths (For more general networks, the shortest augmenting path heuristic requires 1/2 EV paths to find a maxflow in a network of V
-	vertices and E-edges. However in bipartite model, all edges are 1 and value of maxflow is at most n. Thus at most N 
-	augmenting paths are needed since each augmenting path delivers 1 unit of flow to t)
+	> N paths (For more general networks, the shortest augmenting path heuristic requires 1/2 EV paths to find a maxflow in a network of V
+	  vertices and E-edges. However in bipartite model, all edges are 1 and value of maxflow is at most n. Thus at most N 
+	  augmenting paths are needed since each augmenting path delivers 1 unit of flow to t)
+	> We also note that a more refined version of the shortest path augmenting model leads to E(V)^0.5 running time.
+	
 	
