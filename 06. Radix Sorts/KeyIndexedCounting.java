@@ -32,23 +32,31 @@ public class KeyIndexedCounting {
 	 *
 	 */
 	
-	public static String [] sort(String [] a, int R)
+	/**
+	 * Sort an array a[] of N integers between 0 & R-1
+	 * @param a
+	 * @param R
+	 * @return
+	 */
+	public static int [] sort(int [] a, int R)
 	{
 		int N=a.length;
 		int [] count = new int [R+1];
-		String [] aux=new String [N];
+		int [] aux=new int [N];
 		
 		for(int i=0; i<N; i++)
-			count[a[i].charAt(0)+1]++;
+			count[a[i]+1]++;
 		
 		for(int r=0; r<R; r++)
 			count[r+1]+=count[r];
 		
 		for(int i=0; i<N; i++)
-			aux[count[a[i].charAt(0)]++]=a[i];
+			aux[count[a[i]]++]=a[i];
 		
 		for(int i=0; i<N; i++)
 			a[i]=aux[i];
+		
+		return a;
 	}
 
 }
