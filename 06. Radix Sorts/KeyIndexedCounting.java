@@ -69,6 +69,8 @@ public class KeyIndexedCounting {
 	 * 
 	 * Key indexed counting uses extra space ~ N+R
 	 * 
+	 * It is also stable! as when we move, it moves things with equal keys in-order we see it
+	 * 
 	 */
 
 }
