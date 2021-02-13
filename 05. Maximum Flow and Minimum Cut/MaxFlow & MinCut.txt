@@ -119,7 +119,7 @@ Baseball Elimination:
 	Maxflow Formulation:
 	
 	Intuition: Remaining games flow from s to t
-	Team 4 not eliminated iff all edegs pointing from s are full in maxflow
+	Team 4 not eliminated iff all edges pointing from s are full in maxflow
 	
 	- games vertices (each pair of teams other than 4)
 	- team vertices (each team other than 4)
@@ -127,3 +127,6 @@ Baseball Elimination:
 	- game vertex to team vertex (capacity = infinity)
 	- team vertex to target (capacity = w₄ + r₄ - w₂) // for each team make sure they do not win more games than team 4 i.e. the team of our interest
 	
+	Analysis: How many vertices and edges are there in flow network of baseball elimination. Give order of growth
+	> n^2 and n^2. There are (n-1) team vertices. n-1C2 game vertices, 1 source, 1 sink. There are 2* n-1C2 edges from game vertices to team vertices
+	  (2 for each game vertex), n-1C2 edges pointing from the source and n-1 edges pointing to the sink.
