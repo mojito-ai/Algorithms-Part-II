@@ -44,15 +44,19 @@ public class KeyIndexedCounting {
 		int [] count = new int [R+1];
 		int [] aux=new int [N];
 		
+		//count frequencies of each letter using key as index
 		for(int i=0; i<N; i++)
 			count[a[i]+1]++;
 		
+		//compute frequency cumulates which specify destinations
 		for(int r=0; r<R; r++)
 			count[r+1]+=count[r];
 		
+		//access cumulates using key as index to move items
 		for(int i=0; i<N; i++)
 			aux[count[a[i]]++]=a[i];
 		
+		//copy back into original array
 		for(int i=0; i<N; i++)
 			a[i]=aux[i];
 		
