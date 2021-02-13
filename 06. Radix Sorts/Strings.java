@@ -18,4 +18,17 @@
 
 public class Strings {
 
+	/*
+	 * The char data type: 
+	 * 
+	 * 1. C - char datatype - Typically an 8 bit integer
+	 * 						- Supports 7 bit ASCII
+	 * 						- Can represent only 256 characters
+	 * 
+	 * 2. Now-a-days people use UNICODE where a character is a 16-bit-integer
+	 * 
+	 * 3. Java char data type: A 16-bit unsigned integer
+	 * 						  - Supports orignal 16 bit UNICODE
+	 * 					      - Supports 21 bit UNICODE v3.0 (awkwardly)
+	 */
 }
