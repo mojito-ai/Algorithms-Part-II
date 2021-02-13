@@ -16,7 +16,12 @@
 * 
 */
 
-public class Strings {
+public final class Strings implements Comparable<String> {
+
+	private char [] value;	//characters
+	private int offset;		//index of first character in array
+	private int length;		//length of string
+	private int hash;		//cache of hashCode()
 
 	/*
 	 * The char data type: 
@@ -31,4 +36,31 @@ public class Strings {
 	 * 						  - Supports orignal 16 bit UNICODE
 	 * 					      - Supports 21 bit UNICODE v3.0 (awkwardly)
 	 */
+	
+	public int length()
+	{
+		
+	}
+	
+	public char charAt(int i)
+	{
+		
+	}
+	
+	private String(int offset, int length, char [] value)
+	{
+		
+	}
+	
+	public String substring(int from, int to)
+	{
+		
+	}
+	
+	@Override
+	public int compareTo(String o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
 }
