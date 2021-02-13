@@ -86,4 +86,17 @@ public final class Strings implements Comparable<String> {
 		return 0;
 	}
 	
+	/**
+	 * Performance: Underlying implementation is immutable char [] array, offset and length
+	 * 
+	 * 					 String
+	 * Operation		Guarantee		Extra space
+	 * length()				1				1
+	 * charAt()				1				1
+	 * substring()			1				1
+	 * concat()				N				N			(Has to create a whole new string every time so time ~ N)
+	 * 
+	 * Memory: 40+2N bytes for virgin string of length N
+	 * Can use byte [] or char [] instead of String to save space but would lose convenience of String data type
+	 */
 }
