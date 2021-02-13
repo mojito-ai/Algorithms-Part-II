@@ -45,7 +45,14 @@ public class StringsBuilder {
 	 * 				 5 | g
 	 */
 	
-	
+	public static String [] suffixes(String s)
+	{
+		int N=s.length();
+		String [] suffixes = new String [N];
+		for(int i=0; i<N; i++)
+			suffixes[i]=s.substring(i,N);			// Linear time (Java 6) & Quadratic Time  (Java 7)
+		return suffixes;
+	}
 	
 	
 }
