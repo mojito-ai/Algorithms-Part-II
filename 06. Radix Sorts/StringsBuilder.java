@@ -73,5 +73,12 @@ public class StringsBuilder {
 	 * 				p r e f i x
 	 */
 	
-	
+	public static int lcp(String s, String t)
+	{
+		int N=Math.min(s.length(), t.length());
+		for(int i=0; i<N; i++)
+			if(s.charAt(i)!=t.charAt(i))			// Linear Time (worst case) & Sub-linear time (typical case)
+				return i;
+		return N;
+	}
 }
