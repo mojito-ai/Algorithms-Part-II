@@ -18,7 +18,8 @@
 
 5. **Maximum Flow and Minimum Cut:** We introduce the maximum flow and minimum cut problems. We begin with the Ford–Fulkerson algorithm. To analyze its correctness, we establish the maxflow–mincut theorem. Next, we consider an efficient implementation of the Ford–Fulkerson algorithm, using the shortest augmenting path rule. Finally, we consider applications, including bipartite matching and baseball elimination.
 
-6. #### **Radix Sorts**
+6. **Radix Sorts:** We consider specialized sorting algorithms for strings and related objects. We begin with a subroutine to sort integers in a small range. We then consider two classic radix sorting algorithms—LSD and MSD radix sorts. Next, we consider an especially efficient variant, which is a hybrid of MSD radix sort and quicksort known as 3-way radix quicksort. We conclude with suffix sorting and related applications.
+
 7. #### **Tries**
 8. #### **Substring Search**
 9. #### **Regular Expressions**
