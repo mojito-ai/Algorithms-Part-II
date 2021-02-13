@@ -1,0 +1,2 @@
+Digital Key: Sequence of digits over fixed alphabet
+Radix: Number of digits R in alphabet
