@@ -12,4 +12,16 @@
 
 public class LSD {
 
+	/*
+	 * Proposition: LSD sorts fixed length strings in ascending order
+	 * 
+	 * Proof 1: [By induction on i]
+	 * 	
+	 * 		- After pass i, strings are sorted by last i characters
+	 * 		- If two strings differ on sort key, key indexed sort puts them in proper relative order
+	 * 		- If two strings agree on sort key, stability keeps them in proper relative order
+	 * 
+	 * 
+	 * 
+	 */
 }
