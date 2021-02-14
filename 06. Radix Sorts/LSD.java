@@ -3,6 +3,9 @@
 * 
 * <li> Consider characters d from right to left
 * <li> Stably sort using dth character as the key via key indexed sorting
+* <li> Performance		Guarantee			Random			Extra Space			Stable? 			operation on keys
+* <li>	LSD*				2WN				 2WN				N+R				 Yes					charAt()
+* <li> For fixed length W keys
 * 
 * @author  Mohit Sharma
 * @version 1.0
