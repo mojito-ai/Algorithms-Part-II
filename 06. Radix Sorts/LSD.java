@@ -26,5 +26,10 @@ public class LSD {
 	 * 		- If two strings differ on first character, key indexed sort puts them in proper relative order
 	 * 		- If two strings agree on first character, stability keeps them in proper relative order
 	 * 
+	 * Proof 3: [Thinking about the future]
+	 * 
+	 * 		- If the characters not yet examined differ, it doesen't matter what we do now.
+	 * 		- If the characters not yet examined agree, stability ensures later pass won't affect order.s
+	 * 
 	 */
 }
