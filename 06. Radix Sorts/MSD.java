@@ -6,24 +6,31 @@
 * <li> MSD is like a generalisation of QuickSort
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   14-02-2021
 * 
 */
 
 public class MSD {
+	private static int R = 256; // radix
+	private static final int M = 15; // cutoff for small subarrays
+	private static String[] aux; // auxiliary array for distribution
 	
 	public static void sort (String [] a)
 	{
-		String [] aux=new String[a.length];
+		aux=new String[a.length];
 		sort(a,aux,0,a.length-1,0);
 	}
 	
+	//can recycle aux [] array but not count [] array 
 	private static void sort(String [] a, String [] aux, int lo, int hi, int d)
 	{
-		if(hi<=lo)	return;
+		if (hi <= lo + M)
+		 { 
+			Insertion(a, lo, hi, d); 
+			return; 
+		 }
 		
-		int R=256;
 		int [] count = new int[R+2];
 		
 		for(int i=lo; i<=hi; i++)
@@ -42,6 +49,11 @@ public class MSD {
 		for(int r=0; r<R; r++)
 			sort(a, aux, lo+count[r], lo+count[r+1]-1, d+1);
 
+	}
+	
+	private static void Insertion(String [] a, int lo, int hi, int d)
+	{
+		
 	}
 	
 	/**
