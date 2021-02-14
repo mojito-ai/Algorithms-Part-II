@@ -110,7 +110,19 @@ public class MSD {
 	 * Algorithm		guarantee			random			extraspace			stable?			operation on keys
 	 * MSD*				 2NW				 NlogᵣN				N+DR			  yes				charAt()		* average length W keys
 	 * 
+	 * MSD String sort vs MSD Quick sort
 	 * 
+	 * 1. Disadvantadge of MSD Quick sort
+	 * 
+	 * 	- Access memory "randomly" (insufficient cache)
+	 * 	- Inner loop has a lot of characters
+	 * 	- Extra space for count []
+	 * 	- Extra space for aux []
+	 * 
+	 * 2. Disadvantadge of Quick sort
+	 * 	
+	 * 	- Linearithemetic number of string compares (not linear)
+	 * 	- Has to reason many characters in keys with long prefix matches
 	 */
 
 }
