@@ -64,4 +64,14 @@ public class Quick3string {
 	 * 		- Avoiding recomparing long common prefixes
 	 * 
 	 */
+	
+	/*
+	 * 3 way string quicksort vs MSD String sort
+	 * 
+	 * 	- Has a short inner loop
+	 * 	- Is cache friendly
+	 * 	- Is in place
+	 * 
+	 * 
+	 */
 }
