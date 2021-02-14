@@ -60,7 +60,14 @@ public class MSD {
 	
 	private static void exch(String [] a, int i, int j)
 	{
-		
+		String swap=a[i];
+		a[i]=a[j];
+		a[j]=swap;
+	}
+	
+	private static boolean less(String v, String w, int d)
+	{
+		return v.substring(d).compareTo(w.substring(d));
 	}
 	
 	/**
