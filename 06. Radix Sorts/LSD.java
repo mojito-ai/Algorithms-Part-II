@@ -66,11 +66,22 @@ public class LSD {
 	}
 	
 	/*
-	 * This even works if keys are Binary numbers represented in a Binary word, we can break them up into groups of small
+	 * 1. This even works if keys are Binary numbers represented in a Binary word, we can break them up into groups of small
 	 * number of bits, say 64 bit to 8-8bit characters or 4-16bit characters (W=4)
 	 * 
 	 * Sort one million 32-bit integers (Google/Presidential)
 	 * LSD-String-Sort
+	 * 
+	 * 2. History: How to take census in 1900s?
+	 * 
+	 * 1880 census - Took 1500 people, 7 years to manually process data
+	 * 
+	 * Herman Holierith developed counting and sorting machine to automate
+	 * 	- Use punch cards to record data (e.g. gender, age)
+	 * 	- Machine sorts one column at a time (into one of 12 bins)
+	 *  - Typical question: How many women of age 20 to 30? 
+	 *  
+	 * 1890 census - Finished months early and under budget
 	 * 
 	 */
 }
