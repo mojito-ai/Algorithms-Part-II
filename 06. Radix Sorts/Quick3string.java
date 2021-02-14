@@ -7,12 +7,14 @@
 * 
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   14-02-2021
 * 
 */
 public class Quick3string {
 
+	private static final int M = 15; // cutoff for small subarrays
+	
 	public static void sort(String [] a)
 	{
 		sort(a, 0, a.length-1, 0);
@@ -20,7 +22,11 @@ public class Quick3string {
 	
 	private static void sort(String [] a, int lo, int hi, int d)
 	{
-		if(hi<=lo)	return;
+		if (hi <= lo + M)
+		 { 
+			Insertion(a, lo, hi, d); 
+			return; 
+		 }
 		
 		int lt=lo, gt=hi;
 		int i=lo+1;
@@ -29,8 +35,8 @@ public class Quick3string {
 		while(i<=gt)
 		{
 			int t=charAt(a[i],d);			// to handle variable length strings
-			if(t<v)			exch(a,lt++, i++);
-			else if(t>v)	exch(a,i, gt--);
+			if(t<v)			exch(a, lt++, i++);
+			else if(t>v)	exch(a, i, gt--);
 			else 			i++;
 		}
 		
@@ -52,6 +58,18 @@ public class Quick3string {
 		a[j]=swap;
 	}
 	
+	private static void Insertion(String [] a, int lo, int hi, int d)
+	{
+		for(int i=lo; i<=hi; i++)
+			for(int j=i; j>=0 && less(a[j],a[j-1],d); j--)
+				exch(a,j,j-1);
+	}
+	
+	//In java, forming and comparing subarrays is faster than directly comparing with charAt()
+	private static boolean less(String v, String w, int d)
+	{
+		return v.substring(d).compareTo(w.substring(d))<0;
+	}
 	/*
 	 * 3 way string quicksort vs Standard quicksort
 	 * 
