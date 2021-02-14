@@ -72,6 +72,11 @@ public class Quick3string {
 	 * 	- Is cache friendly
 	 * 	- Is in place
 	 * 
+	 * Summary: Frequency of operations
 	 * 
+	 * Performance					Guarantee			Random			Extra Space			Stable? 			operation on keys
+	 *   LSD*							2WN				 2WN				N+R				 Yes					charAt()		* Fixed length of W keys
+	 *   MSD*							2NW				 NlogᵣN				N+DR			 Yes				    charAt()		* average length W keys
+	 *   3 way string quicksort			1.39WNlgR*		1.39NlgN			logN+W			 No						charAt()		* Probilistic
 	 */
 }
