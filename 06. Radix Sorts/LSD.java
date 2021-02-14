@@ -29,7 +29,12 @@ public class LSD {
 	 * Proof 3: [Thinking about the future]
 	 * 
 	 * 		- If the characters not yet examined differ, it doesen't matter what we do now.
-	 * 		- If the characters not yet examined agree, stability ensures later pass won't affect order.s
+	 * 		- If the characters not yet examined agree, stability ensures later pass won't affect order.
 	 * 
 	 */
+	
+	public static void sort(String [] a, int W)
+	{
+		
+	}
 }
