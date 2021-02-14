@@ -83,5 +83,12 @@ public class LSD {
 	 *  
 	 * 1890 census - Finished months early and under budget
 	 * 
+	 * 3. Punch Cards [1900s to 1950s]
+	 * 
+	 * 	- Also useful for accounting, inventory, and business processes
+	 * 	- Primary medium for data entry, storage and processing
+	 * 
+	 * Holierith's company later merged with 3 others to form Computing Tabulating and Recording Corporation (CTRC), company
+	 * renamed to IBM in 1924
 	 */
 }
