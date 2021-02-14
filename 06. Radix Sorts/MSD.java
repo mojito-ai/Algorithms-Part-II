@@ -67,7 +67,7 @@ public class MSD {
 	
 	private static boolean less(String v, String w, int d)
 	{
-		return v.substring(d).compareTo(w.substring(d));
+		return v.substring(d).compareTo(w.substring(d))<0;
 	}
 	
 	/**
