@@ -23,9 +23,17 @@ public class MSD {
 		
 	}
 	
+	/**
+	 * Variable length strings: Treat strings as if they had an extra char at the end (smaller than any char)
+	 * 
+	 * @param s
+	 * @param d
+	 * @return
+	 */
 	private static int charAt(String s, int d)
 	{
-		
+		if(d<s.length())	return s.charAt(d);
+		else				return -1;
 	}
 
 }
