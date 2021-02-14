@@ -24,18 +24,18 @@ public class Quick3string {
 		
 		int lt=lo, gt=hi;
 		int i=lo+1;
-		int v=charAt(a[lo],d);
+		int v=charAt(a[lo],d);		//3 way partitioning using the dth character
 		
 		while(i<=gt)
 		{
-			int t=charAt(a[i],d);
+			int t=charAt(a[i],d);			// to handle variable length strings
 			if(t<v)			exch(a,lt++, i++);
 			else if(t>v)	exch(a,i, gt--);
 			else 			i++;
 		}
 		
 		sort(a,lo,lt-1,d);
-		if(v>=0)	sort(a,lt,gt,d+1);
+		if(v>=0)	sort(a,lt,gt,d+1);		// sort 3 subarrays recursively
 		sort(a,gt+1,hi,d);
 	}
 	
