@@ -24,7 +24,6 @@ public class MSD {
 		if(hi<=lo)	return;
 		
 		int R=256;
-		int N=a.length;
 		int [] count = new int[R+2];
 		
 		for(int i=lo; i<=hi; i++)
@@ -39,6 +38,7 @@ public class MSD {
 		for(int i=lo; i<=hi; i++)
 			a[i]=aux[i-lo];
 		
+		//sorting R sub-arrays recursively
 		for(int r=0; r<R; r++)
 			sort(a, aux, lo+count[r], lo+count[r+1]-1, d+1);
 
