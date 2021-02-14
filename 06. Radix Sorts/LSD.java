@@ -90,5 +90,12 @@ public class LSD {
 	 * 
 	 * Holierith's company later merged with 3 others to form Computing Tabulating and Recording Corporation (CTRC), company
 	 * renamed to IBM in 1924
+	 * 
+	 * 4. Writing programs (A moment in history)
+	 * 
+	 * 	- Card Punch -> Punched cards -> Card reader -> Mainframe -> Line printer
+	 * 
+	 * People who wrote programs were working with punch cards and if you want to write a program, you had to write it by 
+	 * putting one line in each punch card and your program was a huge deck of punch cards.
 	 */
 }
