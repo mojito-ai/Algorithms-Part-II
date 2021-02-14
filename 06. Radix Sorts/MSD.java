@@ -31,7 +31,7 @@ public class MSD {
 			return; 
 		 }
 		
-		int [] count = new int[R+2];
+		int [] count = new int[R+2];	//extra -1 at the end of each string
 		
 		for(int i=lo; i<=hi; i++)
 			count[charAt(a[i],d) + 2]++;
@@ -52,6 +52,13 @@ public class MSD {
 	}
 	
 	private static void Insertion(String [] a, int lo, int hi, int d)
+	{
+		for(int i=lo; i<=hi; i++)
+			for(int j=i; j>=0 && less(a[j],a[j-1],d); j--)
+				exch(a,j,j-1);
+	}
+	
+	private static void exch(String [] a, int i, int j)
 	{
 		
 	}
