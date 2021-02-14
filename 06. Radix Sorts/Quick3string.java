@@ -51,4 +51,17 @@ public class Quick3string {
 		a[i]=a[j];
 		a[j]=swap;
 	}
+	
+	/*
+	 * 3 way string quicksort vs Standard quicksort
+	 * 
+	 * 1. Standard Quicksort
+	 * 		- Uses 2NlnN string compares on average
+	 * 		- Costly for keys with long common prefix 
+	 * 
+	 * 2. 3 way string (radix) quick sort
+	 * 		- Uses ~2NlnN character compares on average for random string
+	 * 		- Avoiding recomparing long common prefixes
+	 * 
+	 */
 }
