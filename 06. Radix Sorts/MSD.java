@@ -99,5 +99,18 @@ public class MSD {
 		if(d<s.length())	return s.charAt(d);
 		else				return -1;
 	}
+	
+	/*
+	 * Performance: Dependent on data
+	 * Number of characters examined
+	 * 1. MSD examines just enough characters to sort the keys
+	 * 2. Number of characters examined depends on the keys.
+	 * 3. Can be sublinear in input size!
+	 * 
+	 * Algorithm		guarantee			random			extraspace			stable?			operation on keys
+	 * MSD*				 2NW				 NlogᵣN				N+DR			  yes				charAt()		* average length W keys
+	 * 
+	 * 
+	 */
 
 }
