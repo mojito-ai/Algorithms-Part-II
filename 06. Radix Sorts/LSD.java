@@ -33,13 +33,19 @@ public class LSD {
 	 * 
 	 */
 	
+	/**
+	 * 
+	 * @param a
+	 * @param W - fixed length strings
+	 */
 	public static void sort(String [] a, int W)
 	{
-		int R=256;
+		int R=256;		//Radix R
 		int N=a.length;
 		String [] aux=new String [N];
 		int [] count = new int [R+1];
 		
+		//Do key indexed counting for each digit from right to left
 		for(int d=W-1; d>=0; d--)
 		{
 			for(int i=0; i<N; i++)
@@ -53,6 +59,6 @@ public class LSD {
 			
 			for(int i=0; i<N; i++)
 				a[i]=aux[i];
-		}
+		} //key indexed counting
 	}
 }
