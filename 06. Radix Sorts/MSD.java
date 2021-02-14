@@ -4,6 +4,12 @@
 * <li> Partition file into R pieces according to first character (use key indexed counting)
 * <li> Recursively sort all strings that start with each character (key indexed counts delineate files to sort)
 * <li> MSD is like a generalisation of QuickSort
+* <li> MSD Performance: Potential for disastrous performance
+* <li> Much too slow for small subarrays
+* <li> Each function call needs its own count [] array
+* <li> ASCII (256 counts) : 100x slower than copy pass for N-2
+* <li> UNICODE (65536 counts) : 32000x slower for N-2
+* <li> Huge number of small subarrays because of recursion
 * 
 * @author  Mohit Sharma
 * @version 2.0
@@ -51,6 +57,15 @@ public class MSD {
 
 	}
 	
+	/**
+	 * Cutoff to insertion sort for smaller subarrays
+	 * <li> Insertion sort but start at dth character
+	 * <li> Implement less() so that it compares starting at dth character
+	 * @param a
+	 * @param lo
+	 * @param hi
+	 * @param d
+	 */
 	private static void Insertion(String [] a, int lo, int hi, int d)
 	{
 		for(int i=lo; i<=hi; i++)
@@ -65,6 +80,7 @@ public class MSD {
 		a[j]=swap;
 	}
 	
+	//In java, forming and comparing subarrays is faster than directly comparing with charAt()
 	private static boolean less(String v, String w, int d)
 	{
 		return v.substring(d).compareTo(w.substring(d))<0;
