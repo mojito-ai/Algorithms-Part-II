@@ -16,7 +16,7 @@
 public class LSD {
 
 	/*
-	 * Proposition: LSD sorts fixed length strings in ascending order
+	 * Propositison: LSD sorts fixed length strings in ascending order
 	 * 
 	 * Proof 1: [By induction on i]
 	 * 	
@@ -38,7 +38,7 @@ public class LSD {
 	
 	/**
 	 * 
-	 * @param a
+	 * @param a - Array of strings
 	 * @param W - fixed length strings
 	 */
 	public static void sort(String [] a, int W)
@@ -64,4 +64,13 @@ public class LSD {
 				a[i]=aux[i];
 		} //key indexed counting
 	}
+	
+	/*
+	 * This even works if keys are Binary numbers represented in a Binary word, we can break them up into groups of small
+	 * number of bits, say 64 bit to 8-8bit characters or 4-16bit characters (W=4)
+	 * 
+	 * Sort one million 32-bit integers (Google/Presidential)
+	 * LSD-String-Sort
+	 * 
+	 */
 }
