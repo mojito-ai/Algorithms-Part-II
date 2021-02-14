@@ -97,5 +97,14 @@ public class LSD {
 	 * 
 	 * People who wrote programs were working with punch cards and if you want to write a program, you had to write it by 
 	 * putting one line in each punch card and your program was a huge deck of punch cards.
+	 * 
+	 * 5. Punch Card sorter
+	 * 	
+	 * 	- Start on the right column
+	 * 	- Put cards in hopper
+	 * 	- Machine distributes into bins
+	 * 	- Pick up cards (stable)
+	 * 	- Move left one column
+	 * 	- Continue until sorted
 	 */
 }
