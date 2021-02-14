@@ -101,7 +101,7 @@ public class MSD {
 	}
 	
 	/*
-	 * Performance: Dependent on data
+	 * > Performance: Dependent on data
 	 * Number of characters examined
 	 * 1. MSD examines just enough characters to sort the keys
 	 * 2. Number of characters examined depends on the keys.
@@ -110,7 +110,7 @@ public class MSD {
 	 * Algorithm		guarantee			random			extraspace			stable?			operation on keys
 	 * MSD*				 2NW				 NlogᵣN				N+DR			  yes				charAt()		* average length W keys
 	 * 
-	 * MSD String sort vs MSD Quick sort
+	 * > MSD String sort vs MSD Quick sort
 	 * 
 	 * 1. Disadvantadge of MSD Quick sort
 	 * 
@@ -123,6 +123,11 @@ public class MSD {
 	 * 	
 	 * 	- Linearithemetic number of string compares (not linear)
 	 * 	- Has to reason many characters in keys with long prefix matches
+	 * 
+	 * > Goal: Combine advantadges of MSD & Quicksort
+	 * 
+	 * 	There exists in-place MSD radix sort that replace key-indexed counting with as in-place variant (such as American-flag sort)
+	 *  Generally not stable
 	 */
 
 }
