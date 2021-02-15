@@ -14,6 +14,19 @@
 
 public class TrieST<Value> {
 	
+	/*
+	 * Performance: 
+	 * 
+	 *  1. Search Hit: Need to examine all L characters for equality
+	 *  
+	 *  2. Search Miss: Could have mismatch on first character
+	 *  				Typical case: Need to examine only a few characters (sublinear)
+	 *  
+	 *  3. Space: R null links at each leaf (but sublinear space possible if many short strings share common prefixes)
+	 *  
+	 *  Bottom line: Fast search hit and even faster search miss, but wastes space
+	 * 
+	 */
 	private Node root;
 	private static final int R=256;		//extended ASCII
 	
