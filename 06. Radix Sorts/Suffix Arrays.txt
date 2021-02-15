@@ -1,0 +1,5 @@
+1. Keyword-in-context search
+
+	Given a text of N characters, pre-process it to enable fast substring search (find all occurances of query string context)
+	
+	Application: Linguistics, databases, web search, word processing
