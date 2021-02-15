@@ -15,7 +15,7 @@
 public class TrieST<Value> {
 	
 	private Node root=new Node();
-	private int R=256;
+	private static final int R=256;
 	
 	/**
 	 * Node : A value plus reference to R nodes
@@ -24,9 +24,10 @@ public class TrieST<Value> {
 	 * @author _CrY
 	 *
 	 */
-	private static class Node
+	private class Node
 	{
 		private Object value;
+		@SuppressWarnings("unchecked")
 		private Node [] next =  (TrieST<Value>.Node[]) new Object[R];
 	}
 	
@@ -40,6 +41,13 @@ public class TrieST<Value> {
 		
 	}
 	
+	/**
+	 * Follow links corresponding to each character in the key
+	 * <li> Search hit - Node where search ends has a non null value.
+	 * <li> Search miss - Reach null link or node where search ends has a null value
+	 * @param key
+	 * @return
+	 */
 	@SuppressWarnings("unchecked")
 	public Value get(String key)
 	{
