@@ -14,7 +14,7 @@
 
 public class TrieST<Value> {
 	
-	private Node root;
+	private Node root=new Node();
 	private int R=256;
 	
 	/**
@@ -40,10 +40,22 @@ public class TrieST<Value> {
 		
 	}
 	
+	@SuppressWarnings("unchecked")
 	public Value get(String key)
 	{
-		
+		Node x = get(root, key, 0);
+		if(x==null)	return null;
+		return (Value) x.value;
 	}
+	
+	private Node get(Node x, String key, int d)
+	{
+		if(x==null)		return null;
+		if(d==key.length())		return x;
+		char c=key.charAt(d);
+		return get(x.next[c], key, d+1);
+	}
+	
 	
 	void delete(String key)
 	{
