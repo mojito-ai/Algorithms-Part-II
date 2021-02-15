@@ -61,5 +61,13 @@ public class LongestRepeatedSubstring {
 	 * 1. Manber Myers algorithm (Linearithemetic)
 	 * 2. Suffix Trees (Linear)
 	 * 
+	 * Manber-Myers MSD Alogorithm
+	 * 
+	 * Phase 0: Sort on first character using key-indexed counting sort
+	 * Phase i: Given array of suffixes sorted on first 2^(i-1) characters, create array of suffixes sorted on first 2^i characters
+	 * 
+	 * Worst cae running time: NlgN
+	 * Finishes after lgN phases
+	 * Can perform a phase in linear time
 	 */
 }
