@@ -69,5 +69,7 @@ public class LongestRepeatedSubstring {
 	 * Worst cae running time: NlgN
 	 * Finishes after lgN phases
 	 * Can perform a phase in linear time
+	 * 
+	 * Index Sort: Can do compares in constant time in between algorithm by maintaining inverses
 	 */
 }
