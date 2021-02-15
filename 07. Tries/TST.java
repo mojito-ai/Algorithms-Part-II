@@ -95,4 +95,14 @@ public class TST<Value> {
 	 * 2. TST - 3 null links in each leaf
 	 * 
 	 */
+	
+	/*
+	 * TST with R^2 Branching at root
+	 * 
+	 * Hybrid of R-way Trie and TST
+	 * 1. Do R^2 branching at root
+	 * 2. Each of R^2 root nodes points to a TST
+	 * 3. Have to take take of 1 and 2 letter words.
+	 * 
+	 */
 }
