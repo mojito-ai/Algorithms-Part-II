@@ -22,9 +22,9 @@ public class TrieST<Value> {
 	 *  1. Search Hit: Need to examine all L characters for equality
 	 *  
 	 *  2. Search Miss: Could have mismatch on first character
-	 *  				Typical case: Need to examine only a few characters (sublinear)
+	 *  				Typical case: Need to examine only a few characters (sub-linear)
 	 *  
-	 *  3. Space: R null links at each leaf (but sublinear space possible if many short strings share common prefixes)
+	 *  3. Space: R null links at each leaf (but sub-linear space possible if many short strings share common prefixes)
 	 *  
 	 *  Bottom line: Fast search hit and even faster search miss, but wastes space
 	 * 
