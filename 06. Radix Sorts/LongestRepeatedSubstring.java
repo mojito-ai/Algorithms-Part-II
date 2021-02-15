@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
 * <h1> Longest Repeated Substring: Given a string of N characters, find the longest repeated substring
 * 
@@ -56,5 +54,12 @@ public class LongestRepeatedSubstring {
 				return i;
 		return N;
 	}
-
+	
+	/*
+	 * Suffix sort challenge: Suffix sort an arbitrary string of length N
+	 * 
+	 * 1. Manber Myers algorithm (Linearithemetic)
+	 * 2. Suffix Trees (Linear)
+	 * 
+	 */
 }
