@@ -14,6 +14,22 @@
 
 public class TrieST<Value> {
 	
+	private Node root;
+	private int R=256;
+	
+	/**
+	 * Node : A value plus reference to R nodes
+	 * <li> Neither keys nor characters are explicitly stored
+	 * <li> Each character is implicitly defined by link index
+	 * @author _CrY
+	 *
+	 */
+	private static class Node
+	{
+		private Object value;
+		private Node [] next =  (TrieST<Value>.Node[]) new Object[R];
+	}
+	
 	TrieST()
 	{
 		
@@ -24,7 +40,7 @@ public class TrieST<Value> {
 		
 	}
 	
-	Value get(String key)
+	public Value get(String key)
 	{
 		
 	}
