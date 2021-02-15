@@ -36,6 +36,13 @@ public class TrieST<Value> {
 		root=new Node();
 	}
 	
+	/**
+	 * Follow links corresponding to each character in the key
+	 * <li> Encounter a null link : Create a new node
+	 * <li> Encounter the last character of the key: Set value in that node
+	 * @param key
+	 * @param val
+	 */
 	void put(String key, Value val)
 	{
 		root=put(root, key, val, 0);
