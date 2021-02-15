@@ -17,6 +17,16 @@ import java.util.Arrays;
 
 public class LongestRepeatedSubstring {
 	
+	/**
+	 * There is a flaw in 3 way string quicksort - if LRS is long
+	 * <li> Longest repeated substring is very long
+	 * <li> Same letter repeated N times
+	 * <li> Two copies of same Java codebase
+	 * <li> D length of longest match
+	 * <li> LRS needs atleast 1+2+3+---+D character compares (Quadratic in D for LRS & for sort)
+	 * @param s
+	 * @return
+	 */
 	public String lrs(String s)
 	{
 		int N=s.length();
@@ -25,7 +35,7 @@ public class LongestRepeatedSubstring {
 		for(int i=0; i<N; i++)
 			suffixes[i]=s.substring(i, N);
 		
-		Arrays.sort(suffixes);
+		Quick3string.sort(suffixes);
 		String lrs="";
 		
 		for(int i=0; i<N-1; i++)
