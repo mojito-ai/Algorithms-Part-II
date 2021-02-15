@@ -36,5 +36,15 @@ public class LongestRepeatedSubstring {
 		}
 		return lrs;
 	}
+	
+	public static int lcp(String v, String w)
+	{
+		int N=Math.min(v.length(), w.length());
+		
+		for(int i=0; i<N; i++)
+			if(v.charAt(i)!=w.charAt(i))
+				return i;
+		return N;
+	}
 
 }
