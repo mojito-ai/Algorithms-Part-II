@@ -14,7 +14,7 @@
 
 public class TrieST<Value> {
 	
-	private Node root=new Node();
+	private Node root;
 	private static final int R=256;
 	
 	/**
@@ -33,12 +33,27 @@ public class TrieST<Value> {
 	
 	TrieST()
 	{
-		
+		root=new Node();
 	}
 	
 	void put(String key, Value val)
 	{
+		root=put(root, key, val, 0);
+	}
+	private Node put(Node x, String key, Value val, int d)
+	{
+		if(x==null)		x=new Node();
 		
+		if(d==key.length())		
+		{
+			x.value=val;
+			return x;
+		}
+		
+		char c=key.charAt(d);
+		x.next[c]=put(x.next[c], key, val, d+1);
+		
+		return x;
 	}
 	
 	/**
@@ -55,7 +70,6 @@ public class TrieST<Value> {
 		if(x==null)	return null;
 		return (Value) x.value;
 	}
-	
 	private Node get(Node x, String key, int d)
 	{
 		if(x==null)		return null;
