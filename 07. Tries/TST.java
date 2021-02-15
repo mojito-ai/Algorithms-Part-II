@@ -10,6 +10,34 @@
 * 
 */
 
-public class TST {
+public class TST<Value> {
+	
+
+	
+	void put(String key, Value val)
+	{
+		
+	}
+	private Node put(Node x, String key, Value val, int d)
+	{
+		
+	}
+	
+	public boolean contains(String key)
+	{
+		return get(key)!=null;
+	}
+	
+
+
+	public Value get(String key)
+	{
+		
+	}
+	private Node get(Node x, String key, int d)
+	{
+
+	}
+	
 
 }
