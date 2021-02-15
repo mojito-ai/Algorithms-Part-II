@@ -3,6 +3,8 @@
 * 
 * <li> Each node has 3 children : smaller (left), equal (middle), larger (right)
 * <li> Fast Algorithms for sorting and searching strings : Joe L. Bentley & Robert Sedgewick
+* <li> Can build balanced TSTs via rotations to achieve L+logN worst case guarantees
+* <li> TST is as fast as hashing (for string keys), space efficient
 * 
 * @author  Mohit Sharma
 * @version 1.0
