@@ -122,4 +122,21 @@ public class TST<Value> {
 	 * 3. Have to take take of 1 and 2 letter words.
 	 * 
 	 */
+	
+	/*
+	 * TST vs Hashing
+	 * 
+	 * Hashing
+	 * 1. Need to examine entire key
+	 * 2. Search hits and misses cost are the same
+	 * 3. Performance relies on hash function
+	 * 4. Does not support ordered operation
+	 * 
+	 * TSTs
+	 * 1. Works only for strings (or digital keys)
+	 * 2. Only examines just enough key characters
+	 * 3. Search miss may involve only a few characters
+	 * 4. Support ordered ops (plus others!)
+	 * 
+	 */
 }
