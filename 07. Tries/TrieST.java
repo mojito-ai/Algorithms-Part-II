@@ -103,7 +103,12 @@ public class TrieST<Value> {
 		return get(x.next[c], key, d+1);
 	}
 	
-	
+	/**
+	 * To delete a key-value pair: 
+	 * <li> To find a node corresponding to key and set value to null.
+	 * <li> If node has null value and all null links, remove that node (& recur).
+	 * @param key
+	 */
 	void delete(String key)
 	{
 		
