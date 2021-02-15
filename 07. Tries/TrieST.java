@@ -5,9 +5,11 @@
 * <li> For now, store characters in nodes (not keys)
 * <li> Each node has R children, one for each possible character.
 * <li> Store values in nodes corresponding to last character in keys.
-
+* <li> Cost summary			Implementation			search miss			search miss			insert			space(ref)
+* <li>						R-way Trie					L					logᵣN			 L				  (R+1)N
+* 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   15-02-2021
 * 
 */
@@ -44,6 +46,11 @@ public class TrieST<Value> {
 		private Node [] next =  (TrieST<Value>.Node[]) new Object[R];
 	}
 	
+	/**
+	 * R-Way Trie: Method of choice for small R
+	 * <li> Too much memory for large R
+	 * <li> The order in which the strings are inserted DO NOT determine the shape of the trie
+	 */
 	TrieST()
 	{
 		root=new Node();
