@@ -109,6 +109,12 @@ public class TrieST<Value> {
 		
 	}
 
+	/*
+	 * Popular Interview Question: Design a data structure to perform efficient spell checking
+	 * 
+	 * Build a 26 way trie (key=word, value=bit)
+	 * 
+	 */
 	
 	/*
 	 * 
