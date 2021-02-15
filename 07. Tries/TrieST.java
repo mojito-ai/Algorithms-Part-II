@@ -15,7 +15,7 @@
 public class TrieST<Value> {
 	
 	private Node root;
-	private static final int R=256;
+	private static final int R=256;		//extended ASCII
 	
 	/**
 	 * Node : A value plus reference to R nodes
@@ -61,6 +61,11 @@ public class TrieST<Value> {
 		x.next[c]=put(x.next[c], key, val, d+1);
 		
 		return x;
+	}
+	
+	public boolean contains(String key)
+	{
+		return get(key)!=null;
 	}
 	
 	/**
