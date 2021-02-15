@@ -111,7 +111,34 @@ public class TrieST<Value> {
 	 */
 	void delete(String key)
 	{
+		root=delete(root, key, 0);
+	}
+	private Node delete(Node x, String key, int d)
+	{
+		if(d==key.length())		
+		{
+			x.value=null;
+			return x;
+		}
 		
+		char c=key.charAt(d);
+		x.next[c]=delete(x.next[c], key, d+1);
+		
+		if(x.value==null)
+		{
+			boolean flag=true;
+			for(int i=0; i<R; i++)
+				if(x.next[i].value!=null)
+				{
+					flag=false;
+					break;
+				}
+			
+			if(flag==true)
+				x=null;
+		}
+				
+			return x;	
 	}
 
 	/*
