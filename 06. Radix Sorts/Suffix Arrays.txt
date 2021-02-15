@@ -3,3 +3,12 @@
 	Given a text of N characters, pre-process it to enable fast substring search (find all occurances of query string context)
 	
 	Application: Linguistics, databases, web search, word processing
+	
+	Preprocess: suffix sort the text
+	Query: Binary search for query; scan until mismatch
+	
+2. Longest repeated substring
+
+	Given a string of N characters, find the longest repeated substring
+	
+	Application: Bioinformatics, Cryptanalysis, data compression
