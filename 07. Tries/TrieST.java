@@ -217,23 +217,37 @@ public class TrieST<Value> {
 	
 	/**
 	 * Key that is the longest prefix of "shellsort" : "shells"
+	 * <li> Find longest key in symbol table that is a prefix of query string
+	 * <li> To send a packet towards destination IP Address, router chooses IP Address in routing table that is longest prefix match
+	 * <li> Search for query string
+	 * <li> Keep track of longest key encountered
 	 * @param Longest key that is a prefix of s
 	 * @return
 	 */
-	Iterable<String> LongestPrefixOf(String s)
+	public String longestPrefixOf(String query)
 	{
-		
+		int length = search(root, query, 0, 0);
+		return query.substring(0, length);
+	}
+	private int search(Node x, String query, int d, int length)
+	{
+		if(x==null)	return length;
+		if(x.value!=null)	length=d;
+		if(d==query.length())	return length;
+		char c=query.charAt(d);
+		return search(x.next[c], query, d+1, length);
 	}
 	
-	/**
-	 * Keys that match s (where . is a wildcard)
-	 * <li> Wildcard match: Keys that match ".he": "she" & "the"
-	 * @param s
-	 * @return
-	 */
-	Iterable<String> keysThatMatch(String s)
-	{
-		
-	}
+	
+//	/**
+//	 * Keys that match s (where . is a wildcard)
+//	 * <li> Wildcard match: Keys that match ".he": "she" & "the"
+//	 * @param s
+//	 * @return
+//	 */
+//	Iterable<String> keysThatMatch(String s)
+//	{
+//		
+//	}
 	
 }
