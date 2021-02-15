@@ -1,10 +1,11 @@
 /**
-* <h1> R-way Tries: </h1>
+* <h1> R-way Tries: [from reTrieval, but pronounced as "try"] </h1>
 * 
-* <li> Summary of performance of symbol table implementations
-* 
-* 
-* <li> 
+* <li> Faster than hashing, more flexible than BST
+* <li> For now, store characters in nodes (not keys)
+* <li> Each node has R children, one for each possible character.
+* <li> Store values in nodes corresponding to last character in keys.
+
 * @author  Mohit Sharma
 * @version 1.0
 * @since   15-02-2021
