@@ -12,3 +12,9 @@
 	Given a string of N characters, find the longest repeated substring
 	
 	Application: Bioinformatics, Cryptanalysis, data compression
+	
+3. A Musical Application
+
+	Visualize repetitions in music
+	- Bach's Goldberg variations
+	- Mary had a little lamb
