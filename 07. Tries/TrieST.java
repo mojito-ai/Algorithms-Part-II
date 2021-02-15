@@ -173,4 +173,20 @@ public class TrieST<Value> {
 	 * 
 	 * 	
 	 */
+	
+	Iterable<String> keys()
+	{
+		
+	}
+	
+	Iterable<String> keysWithPrefix(String s)
+	{
+		
+	}
+	
+	Iterable<String> LongestPrefixOf(String s)
+	{
+		
+	}
+	
 }
