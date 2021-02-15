@@ -200,12 +200,19 @@ public class TrieST<Value> {
 	/**
 	 * Keys with prefix "sh" : "she" , "shells" , "shore"
 	 * <li> Keys that have s as a prefix
+	 * <li> Applications: Autocomplete in a cell phone, Search bar, text editor, or shell
+	 * <li> User types characters one at a time.
+	 * <li> System reports all matching strings
+	 * 
 	 * @param s
 	 * @return
 	 */
-	Iterable<String> keysWithPrefix(String s)
+	Iterable<String> keysWithPrefix(String prefix)
 	{
-		
+		Queue<String> queue=new Queue<>();
+		Node x=get(root, prefix, 0);	//root of subtrie for all strings beginning with the given prefix
+		collect(x, prefix, queue);
+		return queue;
 	}
 	
 	/**
