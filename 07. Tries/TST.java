@@ -12,6 +12,21 @@
 
 public class TST<Value> {
 	
+	/*
+	 * Cost Summary
+	 * 
+	 * 									Character Accesses  (typical case)									dedup
+	 * Implementation		search hit			search miss			insert			space (ref)		moby.txt		actors.txt
+	 * Red-Black BST		L+ClgN				cLgN				clgN				4N			 1.40				97.4
+	 * Hashing (Linear prob) L					 L					 L   				4N to 16N	 0.76			    40.6
+	 * R-way Trie			 L					logᵣN			 	 L				   (R+1)N		 1.12				out of memory
+	 * TST					 L+lnN*				lnN*				L+lnN				4N			 0.72				38.7
+	 * TST with R^2			 L+lnN*				lnN*				L+lnN				4N+R^2		 0.51				32.7
+	 * 
+	 * TST really adapts from data that is not random (* for random keys)
+	 * 
+	 */
+	
 	private Node root;
 	
 	/**
