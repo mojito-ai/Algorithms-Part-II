@@ -49,7 +49,16 @@ public class TST<Value> {
 	}
 	
 
-
+	/**
+	 * Follow links corresponding to each character in the key
+	 * <li> If less, take left link; if greater, take right link
+	 * <li> If equal, take the middle link and move to the next key character.
+	 * 
+	 * <li> Search hit - Node where search ends has a non null value
+	 * <li> Search miss - Reach a null link or node where search ends has a null value.
+	 * @param key
+	 * @return
+	 */
 	public Value get(String key)
 	{
 		Node x=get(root, key, 0);
