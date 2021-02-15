@@ -12,7 +12,27 @@
 * 
 */
 
-public class TrieST {
+public class TrieST<Value> {
+	
+	TrieST()
+	{
+		
+	}
+	
+	void put(String key, Value val)
+	{
+		
+	}
+	
+	Value get(String key)
+	{
+		
+	}
+	
+	void delete(String key)
+	{
+		
+	}
 
 	
 	/*
