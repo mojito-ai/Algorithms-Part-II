@@ -175,9 +175,26 @@ public class TrieST<Value> {
 	 */
 	
 	//Character based Trie Opearations: The string ST API supports several useful character based operations
+	/**
+	 * Ordered Iteration: To iterate through all keys in sorted order
+	 * <li> Do inorder traversal of trie: add keys encountered to a queue
+	 * <li> Maintain sequence of characters on path from root to node.
+	 * @return
+	 */
 	Iterable<String> keys()
 	{
+		Queue<String> queue=new Queue<>();
+		collect(root, "", queue);
+		return queue;
+	}
+	
+	private void collect(Node x, String prefix, Queue<String> q)
+	{
+		if(x==null)	return;
 		
+		if(x.value!=null)	q.enqueue(prefix);
+		for(int c=0; c<R; c++)
+			collect(x.next[c], prefix+c, q);
 	}
 	
 	/**
