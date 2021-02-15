@@ -12,7 +12,27 @@
 
 public class TST<Value> {
 	
-
+	private Node root;
+	private static final int R=256;		//extended ASCII
+	
+	/**
+	 * Node : A TST node has 5 fields
+	 * <li> A value
+	 * <li> A character c
+	 * <li> A reference to left TST
+	 * <li> A reference to middle TST
+	 * <li> A reference to right TST
+	 * @author _CrY
+	 *
+	 */
+	private class Node
+	{
+		private char c;
+		private Value value;
+		private Node left;
+		private Node mid;
+		private Node right;
+	}
 	
 	void put(String key, Value val)
 	{
