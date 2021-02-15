@@ -174,17 +174,40 @@ public class TrieST<Value> {
 	 * 	
 	 */
 	
+	//Character based Trie Opearations: The string ST API supports several useful character based operations
 	Iterable<String> keys()
 	{
 		
 	}
 	
+	/**
+	 * Keys with prefix "sh" : "she" , "shells" , "shore"
+	 * <li> Keys that have s as a prefix
+	 * @param s
+	 * @return
+	 */
 	Iterable<String> keysWithPrefix(String s)
 	{
 		
 	}
 	
+	/**
+	 * Key that is the longest prefix of "shellsort" : "shells"
+	 * @param Longest key that is a prefix of s
+	 * @return
+	 */
 	Iterable<String> LongestPrefixOf(String s)
+	{
+		
+	}
+	
+	/**
+	 * Keys that match s (where . is a wildcard)
+	 * <li> Wildcard match: Keys that match ".he": "she" & "the"
+	 * @param s
+	 * @return
+	 */
+	Iterable<String> keysThatMatch(String s)
 	{
 		
 	}
