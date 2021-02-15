@@ -13,7 +13,6 @@
 public class TST<Value> {
 	
 	private Node root;
-	private static final int R=256;		//extended ASCII
 	
 	/**
 	 * Node : A TST node has 5 fields
@@ -89,5 +88,11 @@ public class TST<Value> {
 		else						return x;
 	}
 	
-
+	/*
+	 * Spell Checker: 26 way trie vs TST
+	 * 
+	 * 1. 26 way Trie - 26 null links in each leaf
+	 * 2. TST - 3 null links in each leaf
+	 * 
+	 */
 }
