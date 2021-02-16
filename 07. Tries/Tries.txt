@@ -10,3 +10,6 @@
 		
 		> Multi Tap: 4 4 3 3 5 5 5 5 5 5 6 6 6
 		> T9: 4 3 5 5 6
+		
+		Implementation: A 9-way Trie where a key is a sequence of numbers and the value is the set of words in the dictionary
+						corresponding to that numeric sequence.
