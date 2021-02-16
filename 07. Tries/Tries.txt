@@ -13,3 +13,20 @@
 		
 		Implementation: A 9-way Trie where a key is a sequence of numbers and the value is the set of words in the dictionary
 						corresponding to that numeric sequence.
+						
+2. Patricia Trie: Practical Algorithm to Retrieve Information Coded in Alphanumeric
+
+		- Remove one way branching
+		- Each node represents a sequence of characters
+		- Implementation:						No one way branching
+								|shell|
+								/	  \
+							  |s|	 |fish|
+							  
+		- Applications: Database search
+						P2P network search
+						IP Routing tables: Longest prefix match
+						Compressed quad-tree for N body simulation
+						Efficiently storing and querying XML documents
+						
+		- Also known as Crit-bit tree , Radix tree
