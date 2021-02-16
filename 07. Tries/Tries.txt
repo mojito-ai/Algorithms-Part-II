@@ -30,3 +30,9 @@
 						Efficiently storing and querying XML documents
 						
 		- Also known as Crit-bit tree , Radix tree
+		
+3. Suffix tree: Patricia trie of suffixes of a string
+				Linear time construction
+				
+		-Applications: Linear time - Longest repeated substring, longest common substring, longest palindromic substring, substring search, Tandem repeats
+					   Computational Biology databases (BLAST, FASTA)
