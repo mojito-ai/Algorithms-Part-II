@@ -36,3 +36,16 @@
 				
 		-Applications: Linear time - Longest repeated substring, longest common substring, longest palindromic substring, substring search, Tandem repeats
 					   Computational Biology databases (BLAST, FASTA)
+					   
+4. Summary of String ST: A success story in algorithm design and analysis
+
+		- Red-Black BST: Performance guarantee - log N key compares
+						 Supports ordered ops in API
+						 
+		- Hash Tables: Performance guarantee - Constant number of probes
+					   Requires good hash function for key type
+					   
+		- Tries, R-way, TST : Performance guarantee - log N characters accessed
+						      Supports character based operations
+						    
+		  Bottom line: You can get at anything by examining 50-100 bits.
