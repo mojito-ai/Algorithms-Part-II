@@ -1,0 +1,12 @@
+1. T9 Texting: Type text messages on a phone keyboard
+
+		- Multi Tap input: Enter a letter by repeatedly pressing a key until the desired letter appears
+		
+		- T9 text input: A much faster and fun way to enter text 
+						i. Find all words that correspond to given sequence of numbers.
+					   ii. Press 0 to see all completion options.
+					   
+		E.g. hello
+		
+		> Multi Tap: 4 4 3 3 5 5 5 5 5 5 6 6 6
+		> T9: 4 3 5 5 6
