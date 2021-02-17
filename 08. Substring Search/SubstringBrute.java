@@ -20,5 +20,22 @@
 */
 
 public class SubstringBrute {
+	
+	public static int search(String pat, String txt)
+	{
+		int N=txt.length();
+		int M=pat.length();
+		for(int i=0; i<N-M; i++)
+		{
+			int j;
+			for(j=0; j<M; j++)
+			{
+				if(txt.charAt(i+j)!=pat.charAt(j))
+					break;
+			}
+			if(j==M)	return i;	// index in text where pattern starts
+		}
+		return N;	//not found
+	}
 
 }
