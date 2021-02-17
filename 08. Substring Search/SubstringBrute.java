@@ -21,6 +21,16 @@
 
 public class SubstringBrute {
 	
+	/**
+	 * Java's indexOf() uses this implementation
+	 * <li> i=indexes into text
+	 * <li> j=indexes into pattern
+	 * <li> Mismatch happens at j & i+j index of pattern and text respectively.
+	 * 
+	 * @param pat
+	 * @param txt
+	 * @return
+	 */
 	public static int search(String pat, String txt)
 	{
 		int N=txt.length();
