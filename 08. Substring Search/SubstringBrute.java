@@ -24,8 +24,20 @@ public class SubstringBrute {
 	 * 1. Performance Worst Case: Brute force algorithm can be slow if text and pattern are repetitive
 	 * Worst case: ~MN char compares
 	 * 
-	 * 2. 
-	 */
+	 * 2. Backup: In many applications, we want to avoid backup in text stream 
+	 * 		- Treat input as stream of data
+	 * 		- Abstract model: Standard input
+	 * 
+	 * Brute force algorithm needs backup for every mismatch
+	 * 
+	 * e.g. A A A A A A A A A A A A A A A A A
+	 * 						A A A A A B <--- MISMATCH
+	 * 						
+	 * 						   <-------- Backup
+	 * 		
+	 * 		A A A A A A A A A A A A A A A A A
+	 * 						  A A A A A B <------- shifts pattern right by one position
+	 */						 
 	
 	/**
 	 * Java's indexOf() uses this implementation
