@@ -13,8 +13,12 @@
 * <li> 5 0  2	  		  A
 * <li> 6 4  2	  			A B R A
 * 
+* <li> Brute force is not always good enough 
+* <li> Theoretical challenge = Linear time guarantee
+* <li> Practical challenge = Avoid backup in text stream
+* 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   17-02-2021
 * 
 */
