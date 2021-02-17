@@ -20,6 +20,12 @@
 */
 
 public class SubstringBrute {
+	/*
+	 * 1. Performance Worst Case: Brute force algorithm can be slow if text and pattern are repetitive
+	 * Worst case: ~MN char compares
+	 * 
+	 * 2. 
+	 */
 	
 	/**
 	 * Java's indexOf() uses this implementation
