@@ -71,17 +71,23 @@ public class SubstringBrute {
 	 * 
 	 * <li> Maintain a buffer of last M characters we've seen.
 	 * <li> Alternate implementation of search
+	 * <li> Same sequence of char compares as previous implementations 
+	 * <li> i j  0 1 2 3 4 5 6 7 8 9 10 
+	 * <li> 	 A B A C A D A B R A C
+	 * <li> 7 3          A D A c r     
+	 * <li> 5 0			   A d a c r
+	 * 
 	 * @param pat
 	 * @param txt
 	 * @return
 	 */
 	public static int search2(String pat, String txt)
 	{
-		int i, N=txt.length();
-		int j, M=pat.length();
+		int i, N=txt.length();		// i points to end of sequence of already matched chars in text
+		int j, M=pat.length();		// j stores number of already matched chars (end of sequence in pattern)
 		for(i=0, j=0; i<N && j<M; i++)
 		{
-			if(txt.charAt(i+j)==pat.charAt(j))	j++;
+			if(txt.charAt(i)==pat.charAt(j))	j++;
 			else
 			{
 				i-=j;	// explicit backup performed here
