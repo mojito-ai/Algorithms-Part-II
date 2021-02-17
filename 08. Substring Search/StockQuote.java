@@ -11,8 +11,8 @@ import edu.princeton.cs.algs4.In;
 * <li> 2. Computer Forensics: Search memory or disk for signatures. (e.g. all URLs or RSA keys that the user has entered)
 * <li> 3. Identify patterns indicative of SPAM : PROFITS, LOSE WEIGHT, THIS IS A ONE TIME MAILING
 * <li> 4. Electronic surveillance: Building a machine to find "Attack at Dawn"
-* <li> 5. Screen Scraping: Extract relevant data from a web page
-* 
+* <li> 5. Screen Scraping: Extract relevant data from a web page (StockQuote)
+* <li> 6. Checking whether a token is a legal Java variable name : Ideally suited for regular expressions (pattern matching)
 * 
 * @author  Mohit Sharma
 * @version 1.0
@@ -31,6 +31,8 @@ public class StockQuote {
 		String name="https://finance.yahoo.come/g?s=";
 		In in=new In(name+args[0]);
 		String text=in.readAll();
+		
+		// The indexOf() method in Java's string library returns the index of the first occurance of a given string, starting at a given offset.
 		int start=text.indexOf("Last Trade:", 0);
 		int from=text.indexOf("<b>", start);
 		int to=text.indexOf("</b>", from);
