@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.In;
+
 /**
 * <h1> <b>Substring Search:</b> Find pattern of length M in a text of length N. (Typically N>>M) </h1>
 * 
@@ -26,7 +28,13 @@ public class StockQuote {
 	 */
 	public static void main(String [] args)
 	{
-		
+		String name="https://finance.yahoo.come/g?s=";
+		In in=new In(name+args[0]);
+		String text=in.readAll();
+		int start=text.indexOf("Last Trade:", 0);
+		int from=text.indexOf("<b>", start);
+		int to=text.indexOf("</b>", from);
+		String price=text.substring(from+3, to);
+		System.out.println(price);
 	}
-
 }
