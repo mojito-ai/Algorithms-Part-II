@@ -66,4 +66,29 @@ public class SubstringBrute {
 		return N;	//not found
 	}
 
+	/**
+	 * Addressing the problem of backup: 
+	 * 
+	 * <li> Maintain a buffer of last M characters we've seen.
+	 * <li> Alternate implementation of search
+	 * @param pat
+	 * @param txt
+	 * @return
+	 */
+	public static int search2(String pat, String txt)
+	{
+		int i, N=txt.length();
+		int j, M=pat.length();
+		for(i=0, j=0; i<N && j<M; i++)
+		{
+			if(txt.charAt(i+j)==pat.charAt(j))	j++;
+			else
+			{
+				i-=j;	// explicit backup performed here
+				j=0;
+			}
+		}
+		if(j==M)	return i-j;
+		else		return N;
+	}
 }
