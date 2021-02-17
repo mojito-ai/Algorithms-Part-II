@@ -1,5 +1,5 @@
 /**
-* <h1> Substring Search: Find pattern of length M in a text of length N. (Typically N>>M) </h1>
+* <h1> <b>Substring Search:</b> Find pattern of length M in a text of length N. (Typically N>>M) </h1>
 * 
 * <li> Pattern : N E E D L E
 * <li> Text : I N A H A Y S T A C K N E E D L E I N A
@@ -19,5 +19,14 @@
 */
 
 public class StockQuote {
+	
+	/**
+	 * Find string delimited by <b> and </b> after the first occurance of pattern "Last Trade:"
+	 * @param args
+	 */
+	public static void main(String [] args)
+	{
+		
+	}
 
 }
