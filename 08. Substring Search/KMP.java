@@ -13,5 +13,14 @@
 */
 
 public class KMP {
+	
+	/*
+	 * Deterministic Finite State Automaton (DFA): DFA is abstract string searching machine
+	 * 
+	 * 1. Finite number of states (including start and halt)
+	 * 2. Exactly one transition state for each char in alphabet.
+	 * 3. Accept if sequence of transitions leads to halt state
+	 * 
+	 */
 
 }
