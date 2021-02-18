@@ -7,7 +7,7 @@
 * <li> Can skip as many as M text chars when finding one not in pattern
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   18-02-2021
 * 
 */
@@ -59,6 +59,7 @@ public class BoyerMoore {
 	 * 			 search for a pattern of length M in a text of length N.
 	 * 
 	 * <li> Worst case - Can be as bad as ~MN
+	 * <li> Can improve worst case ~3N by adding KMP like rule to guard against repetitive pattern
 	 * @param txt
 	 * @return
 	 */
