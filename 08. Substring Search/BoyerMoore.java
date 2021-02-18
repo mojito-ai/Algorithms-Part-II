@@ -22,6 +22,12 @@ public class BoyerMoore {
 	 * 		11	4												N	E	E	D	L	E
 	 * 		15	0																N	E	E	D	L	E	
 	 * 
+	 * 
+	 * How much to skip?
+	 * 
+	 * Case 1: Mismatched character not in pattern: Increment i one character beyond the present txt character
+	 * Case 2a: Mismatched character in pattern: Align txt char with rightmost pattern char
+	 * Case 2b: Mismatched character in pattern (but heuristic no help) : If heuristic cause backup, just increment pointer by 1
 	 */
 
 }
