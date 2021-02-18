@@ -26,8 +26,9 @@ public class KMP {
 	 * DFA Construction Demo: Include one state for each character in pattern (plus accept state)
 	 * 
 	 * 1. Match Transistion: If in state j (first j characters have already been matched) and next char==pat.charAt(j), goto j+1
-	 * 2. Mismatch Transistion: Backup if c!=pat.charAt(j) 
+	 * 2. Mismatch Transistion: Backup if c!=pat.charAt(j). It also means that the last j-1 characters of input are pat[1...j-1] followed by a c 
 	 * 
+	 * <li> To compute dfa[c][j]: Simulate pat[1.....j-1] on DFA and take transistion c
 	 * @param pattern
 	 */
 	public KMP(String pattern)
@@ -41,9 +42,9 @@ public class KMP {
 		for(int X=0, j=1; j<M; j++)
 		{
 			for(char c=0; c<R; c++)
-				dfa[c][j]=dfa[c][X];
-			dfa[pat.charAt(j)][j]=j+1;
-			X=dfa[pat.charAt(j)][X];
+				dfa[c][j]=dfa[c][X];		//copy mismatch cases
+			dfa[pat.charAt(j)][j]=j+1;		//set match case
+			X=dfa[pat.charAt(j)][X];		//update restart state
 		}
 	}
 	
