@@ -127,4 +127,9 @@ public class KMP {
 	 * 
 	 */
 
+	/*
+	 * Non-deterministic finite state automaton (NFA) : Used when larger alphabets. Improved version of KMP constructs nfa[] in time and space ~ M
+	 * Can have multiple hops and either success or failure states.
+	 * 
+	 */
 }
