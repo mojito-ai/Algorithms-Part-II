@@ -34,9 +34,19 @@ public class BoyerMoore {
 	private final int [] right;
 	private final int R=256;
 	private final String pat;
+	private final int M;
 	
 	public BoyerMoore(String pattern)
 	{
+		this.pat=pattern;
+		M=pat.length();
+		right=new int[R];
+		
+		for(int c=0; c<R; c++)
+			right[c]=-1;
+		
+		for(int i=0; i<M; i++)
+			right[pat.charAt(i)]=i;
 		
 	}
 	
