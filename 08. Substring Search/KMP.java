@@ -128,8 +128,14 @@ public class KMP {
 	 */
 
 	/*
-	 * Non-deterministic finite state automaton (NFA) : Used when larger alphabets. Improved version of KMP constructs nfa[] in time and space ~ M
+	 * 1. Non-deterministic finite state automaton (NFA) : Used when larger alphabets. Improved version of KMP constructs nfa[] in time and space ~ M
 	 * Can have multiple hops and either success or failure states.
 	 * 
+	 * 2. History: Theory meets practise (Fast pattern matching in strings)
+	 * Independently discovered by two theoreticians and a hacker
+	 * 
+	 * 		- Knuth: Inspired by esoteric theorem (by Steve Cook), discovered linear algorithm
+	 * 		- Pratt: Made running time independent of alphabet size
+	 * 		- Morris: Built a text editor for the CDC 6400 Computer
 	 */
 }
