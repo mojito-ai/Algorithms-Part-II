@@ -20,8 +20,16 @@ public class KMP {
 	private final int M;
 	private final int NOT_FOUND=999999999;
 	private final int [] [] dfa;
+	private final String pat;
 	
-	
+	public KMP(String pattern)
+	{
+		this.pat=pattern;
+		M=pat.length();
+		dfa=new int [R][M];
+		
+		dfa[pat.charAt(0)][0]=1;
+	}
 	
 	/*
 	 * Deterministic Finite State Automaton (DFA): DFA is abstract string searching machine
