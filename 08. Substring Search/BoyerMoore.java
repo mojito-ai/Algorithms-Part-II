@@ -36,6 +36,10 @@ public class BoyerMoore {
 	private final String pat;
 	private final int M;
 	
+	/**
+	 * Precompute index of rightmost occurance of character c in pattern (-1 if character not in pattern)
+	 * @param pattern
+	 */
 	public BoyerMoore(String pattern)
 	{
 		this.pat=pattern;
@@ -46,7 +50,7 @@ public class BoyerMoore {
 			right[c]=-1;
 		
 		for(int i=0; i<M; i++)
-			right[pat.charAt(i)]=i;
+			right[pat.charAt(i)]=i;	//storing rightmost occurance of char in pattern
 		
 	}
 	
