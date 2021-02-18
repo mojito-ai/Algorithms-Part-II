@@ -8,7 +8,7 @@
 * 
 * @author  Mohit Sharma
 * @version 1.0
-* @since   17-02-2021
+* @since   18-02-2021
 * 
 */
 
@@ -20,6 +20,15 @@ public class KMP {
 	 * 1. Finite number of states (including start and halt)
 	 * 2. Exactly one transition state for each char in alphabet.
 	 * 3. Accept if sequence of transitions leads to halt state
+	 * 
+	 * 	Internal Representation: 
+	 * 
+	 * 			j		0	1	2	3	4	5				If in state j, reading the char c: 
+	 * 	pat.charAt(j)	A	B	A	B	A	C				If j is 6 halt and accept
+	 * 														else move to state dfa[c][j]
+	 * 			A		1	1	3	1	5	1	
+	 * 			B		0	2	0	4	0	4
+	 * 			C		0	0	0	0	0	6
 	 * 
 	 */
 
