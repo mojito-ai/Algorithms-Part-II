@@ -8,6 +8,10 @@ import edu.princeton.cs.algs4.In;
 * <li> We know previous 6 chars are BAAAAB
 * <li> Don't need to backup pointer completely.
 * 
+* <li> Running time: M character accesses (but space/time ~ RM)
+* <li> Proposition: KMP Substring search accesses no more than M+N chars to search for a pattern of length M in a text of length N.
+* <li> Proof: Each pattern character accessed once when constructing the DFA, each text char accessed once (in worst case) when simulating the DFA 
+* 
 * @author  Mohit Sharma
 * @version 2.0
 * @since   18-02-2021
