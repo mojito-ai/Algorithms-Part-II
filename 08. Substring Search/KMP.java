@@ -66,6 +66,12 @@ public class KMP {
 		else		return N;
 	}
 	
+	/**
+	 * Could use input stream (since there is no backup)
+	 * 
+	 * @param in
+	 * @return
+	 */
 	public int search(In in)
 	{
 		for(int i=0, j=0; !in.isEmpty() && j<M; i++)
@@ -73,5 +79,11 @@ public class KMP {
 		if(j==M)	return i-M;
 		else		return NOT_FOUND;
 	}
+	
+	/*
+	 * Running time: Simulate DFA on text: At most N character accesses
+	 * Build DFA: How to do efficiently
+	 * 
+	 */
 
 }
