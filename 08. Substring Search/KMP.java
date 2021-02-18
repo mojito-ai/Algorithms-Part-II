@@ -9,18 +9,18 @@ import edu.princeton.cs.algs4.In;
 * <li> Don't need to backup pointer completely.
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   18-02-2021
 * 
 */
 
 public class KMP {
 	
-	private final int R=256;
-	private final int M;
-	private final int NOT_FOUND=999999999;
-	private final int [] [] dfa;
-	private final String pat;
+	private final int R=256;		//Radix
+	private final int M;			//Length of pattern
+	private final int NOT_FOUND=999999999;	//NOT_FOUND incase of input stream
+	private final int [] [] dfa;		//Deterministic Finite State Automaton
+	private final String pat;	//Pattern
 	
 	/**
 	 * DFA Construction Demo: Include one state for each character in pattern (plus accept state)
