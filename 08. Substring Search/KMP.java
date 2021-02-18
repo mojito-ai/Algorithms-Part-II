@@ -36,8 +36,15 @@ public class KMP {
 	 * Interpretation of KMP DFA:
 	 * 
 	 * 1. What is interpretation of DFA state after reading in txt[i]
-	 *	  State= Number of characters in pattern that have been matched.
+	 *	  State = Number of characters in pattern that have been matched.
+	 *
+	 * 2. State is the length of the longest prefix of pat[] that is a suffix of txt[0....i]
 	 * 
+	 * e.g. DFA in state 3 after reading in txt[0...6]
+	 * 		
+	 * 								i
+	 * 		0	1	2	3	4	5	6	7	8					0	1	2	3	4	5
+	 * txt	B	C	B	A	A	B	A	c	a		pattern		A	B	A	b	a	c
 	 */
 
 }
