@@ -29,6 +29,10 @@ public class KMP {
 	 * 2. Mismatch Transistion: Backup if c!=pat.charAt(j). It also means that the last j-1 characters of input are pat[1...j-1] followed by a c 
 	 * 
 	 * <li> To compute dfa[c][j]: Simulate pat[1.....j-1] on DFA and take transistion c
+	 * <li> Running time: Seems to take j steps everytime
+	 * <li> To overcome running time , we simulate pat[1....j-1] on DFA and take transistion c. And save state X.
+	 * <li> Running time reduces to constant time on maintaining state X.
+	 * 
 	 * @param pattern
 	 */
 	public KMP(String pattern)
