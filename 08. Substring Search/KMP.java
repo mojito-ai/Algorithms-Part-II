@@ -16,6 +16,13 @@ import edu.princeton.cs.algs4.In;
 
 public class KMP {
 	
+	private final int R=256;
+	private final int M;
+	private final int NOT_FOUND=999999999;
+	private final int [] [] dfa;
+	
+	
+	
 	/*
 	 * Deterministic Finite State Automaton (DFA): DFA is abstract string searching machine
 	 * 
