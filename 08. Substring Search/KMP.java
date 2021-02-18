@@ -29,6 +29,12 @@ public class KMP {
 		dfa=new int [R][M];
 		
 		dfa[pat.charAt(0)][0]=1;
+		
+		for(int X=0, j=1; j<=M; j++)
+		{
+			for(char c=0; c<R; c++)
+				dfa[c][j]=dfa[c][X];
+		}
 	}
 	
 	/*
