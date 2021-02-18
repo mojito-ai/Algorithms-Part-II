@@ -13,5 +13,15 @@
 */
 
 public class BoyerMoore {
+	
+	/*
+	 * E.g. i	j	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21
+	 * txt->		F	I	N	D	I	N	A	H	A	Y	S	T	A	C	K	N	E	E	D	L	E	T
+	 * 		0	5	N	E	E	D	L	E
+	 * 		5	5						N	E	E	D	L	E
+	 * 		11	4												N	E	E	D	L	E
+	 * 		15	0																N	E	E	D	L	E	
+	 * 
+	 */
 
 }
