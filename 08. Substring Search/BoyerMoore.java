@@ -54,6 +54,11 @@ public class BoyerMoore {
 		
 	}
 	
+	/**
+	 * 
+	 * @param txt
+	 * @return
+	 */
 	public int search(String txt)
 	{
 		int N=txt.length();
@@ -64,13 +69,13 @@ public class BoyerMoore {
 			skip=0;
 			for(int j=M-1; j>=0; j--)
 			{
-				if(pat.charAt(j)!=txt.charAt(i+j))
+				if(pat.charAt(j)!=txt.charAt(i+j)) //compute skip value
 				{
-					skip=Math.max(1, j-right[txt.charAt(i+j)]);
+					skip=Math.max(1, j-right[txt.charAt(i+j)]);	//incase other term is non-positive (backing up)
 					break;
 				}
 			}
-			if(skip==0)		return i;
+			if(skip==0)		return i;	//match
 		}
 		return N;
 	}
