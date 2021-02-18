@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.In;
+
 /**
 * <h1> <b>Knuth-Morris-Pratt: </b> Ingenious way to do substring search without backup. </h1>
 * 
@@ -47,6 +49,14 @@ public class KMP {
 	 * txt	B	C	B	A	A	B	A	c	a		pattern		A	B	A	b	a	c
 	 */
 	
+	/**
+	 * Key differences from brute force implementation
+	 * <li> Need to precompute dfa[][] from pattern
+	 * <li> Text pointer i never decrements
+	 * 
+	 * @param txt
+	 * @return
+	 */
 	public int search(String txt)
 	{
 		int N=txt.length();
@@ -54,6 +64,14 @@ public class KMP {
 			j=dfa[txt.charAt(i)][j];		//no backup
 		if(j==M)	return i-M;
 		else		return N;
+	}
+	
+	public int search(In in)
+	{
+		for(int i=0, j=0; !in.isEmpty() && j<M; i++)
+			j=dfa[in.readChar()][j];		//no backup
+		if(j==M)	return i-M;
+		else		return NOT_FOUND;
 	}
 
 }
