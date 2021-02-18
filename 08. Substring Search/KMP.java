@@ -34,6 +34,7 @@ public class KMP {
 		{
 			for(char c=0; c<R; c++)
 				dfa[c][j]=dfa[c][X];
+			dfa[pat.charAt(j)][j]=j+1;
 		}
 	}
 	
