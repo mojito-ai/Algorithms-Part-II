@@ -31,5 +31,13 @@ public class KMP {
 	 * 			C		0	0	0	0	0	6
 	 * 
 	 */
+	
+	/*
+	 * Interpretation of KMP DFA:
+	 * 
+	 * 1. What is interpretation of DFA state after reading in txt[i]
+	 *	  State= Number of characters in pattern that have been matched.
+	 * 
+	 */
 
 }
