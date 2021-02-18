@@ -35,6 +35,7 @@ public class KMP {
 			for(char c=0; c<R; c++)
 				dfa[c][j]=dfa[c][X];
 			dfa[pat.charAt(j)][j]=j+1;
+			X=dfa[pat.charAt(j)][X];
 		}
 	}
 	
@@ -81,8 +82,8 @@ public class KMP {
 	 */
 	public int search(String txt)
 	{
-		int N=txt.length();
-		for(int i=0, j=0; i<N && j<M; i++)
+		int i, j, N=txt.length();
+		for(i=0, j=0; i<N && j<M; i++)
 			j=dfa[txt.charAt(i)][j];		//no backup
 		if(j==M)	return i-M;
 		else		return N;
@@ -96,7 +97,8 @@ public class KMP {
 	 */
 	public int search(In in)
 	{
-		for(int i=0, j=0; !in.isEmpty() && j<M; i++)
+		int i, j;
+		for(i=0, j=0; !in.isEmpty() && j<M; i++)
 			j=dfa[in.readChar()][j];		//no backup
 		if(j==M)	return i-M;
 		else		return NOT_FOUND;
