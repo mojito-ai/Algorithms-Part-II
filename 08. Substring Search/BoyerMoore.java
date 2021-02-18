@@ -55,7 +55,10 @@ public class BoyerMoore {
 	}
 	
 	/**
+	 * Property: Substring search with the Boyer-Moore mismatched character heuristic takes about ~N/M character compares to 
+	 * 			 search for a pattern of length M in a text of length N.
 	 * 
+	 * <li> Worst case - Can be as bad as ~MN
 	 * @param txt
 	 * @return
 	 */
