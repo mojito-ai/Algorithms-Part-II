@@ -148,5 +148,24 @@ public class RabinKarp {
      *
      * 5. How would you extend Rabin-Karp to efficiently search for any one of P possible patterns in a text of length N?
      * 	  Compute hashes for those patterns and look for any one of them. Use a symbol table.
-     */														
+     */		
+    
+    /*
+     * Substring Search summary: Cost of searching for an M character pattern in a N character text.
+     * 
+     * 										  Operation Count
+     * Algorithm		Version				Guarantee	Typical			Backup in output		correct? 		ExtraSpace
+     * 
+     * Brute Force		   -				  MN		  1.1N				Yes					  Yes				1
+     * 
+     * Knuth-Morris-	  Full DFA			  2N		  1.1N				No					  Yes				MR
+     * Pratt
+     * 
+     *		      Mismatch Transitions		  3N		  1.1N				Yes					  Yes				M
+     * 						only
+     * 					  
+     * 				Full-Algorithm			  3N		  N/M				Yes					  Yes				R
+     * 
+     * Boyer-Moore
+     */
 }
