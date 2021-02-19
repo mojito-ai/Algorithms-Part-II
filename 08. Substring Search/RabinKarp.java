@@ -127,7 +127,7 @@ public class RabinKarp {
      * 						   digits to see if there is a match. We take Q large enough so that we are confident that the 
      * 						   probability of two M digit numbers having the same hash value us very very low.
      * 
-     * 2. Las Vegas Version: Check for substring match if hash match; continu
+     * 2. Las Vegas Version: Check for substring match if hash match; continue search if false condition
      * 
      * 
      */
