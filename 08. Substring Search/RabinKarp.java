@@ -17,4 +17,15 @@
 
 public class RabinKarp {
 
+	/*
+	 * 1. Efficiently computing the hash function
+	 * 
+	 * - Modular hash function: Use the notation of ti for txt.charAt(i), we wish to compute
+	 * 	
+	 * 							xi=ti * R^(M-1) + ti+1 * R^(M-2) + -------- + ti+M-1 * R^0	(mod Q)
+	 * 
+	 * - Intuition: M-digit, base-R, modulo Q
+	 * 
+	 * - Horner's Method: Linear time method to evaluate M degree polynomial
+	 */
 }
