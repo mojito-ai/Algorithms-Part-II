@@ -138,6 +138,6 @@ public class RabinKarp {
      * 
      * Monte-Carlo: Always runs in linear time. Extremely likely to return a correct answer (but not always!)
      * 				
-     * 
+     * Las-Vegas version: Always returns correct answer. Extremely likely to run in linear time (but worst case MN)
      */
 }
