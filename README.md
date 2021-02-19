@@ -24,7 +24,8 @@
 
 8. **Substring Search:** We consider algorithms for searching for a substring in a piece of text. We begin with a brute-force algorithm, whose running time is quadratic in the worst case. Next, we consider the ingenious Knuth–Morris–Pratt algorithm whose running time is guaranteed to be linear in the worst case. Then, we introduce the Boyer–Moore algorithm, whose running time is sublinear on typical inputs. Finally, we consider the Rabin–Karp fingerprint algorithm, which uses hashing in a clever way to solve the substring search and related problems.
 
-9. #### **Regular Expressions**
+9. **Regular Expressions:** We complete our study of string processing by considering a number of ingenious algorithms that take full advantage of several of the fundamental methods covered earlier in the course. In the first lecture, we consider regular expression pattern matching, where the goal is to find strings from a specified set in a given text. A regular expression is a method for specifying a set of strings. Our topic for this lecture is the famous grep algorithm that determines whether a given text contains any substring from the set. We examine an efficient implementation that makes use of our digraph reachability implementation from Week 1.
+
 10. #### **Data Compression**
 11. #### **Reductions**
 12. #### **Linear Programming**
