@@ -17,6 +17,17 @@
 
 public class RabinKarp {
 
+	private final int M;
+	private long RM;
+	private final long Q;
+	private long patHash;
+	private final int R;
+	
+	RabinKarp(String pat)
+	{
+		
+	}
+	
 	/*
 	 * 1. Efficiently computing the hash function
 	 * 
@@ -45,5 +56,10 @@ public class RabinKarp {
 		for(int i=0; i<M; i++)
 			h = (R * h + key.charAt(i)) % Q;
 		return h;
+	}
+	
+	public int search(String txt)
+	{
+		
 	}
 }
