@@ -129,6 +129,11 @@ public class RabinKarp {
      * 
      * 2. Las Vegas Version: Check for substring match if hash match; continue search if false condition
      * 
+     * 3. Analysis: 
      * 
+     * Theory=If Q is a sufficiently large random prime(about MN^2), then the probability of a false condition is about 1/N
+     * 
+     * Practise: Choose Q to be large prime (but not so large as to cause overflow). Under reasonable assumptions, probability
+     * 			 of a collision is about 1/Q.
      */
 }
