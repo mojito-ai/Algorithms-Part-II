@@ -23,6 +23,18 @@ public class RabinKarp {
 	private long patHash;
 	private final int R;
 	
+	/**
+	 * How to efficiently compute xi+1 given that we know xi
+	 * 
+	 * 		xi=ti * R^(M-1) + ti+1 * R^(M-2) + -------- + ti+M-1 * R^0	(mod Q)
+	 * 	 xi+1=ti+1 *R^(M-1) + ti+2 * R^(M-2) + -------- + ti+M * R^0	(mod Q)
+	 * 
+	 * Key property: Can update hash function in constant time
+	 * 
+	 * 		xi+1=(xi-ti*R^(M-1))R + ti+M
+	 * 
+	 * @param pat
+	 */
 	RabinKarp(String pat)
 	{
 		
