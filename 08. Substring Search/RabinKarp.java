@@ -17,11 +17,11 @@
 
 public class RabinKarp {
 
-	private final int M;
-	private long RM;
-	private final long Q;
-	private long patHash;
-	private final int R;
+	private final int M;	//pattern length
+	private long RM;		//R^(M-1) % Q
+	private final long Q;	//modulus
+	private long patHash;	//pattern hash value
+	private final int R;	//Radix
 	
 	/**
 	 * How to efficiently compute xi+1 given that we know xi
