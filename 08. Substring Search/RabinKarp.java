@@ -135,5 +135,9 @@ public class RabinKarp {
      * 
      * Practise: Choose Q to be large prime (but not so large as to cause overflow). Under reasonable assumptions, probability
      * 			 of a collision is about 1/Q.
+     * 
+     * Monte-Carlo: Always runs in linear time. Extremely likely to return a correct answer (but not always!)
+     * 				
+     * 
      */
 }
