@@ -1,3 +1,6 @@
+import java.math.BigInteger;
+import java.util.Random;
+
 /**
 * <h1> <b>Rabin-Karp Fingerprint Search:</b> Basic idea of modular hashing. Easiest to think in context of numbers although
 * 											 it works in all kinds of situations as everything is encoded as a bit which can
@@ -53,7 +56,15 @@ public class RabinKarp {
 	 */
 	RabinKarp(String pat)
 	{
+		Q=longRandomPrime();
+		M=pat.length();
+		R=256;
 		
+		RM=1;
+		for(int i=0; i<M-1; i++)
+			RM=(R*RM) % Q;
+		
+		patHash=hash(pat, M);
 	}
 	
 	/*
@@ -88,6 +99,14 @@ public class RabinKarp {
 	
 	public int search(String txt)
 	{
-		
+		int N=txt.length();
+		long txtHash=hash(txt,N);
+		if(patHash==txtHash)	return 0;
 	}
+	
+	 // a random 31-bit prime
+    private static long longRandomPrime() {
+        BigInteger prime = BigInteger.probablePrime(31, new Random());
+        return prime.longValue();
+    }
 }
