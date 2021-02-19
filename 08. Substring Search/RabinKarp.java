@@ -37,4 +37,13 @@ public class RabinKarp {
 	 * 					3		(265*10+3)%997=659
 	 * 					4		(659*10+5)%997=613
 	 */
+	
+	//Compute hash for M digit key
+	private long hash(String key, int M)
+	{
+		long h=0;
+		for(int i=0; i<M; i++)
+			h = (R * h + key.charAt(i)) % Q;
+		return h;
+	}
 }
