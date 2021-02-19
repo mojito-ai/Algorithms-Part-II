@@ -27,5 +27,14 @@ public class RabinKarp {
 	 * - Intuition: M-digit, base-R, modulo Q
 	 * 
 	 * - Horner's Method: Linear time method to evaluate M degree polynomial
+	 * 
+	 * E.g. 		pattern		0	1	2	3	4		R=10	Q=997
+	 * 							2	6	5	3	5
+	 * 
+	 * 					0		2%997=2
+	 * 					1		(2*10+6)%997=26
+	 * 					2		(26*10+5)%997=265
+	 * 					3		(265*10+3)%997=659
+	 * 					4		(659*10+5)%997=613
 	 */
 }
