@@ -13,7 +13,7 @@ import java.util.Random;
 * <li> If pattern hash = text substring hash, check for a match
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   19-02-2021
 * 
 */
@@ -56,13 +56,13 @@ public class RabinKarp {
 	 */
 	RabinKarp(String pat)
 	{
-		Q=longRandomPrime();
+		Q=longRandomPrime();		//A large prime (but avoid overflow)
 		M=pat.length();
-		R=256;
+		R=256;		
 		
 		RM=1;
 		for(int i=0; i<M-1; i++)
-			RM=(R*RM) % Q;
+			RM=(R*RM) % Q;			//precompute R^(M-1) (mod Q)
 		
 		patHash=hash(pat, M);
 	}
@@ -98,11 +98,21 @@ public class RabinKarp {
 	}
 	
 	public int search(String txt)
-	{
-		int N=txt.length();
-		long txtHash=hash(txt,N);
-		if(patHash==txtHash)	return 0;
-	}
+	{ // Search for hash match in text.
+		 int N = txt.length();
+		 long txtHash = hash(txt, M);
+		 if (patHash == txtHash) return 0; // Match at beginning.
+		 
+		 for (int i = M; i < N; i++)
+		 { // Remove leading digit, add trailing digit, check for match.
+			 txtHash = (txtHash + Q - RM*txt.charAt(i-M) % Q) % Q;
+			 txtHash = (txtHash*R + txt.charAt(i)) % Q;
+			 if (patHash == txtHash)
+				 return i - M + 1; // match
+		 }
+		 return N; // no match found
+	} 
+	
 	
 	 // a random 31-bit prime
     private static long longRandomPrime() {
