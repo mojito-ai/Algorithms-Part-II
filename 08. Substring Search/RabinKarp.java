@@ -166,6 +166,15 @@ public class RabinKarp {
      * 					  
      * 				Full-Algorithm			  3N		  N/M				Yes					  Yes				R
      * 
-     * Boyer-Moore
+     * Boyer-Moore		Mismatched char		  MN		  N/M				Yes					  Yes				R
+     * 					Heuristic only
+     *
+     * Rabin-Karp		Monte-Carlo			  7N		  7N				No					  Yes*				1			* = probabilistic guarantee with uniform hash function
+     * 
+     * 					Las-Vegas			  7N*		  7N				Yes					  Yes				1
+     * 
+     * 
      */
+    
+    
 }
