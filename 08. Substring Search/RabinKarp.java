@@ -139,5 +139,11 @@ public class RabinKarp {
      * Monte-Carlo: Always runs in linear time. Extremely likely to return a correct answer (but not always!)
      * 				
      * Las-Vegas version: Always returns correct answer. Extremely likely to run in linear time (but worst case MN)
-     */
+     * 
+     * 4. Advantages vs Disadvantages
+     * 
+     *  - Extend to 2d search								- Arithemetic ops slower than char compares
+     *  - Extends to finding multiple patterns				- Las Vegas version requires backup
+     *														- Poor worse case guarantee 
+     */														
 }
