@@ -145,5 +145,8 @@ public class RabinKarp {
      *  - Extend to 2d search								- Arithemetic ops slower than char compares
      *  - Extends to finding multiple patterns				- Las Vegas version requires backup
      *														- Poor worse case guarantee 
+     *
+     * 5. How would you extend Rabin-Karp to efficiently search for any one of P possible patterns in a text of length N?
+     * 	  Compute hashes for those patterns and look for any one of them. Use a symbol table.
      */														
 }
