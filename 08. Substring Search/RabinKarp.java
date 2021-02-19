@@ -115,8 +115,20 @@ public class RabinKarp {
 	
 	
 	 // a random 31-bit prime
-    private static long longRandomPrime() {
+    private static long longRandomPrime() 
+    {
         BigInteger prime = BigInteger.probablePrime(31, new Random());
         return prime.longValue();
     }
+    
+    /*
+     * 1. Monte Carlo Version: Return match if hash matches. We guarantee that the algorithm is gonna be quick but with low 
+     * 						   probability that it might get the answer wrong. We don't even bother to go through and check all the 
+     * 						   digits to see if there is a match. We take Q large enough so that we are confident that the 
+     * 						   probability of two M digit numbers having the same hash value us very very low.
+     * 
+     * 2. Las Vegas Version: Check for substring match if hash match; continu
+     * 
+     * 
+     */
 }
