@@ -20,8 +20,8 @@
 		- Each node represents a sequence of characters
 		- Implementation:						No one way branching
 								|shell|
-								/	  \
-							  |s|	 |fish|
+								/      \
+							      |s|    |fish|
 							  
 		- Applications: Database search
 						P2P network search
