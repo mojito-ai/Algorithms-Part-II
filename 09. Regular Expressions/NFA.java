@@ -18,7 +18,8 @@ public class NFA {
 	 * DFA: Machine to recognise whether a given string is in a given set.
 	 * 
 	 * 1. Kleene's Theorem: [Stephen Kleene, Princeton]
-	 * 
+	 * -For any DFA, there exists an RE that describes the same set of strings.
+	 * -For any RE, there exists a DFA that recognises the same set of strings.
 	 */
 
 }
