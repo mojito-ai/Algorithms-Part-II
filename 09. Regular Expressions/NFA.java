@@ -1,7 +1,11 @@
 /**
 * <h1> <b>NFA:</b> Nondeterministic finite state automaton.</h1>
 * 
-* <li> 
+* <li> Regular expression matching NFA
+* <li> RE enclosed in parenthesis
+* <li> One state per RE character (start=0, accept=M)
+* <li> Red ε-transition (change state, but don't scan text)
+* <li> Black match transition (change state and scan to next text char)
 * 
 * @author  Mohit Sharma
 * @version 1.0
