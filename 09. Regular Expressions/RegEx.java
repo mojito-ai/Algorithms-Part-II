@@ -74,15 +74,12 @@ public class RegEx {
 	 * Character-Class			[A-Za-z][a-z]*			word				camelCase
 	 * 													Capitalized			4illegal
 	 * 
-	 * Closure					AB*A					AA					AB
-	 * (0 or more 										ABBBBBBBA			ABABA	
-	 *  occurances)
-	 *  
-	 * Parentheses				A(A|B)AAB				AAAAB				every other string
-	 * 													ABAAB				
-	 * 				
-	 * 							(AB)*A					A					AA
-	 * 													ABABABABABA			ABBA	
+	 * Atleast one				A(BC)+DE				ABCDE				ADE
+	 * 													ABCDBCDE			BCDE	
+	 * 
+	 * Exactly k				[0-9]{5}-[0-9]{4}		08540-1111			111111111
+	 *  												19072-5541			166-54-111
+	 * 
 	 * 
 	 * 
 	 */
