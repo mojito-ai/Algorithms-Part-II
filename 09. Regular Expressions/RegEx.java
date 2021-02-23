@@ -96,6 +96,11 @@ public class RegEx {
 	 * (Social security numbers)		166-45-1111				8675309
 	 * 
 	 * [a-z]+@([a-z]+\.)+(edu|com)		wayne@princeton.edu		spam@nowhere
-	 * 	(Email addresses)				rs@princeton.edu		
+	 * 	(Email addresses)				rs@princeton.edu	
+	 * 
+	 * [$_A-Za-z][$_A-Za-z0-9]*			ident3					3a
+	 * (Java identifier)				PatternMatcher			ident#3
+	 * 
+	 * REs play a well understood role in the theory of computation	
 	 */
 }
