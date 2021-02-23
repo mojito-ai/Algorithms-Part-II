@@ -38,6 +38,24 @@ public class NFA {
 	 * 													reject=pattern does not match text
 	 * 
 	 * Bad news: Basic plan is infeasible [DFA may have exponential number of states]
+	 * 
+	 * 
+	 * 3. Pattern matching implementation: Basic plan (revised attempt)
+	 * 
+	 * Overview is the same as for KMP
+	 * -No backup in text input stream
+	 * -Quadratic time guarantee (linear time typical)
+	 * 
+	 * Underlying implementation: NonDeterministic finite state automata
+	 * 
+	 * Basic plan [Apply Kleene's theorem]
+	 * -Build NFA from RE
+	 * -Simulate NFA with text as input
+	 * 
+	 * text 				NFA for pattern
+	 * AAAABD				(A*B|AC)D					accept=pattern matches text
+	 * 													reject=pattern does not match text
+	 * 
 	 */
 
 }
