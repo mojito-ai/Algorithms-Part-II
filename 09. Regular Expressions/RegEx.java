@@ -1,0 +1,17 @@
+/**
+* <h1> <b>Regular Expression:</b> Pattern matching = Finding one of a specified set of strings in text.</h1>
+* 
+* <li> Substring search = Find a single string in text vs Pattern Matching
+* <li> Genomics = Fragile X syndrome is a common cause of mental retardation.
+* <li> Human genome contains triplet repeats of CGG or AGG, bracketed by GCG at the beginning and CTG at the end.
+* <li> Number of repeats is variable, and correlated with syndrome.
+* 
+* @author  Mohit Sharma
+* @version 1.0
+* @since   23-02-2021
+* 
+*/
+
+public class RegEx {
+
+}
