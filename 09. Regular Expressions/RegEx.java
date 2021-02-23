@@ -7,9 +7,10 @@
 * <li> Number of repeats is variable, and correlated with syndrome.
 * <li> Pattern: GCG(CGG|AGG)*CTG
 * <li> Text: GCGGCGTGTGTGCGAGAGAGTGGGTTTG GCGCGGAGGCGGCTG GCGGCGTCGT
+* <li> Some people, when confronted with a problem, think "I know, I'll use regular expressions." Now they have two problems. -Jamie Zawinski (flame war on alt.religion.emacs)
 * 
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   23-02-2021
 * 
 */
@@ -111,5 +112,6 @@ public class RegEx {
 	 * - Can be difficult to debug
 	 * - Can be easier to write than read.
 	 * 
+	 * Bottom Line: REs are amazingly powerful and expressive but using them in applications can be amazingly complex and error-prone.
 	 */
 }
