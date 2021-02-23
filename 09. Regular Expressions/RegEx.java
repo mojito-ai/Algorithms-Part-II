@@ -33,6 +33,12 @@ public class RegEx {
 	 * 		-Filter text (spam, NetNanny, Malware)
 	 * 		-Validate data - entry fields (dates, email, URL)
 	 * 
+	 * 4. Parse Text files:
+	 * 		-Compile a java program
+	 * 		-Crawl and index the web
+	 * 		-Read in data stored in adhoc input file formats
+	 * 		-Create java documentation from Javadoc comments
+	 * 
 	 */
 
 }
