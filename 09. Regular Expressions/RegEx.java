@@ -25,6 +25,13 @@ public class RegEx {
 	 * 						   Search via regular expression
 	 * 
 	 * 3. Test if string matches some pattern: 
+	 * 		-Process natural language
+	 * 		-Scan for virus signatures
+	 * 		-Specify a programming language
+	 * 		-Access information in digital libraries
+	 * 		-Search Genome using PROSITE patterns
+	 * 		-Filter text (spam, NetNanny, Malware)
+	 * 		-Validate data - entry fields (dates, email, URL)
 	 * 
 	 */
 
