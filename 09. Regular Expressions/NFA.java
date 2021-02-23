@@ -20,6 +20,18 @@ public class NFA {
 	 * 1. Kleene's Theorem: [Stephen Kleene, Princeton]
 	 * -For any DFA, there exists an RE that describes the same set of strings.
 	 * -For any RE, there exists a DFA that recognises the same set of strings.
+	 * 
+	 * 2. Pattern matching implementation: Basic plan (first attempt) - Ken Thompson
+	 * 
+	 * Overview is the same as for KMP
+	 * -No backup in text input stream
+	 * -Linear time guarantee
+	 * 
+	 * Underlying implementation: Deterministic finite state automata
+	 * 
+	 * Basic plan [Apply Kleene's theorem]
+	 * -Build DFA from RE
+	 * -Simulate DFA with text as input
 	 */
 
 }
