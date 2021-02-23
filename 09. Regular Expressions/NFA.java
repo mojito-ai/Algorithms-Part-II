@@ -32,6 +32,12 @@ public class NFA {
 	 * Basic plan [Apply Kleene's theorem]
 	 * -Build DFA from RE
 	 * -Simulate DFA with text as input
+	 * 
+	 * text 				DFA for pattern
+	 * AAAABD				(A*B|AC)D					accept=pattern matches text
+	 * 													reject=pattern does not match text
+	 * 
+	 * Bad news: Basic plan is infeasible [DFA may have exponential number of states]
 	 */
 
 }
