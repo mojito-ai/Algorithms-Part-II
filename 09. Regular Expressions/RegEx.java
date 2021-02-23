@@ -51,9 +51,16 @@ public class RegEx {
 	 * Or					4					AA|BAAB					AA					every other string
 	 * 																 	BAAB
 	 * 
-	 * 
-	 * 
-	 * 
+	 * Closure				2					AB*A					AA					AB
+	 * (0 or more 														ABBBBBBBA			ABABA	
+	 *  occurances)
+	 *  
+	 * Parentheses							A(A|B)AAB					AAAAB				every other string
+	 * 																	ABAAB				
+	 * 						1
+	 * 										(AB)*A						A					AA
+	 * 																	ABABABABABA			ABBA					
+	 * 		
 	 * 
 	 */
 
