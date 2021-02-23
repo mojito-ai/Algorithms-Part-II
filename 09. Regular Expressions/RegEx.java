@@ -61,6 +61,29 @@ public class RegEx {
 	 * 										(AB)*A						A					AA
 	 * 																	ABABABABABA			ABBA					
 	 * 		
+	 */
+	
+	/*
+	 * Regular Expression Shortcuts: Additional operations are often added for convenience
+	 * 
+	 *  Operation			Example RE					Matches				Does not match
+	 * 
+	 * Wildcard					.U.U.U.					CUMULUS				SUCCUBUS
+	 * 													JUGULUM				TUMULTUOUS
+	 * 
+	 * Character-Class			[A-Za-z][a-z]*			word				camelCase
+	 * 													Capitalized			4illegal
+	 * 
+	 * Closure					AB*A					AA					AB
+	 * (0 or more 										ABBBBBBBA			ABABA	
+	 *  occurances)
+	 *  
+	 * Parentheses				A(A|B)AAB				AAAAB				every other string
+	 * 													ABAAB				
+	 * 				
+	 * 							(AB)*A					A					AA
+	 * 													ABABABABABA			ABBA	
+	 * 
 	 * 
 	 */
 
