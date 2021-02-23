@@ -6,6 +6,7 @@
 * <li> One state per RE character (start=0, accept=M)
 * <li> Red ε-transition (change state, but don't scan text)
 * <li> Black match transition (change state and scan to next text char)
+* <li> Accept if any sequence of transitions ends in accept state (after scanning all text characters)
 * 
 * @author  Mohit Sharma
 * @version 1.0
