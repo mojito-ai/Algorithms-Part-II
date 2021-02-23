@@ -40,5 +40,21 @@ public class RegEx {
 	 * 		-Create java documentation from Javadoc comments
 	 * 
 	 */
+	
+	/*
+	 * A regular expression is a notation to specify a set (possibly infinite) of strings.
+	 * 
+	 * Operation			Order				Example RE				Matches				Does not match
+	 * 
+	 * Concatenation		3					AABAAB					AABAAB				every other string
+	 * 
+	 * Or					4					AA|BAAB					AA					every other string
+	 * 																 	BAAB
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
 
 }
