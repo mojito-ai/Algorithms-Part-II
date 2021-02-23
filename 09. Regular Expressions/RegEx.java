@@ -80,7 +80,7 @@ public class RegEx {
 	 * Exactly k				[0-9]{5}-[0-9]{4}		08540-1111			111111111
 	 *  												19072-5541			166-54-111
 	 * 
-	 * 
+	 * [A-E]+	is shorthand for (A|B|C|D|E)(A|B|C|D|E)*
 	 * 
 	 */
 
