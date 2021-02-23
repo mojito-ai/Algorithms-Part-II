@@ -6,7 +6,7 @@
 * <li> Human genome contains triplet repeats of CGG or AGG, bracketed by GCG at the beginning and CTG at the end.
 * <li> Number of repeats is variable, and correlated with syndrome.
 * <li> Pattern: GCG(CGG|AGG)*CTG
-* <li> Text: GCGGCGTGTGTGCGAGAGAGTGGGTTTG GCGCGGAGGCGGCTG GCGGCGTCGTE
+* <li> Text: GCGGCGTGTGTGCGAGAGAGTGGGTTTG GCGCGGAGGCGGCTG GCGGCGTCGT
 * 
 * @author  Mohit Sharma
 * @version 1.0
@@ -15,5 +15,17 @@
 */
 
 public class RegEx {
+	
+	/*
+	 * Applications: 
+	 * 
+	 * 1. Syntax highlighting : Highlight keywords, Grey out comments
+	 * 
+	 * 2. Google Code search : Search public source code
+	 * 						   Search via regular expression
+	 * 
+	 * 3. Test if string matches some pattern: 
+	 * 
+	 */
 
 }
