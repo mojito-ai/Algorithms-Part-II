@@ -17,6 +17,8 @@ public class NFA {
 	 * RE: Concise way to describe a set of strings.
 	 * DFA: Machine to recognise whether a given string is in a given set.
 	 * 
+	 * 1. Kleene's Theorem: [Stephen Kleene, Princeton]
+	 * 
 	 */
 
 }
