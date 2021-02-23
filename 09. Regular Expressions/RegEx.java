@@ -9,7 +9,7 @@
 * <li> Text: GCGGCGTGTGTGCGAGAGAGTGGGTTTG GCGCGGAGGCGGCTG GCGGCGTCGT
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   23-02-2021
 * 
 */
@@ -84,4 +84,18 @@ public class RegEx {
 	 * 
 	 */
 
+	/*
+	 * Regular expression Examples: RE notation is surprisingly expressive
+	 * 
+	 * Regular Expression				Matches					Does not match
+	 * 
+	 * .*SPB.*							RASPBERRY				SUBSPACE
+	 * (Substring search)				CRISPBREAD				SUBSPECIES
+	 * 
+	 * [0-9]{3}-[0-9]{2}-[0-9]{4}		166-11-4433				11-55555555
+	 * (Social security numbers)		166-45-1111				8675309
+	 * 
+	 * [a-z]+@([a-z]+\.)+(edu|com)		wayne@princeton.edu		spam@nowhere
+	 * 	(Email addresses)				rs@princeton.edu		
+	 */
 }
