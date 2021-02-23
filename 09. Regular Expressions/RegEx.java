@@ -5,6 +5,8 @@
 * <li> Genomics = Fragile X syndrome is a common cause of mental retardation.
 * <li> Human genome contains triplet repeats of CGG or AGG, bracketed by GCG at the beginning and CTG at the end.
 * <li> Number of repeats is variable, and correlated with syndrome.
+* <li> Pattern: GCG(CGG|AGG)*CTG
+* <li> Text: GCGGCGTGTGTGCGAGAGAGTGGGTTTG GCGCGGAGGCGGCTG GCGGCGTCGTE
 * 
 * @author  Mohit Sharma
 * @version 1.0
