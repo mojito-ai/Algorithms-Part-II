@@ -103,4 +103,13 @@ public class RegEx {
 	 * 
 	 * REs play a well understood role in the theory of computation	
 	 */
+	
+	/*
+	 *Caveat: Writing a RE is like writing a program
+	 *
+	 * - Need to understand programming model
+	 * - Can be difficult to debug
+	 * - Can be easier to write than read.
+	 * 
+	 */
 }
