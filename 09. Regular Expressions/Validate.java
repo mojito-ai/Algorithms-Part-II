@@ -10,6 +10,19 @@
 * 
 */
 
+/*
+ * Regular expressions in other languages:
+ * 
+ * 1. Broadly applicable programmer's tool.
+ * 	-Originated in Unix in the 1970s.
+ * 	-Many languages support extended regular expressions.
+ * 	-Built into grep, awk, emacs, Perl, PHP, Python, JavaScript, ...
+ * 
+ * ex: % grep 'NEWLINE' *\* .java ---> 
+ * 
+ * 2. PERL. Practical Extraction and Report Language.
+ *
+ */
 
 public class Validate {
 	
