@@ -27,6 +27,15 @@ public class GREP {
 	 * <li>	Greedy vs reluctant matching.
 	 * @param args
 	 */
+	
+	/*
+	 * Ex. Which substring(s) should be matched by the RE <blink>.*</blink> ?
+	 * 
+ 	 *		<--reluctant------>			<----reluctant--------->
+ 	 *		<blink>text</blink>some text<blink>more text</blink>
+ 	 *		<----------------greedy---------------------------->
+	 * 
+	 */
 	public static void main(String [] args)
 	{
 		//contains RE as a substring
