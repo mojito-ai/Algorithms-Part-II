@@ -29,11 +29,11 @@ public class Harvester {
 		String regexp = args[0];
 		In in = new In(args[1]);
 		String input=in.readAll();
-		Pattern pattern = Pattern.compile(regexp);
-		Matcher matcher = pattern.matcher(input);
-		while(matcher.find())
+		Pattern pattern = Pattern.compile(regexp);	//compile() creates a Pattern(NFA) from RE
+ 		Matcher matcher = pattern.matcher(input);	//matcher() creates a Matcher(NFA simulator) from NFA and text
+		while(matcher.find())						//find() looks for the next match
 		{
-			System.out.println(matcher.group());
+			System.out.println(matcher.group());	//group() returns the substring most recently found by find()
 		}
 	}
 
