@@ -65,9 +65,11 @@ public class NFA {
 			for(int v=0; v<G.V(); v++)
 				if(dfs.hasPathTo(v))
 					pc.add(v);
-			
 		}
 		
+		for(int v : pc)
+			if(v==M)	return true;
+		return false;
 	}
 	
 	private Digraph buildEpsilonTransitionDigraph()
