@@ -134,7 +134,11 @@ public class NFA {
 			}
 			
 			//metasymbols
+			if(re[i]=='(' || re[i]=='*' || re[i]==')')
+				G.addEdge(i, i+1);
 		}
+		
+		return G;
 	}
 	/*
 	 * Duality between REs and DFAs: 
