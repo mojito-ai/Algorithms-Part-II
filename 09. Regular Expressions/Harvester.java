@@ -17,7 +17,7 @@ import edu.princeton.cs.algs4.In;
 *			http://www.cs.princeton.edu/news
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   24-02-2021
 * 
 */
