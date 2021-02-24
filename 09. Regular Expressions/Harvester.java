@@ -1,3 +1,6 @@
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 /**
 * <h1> <b>Harvester:</b> Print all substrings of input that match a RE.</h1>
 * 
@@ -19,5 +22,10 @@
 */
 
 public class Harvester {
+	
+	public static void main(String [] args)
+	{
+		
+	}
 
 }
