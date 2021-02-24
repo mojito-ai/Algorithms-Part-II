@@ -24,6 +24,10 @@
  * 		typewritten
  * 
  * 2. PERL. Practical Extraction and Report Language.
+ * 
+ * ex. % perl -p -i -e 's|from|to|g' input.txt --> replace all occurrences of from with to in the file input.txt
+ * 
+ * ex. % perl -n -e 'print if /^[A-Z][A-Za-z]*$/' words.txt --> print all words that start with uppercase letter
  *
  */
 
