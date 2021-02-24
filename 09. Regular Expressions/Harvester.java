@@ -23,7 +23,7 @@ import edu.princeton.cs.algs4.In;
 */
 
 /*
- * Warning. Typical implementations do not guarantee performance!
+ * 1. Warning. Typical implementations do not guarantee performance!
  * 
  * % java Validate "(a|aa)*b" aaaaaaaaaaaaaaaaaaaaaaaaaaaaaac 				1.6 seconds
  * % java Validate "(a|aa)*b" aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac 			3.7 seconds
@@ -32,10 +32,32 @@ import edu.princeton.cs.algs4.In;
  * % java Validate "(a|aa)*b" aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac 		62.2 seconds
  * % java Validate "(a|aa)*b" aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac 	161.6 seconds
  * 
- * SpamAssassin regular expression. 
+ * 2. SpamAssassin regular expression. 
+ * 
  * % java RE "[a-z]+@[a-z]+([a-z\.]+\.)+[a-z]+" spammer@x...................... 
  * Takes exponential time on pathological email addresses.
  * Troublemaker can use such addresses to DOS a mail server. 
+ * 
+ */
+
+/*
+ * 3. Back-references.
+ * 
+ * \1 notation matches subexpression that was matched earlier.
+ * Supported by typical RE implementations.
+ * 
+ * (.+)\1 // beriberi couscous
+ * 1?$|^(11+?)\1+ // 1111 111111 111111111
+ * 
+ * 4. Some non-regular languages.
+ * Strings of the form ww for some string w: beriberi.
+ * Unary strings with a composite number of 1s: 111111.
+ * Bitstrings with an equal number of 0s and 1s: 01110100.
+ * Watson-Crick complemented palindromes: atttcggaaat.
+ * Remark. Pattern matching with back-references is intractable.
+ * 
+ * 
+ * 
  * 
  */
 public class Harvester {
