@@ -1,7 +1,16 @@
 /**
 * <h1> <b>Harvester:</b> Print all substrings of input that match a RE.</h1>
 * 
-* <li> 
+* <li> ex. % java Harvester "gcg(cgg|agg)*ctg" chromosomeX.txt		--> Harvest pattern from DNA
+*			gcgcggcggcggcggcggctg
+*			gcgctg
+*			gcgctg
+*			gcgcggcggcggaggcggaggcggctg
+*
+* <li> % java Harvester "http://(\\w+\\.)*(\\w+)" http://www.cs.princeton.edu
+*			http://www.princeton.edu
+*			http://www.google.com
+*			http://www.cs.princeton.edu/news
 * 
 * @author  Mohit Sharma
 * @version 1.0
