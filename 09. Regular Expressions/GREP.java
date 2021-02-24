@@ -13,6 +13,20 @@ import edu.princeton.cs.algs4.StdIn;
 */
 public class GREP {
 	
+	/**
+	 * Typical grep application: crossword puzzles
+	 * 
+	 * <li> Industrial Strength grep implementation: 
+	 * <li> To complete the implementation:
+	 * <li> Add multiway or.
+     * <li>	Handle metacharacters.
+	 * <li>	Support character classes.
+	 * <li>	Add capturing capabilities.
+	 * <li>	Extend the closure operator.
+	 * <li>	Error checking and recovery.
+	 * <li>	Greedy vs reluctant matching.
+	 * @param args
+	 */
 	public static void main(String [] args)
 	{
 		//contains RE as a substring
