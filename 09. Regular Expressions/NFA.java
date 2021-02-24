@@ -9,7 +9,7 @@
 * <li> Accept if any sequence of transitions ends in accept state (after scanning all text characters)
 * 
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   24-02-2021
 * 
 */
@@ -105,6 +105,9 @@ public class NFA {
 	 * Goal: Write a program to build epsilon transition edges
 	 * <li> Challenges : Remember left parenthesis to implement closure and or; remember | to implement or.
 	 * <li> Concatenation: Add match transition edge from state corresponding to characters in the alphabet to next state.
+	 * <li> Closure: Add three epsilon transition edges for each * operator.
+	 * <li> Parenthesis: Add epsilon transition edges from parenthesis to next state.
+	 * <li> OR: Add two epsilon transition edges for each | operator
 	 * @return
 	 */
 	private Digraph buildEpsilonTransitionDigraph()
