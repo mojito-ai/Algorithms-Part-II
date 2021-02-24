@@ -53,7 +53,18 @@ public class NFA {
 		for(int i=0; i<txt.length(); i++)
 		{
 			Bag<Integer> match = new Bag<>();
-			for(int v : pc);
+			for(int v : pc)
+			{
+				if(v==M)	continue;
+				if(re[v]==txt.charAt(i) || re[v]=='.')
+					match.add(v+1);
+			}
+			
+			dfs=new DirectedDFS(G, match);
+			pc=new Bag<>();
+			for(int v=0; v<G.V(); v++)
+				if(dfs.hasPathTo(v))
+					pc.add(v);
 			
 		}
 		
