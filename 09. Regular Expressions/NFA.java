@@ -20,6 +20,12 @@
  * One view: Machine can guess the proper sequence of state transitions
  * Alternate view: Sequence is a proof that the machine accepts the text.
  * 
+ * 		   /---\	   /-----------\
+ * 0-->1-->2-->3-->4-->5-->6-->7-->8-->9-->10-->11			NFA corresponding to pattern ((A*B|AC)D)
+ * (   (   A   *   B   |   A   C   )   D    )	
+ * 	    \   \---/         /
+ *       \---------------/
+ * 
  */
 public class NFA {
 	
