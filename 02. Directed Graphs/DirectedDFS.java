@@ -38,6 +38,14 @@ public class DirectedDFS {
 		dfs(G,s); //find vertices connected to s
 	}
 	
+	DirectedDFS(Digraph G, Iterable<Integer> s)
+	{
+		marked=new boolean[G.V()];
+		edgeTo=new Integer[G.V()];
+		for(Integer v: s)
+			dfs(G,v);
+	}
+	
 	private void dfs(Digraph G, int v)
 	{
 		marked[v]=true;
