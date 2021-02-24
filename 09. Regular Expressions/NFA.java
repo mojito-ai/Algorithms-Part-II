@@ -110,6 +110,14 @@ public class NFA {
 	 * <li> OR: Add two epsilon transition edges for each | operator
 	 * @return
 	 */
+	
+	/*
+	 * Analysis: 
+	 * 
+	 * Proposition: Building the NFA corresponding to an M character RE takes time and space proportional to M.
+	 * Proof: For each of the M characters, we add at most three epsilon transitions and execute at most two stack operations.
+	 * 
+	 */
 	private Digraph buildEpsilonTransitionDigraph()
 	{
 		Digraph G = new Digraph(M+1);
