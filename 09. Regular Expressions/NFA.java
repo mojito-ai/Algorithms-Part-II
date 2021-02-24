@@ -32,6 +32,20 @@
  */
 public class NFA {
 	
+	NFA(String regex)
+	{
+		
+	}
+	
+	public boolean recognizes(String txt)
+	{
+		
+	}
+	
+	private Digraph buildEpsilonTransitionDigraph()
+	{
+		
+	}
 	/*
 	 * Duality between REs and DFAs: 
 	 * 
