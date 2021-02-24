@@ -26,6 +26,9 @@
  * 	    \   \---/         /
  *       \---------------/
  * 
+ * Q. How to to determine whether a string is matched by automaton?
+ * A. DFA-Deterministic: Easy because exactly one transition state applicable.
+ * 	  NFA-Nondeterministic: Can be several applicable transitions; need to select right one.
  */
 public class NFA {
 	
