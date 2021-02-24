@@ -112,6 +112,19 @@ public class NFA {
 			//left parenthesis and |
 			if(re[i]=='(' || re[i]=='|')
 				ops.push(i);
+			
+			else 
+				if(re[i]==')')
+			{
+				int or=ops.pop();
+				if(or=='|')			//or
+				{
+					lp=ops.pop();
+					G.addEdge(lp, or+1);
+					G.addEdge(or, i);
+				}
+				else	lp=or;
+			}
 		}
 	}
 	/*
