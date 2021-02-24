@@ -85,6 +85,11 @@ public class Harvester {
      * 		grep RE -> NFA.
   	 * 		javac Java language -> Java byte code
 	 * 
+	 * 						KMP 			grep 			Java
+	 *	pattern				string 			RE 				program
+	 *	parser				unnecessary 	check if legal 	check if legal
+	 *	compiler output		DFA 			NFA 			byte code
+	 *	simulator			DFA simulator 	NFA 			simulator JVM
 	 * 
 	 */
 }
