@@ -18,7 +18,10 @@
  * 	-Many languages support extended regular expressions.
  * 	-Built into grep, awk, emacs, Perl, PHP, Python, JavaScript, ...
  * 
- * ex: % grep 'NEWLINE' *\* .java ---> 
+ * ex: % grep 'NEWLINE' *\* .java ---> Print all lines containing NEWLINE which occurs in any file with a .java extension
+ * 
+ * ex. % egrep '^[qwertyuiop]*[zxcvbnm]*$' words.txt | egrep '...........'
+ * 		typewritten
  * 
  * 2. PERL. Practical Extraction and Report Language.
  *
