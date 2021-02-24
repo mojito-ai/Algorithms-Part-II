@@ -101,6 +101,12 @@ public class NFA {
 		return false;
 	}
 	
+	/**
+	 * Goal: Write a program to build epsilon transition edges
+	 * <li> Challenges : Remember left parenthesis to implement closure and or; remember | to implement or.
+	 * <li> Concatenation: Add match transition edge from state corresponding to characters in the alphabet to next state.
+	 * @return
+	 */
 	private Digraph buildEpsilonTransitionDigraph()
 	{
 		Digraph G = new Digraph(M+1);
