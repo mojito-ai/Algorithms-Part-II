@@ -113,6 +113,13 @@ public class NFA {
 	private Digraph buildEpsilonTransitionDigraph()
 	{
 		Digraph G = new Digraph(M+1);
+		/*
+		 *Maintain a stack
+		 *1. ( symbol : push ( onto stack
+		 *2. | symbol : push | onto stack
+		 *3. ) symbol : pop corresponding ( and possibly intervening |
+		 *Add epsilon transition edges for closure/or
+		 */
 		Stack<Integer> ops = new Stack<>();
 		for(int i=0; i<M; i++)
 		{
