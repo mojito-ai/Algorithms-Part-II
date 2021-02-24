@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.StdIn;
+
 /**
 * <h1> <b>GREP:</b> Generalized Regular Expression Print.</h1>
 * 
@@ -9,5 +11,17 @@
 * 
 */
 public class GREP {
+	
+	public static void main(String [] args)
+	{
+		String regexp = "(.*" + args[0] + "*.)";
+		NFA nfa = new NFA(regexp);
+		while(StdIn.hasNextLine())
+		{
+			String line = StdIn.readLine();
+			if(nfa.recognizes(line))
+				System.out.println(line);
+		}
+	}
 
 }
