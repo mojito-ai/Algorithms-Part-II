@@ -125,6 +125,15 @@ public class NFA {
 				}
 				else	lp=or;
 			}
+			
+			//Closure (needs 1 character lookout)
+			if(i<M-1 && re[i+1]=='*')
+			{
+				G.addEdge(lp, i+1);
+				G.addEdge(i+1, lp);
+			}
+			
+			//metasymbols
 		}
 	}
 	/*
