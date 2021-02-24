@@ -35,6 +35,13 @@ public class NFA {
 	private Digraph G;		//epsilon transitions digraph
 	private final char [] re;	//number of states
 	
+	/**
+	 * State names: Integers from 0 to M
+	 * <li> Match Transitions: Keep regular expression in array re[] (implicit)
+	 * <li> Epsilon transitions: Store in a digraph G
+	 * <li> Maintain set of all possible states that NFA could be in after reading in the first i text characters
+	 * @param regex
+	 */
 	NFA(String regex)
 	{
 		M=regex.length();
