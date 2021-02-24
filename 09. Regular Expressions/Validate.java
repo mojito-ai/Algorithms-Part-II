@@ -15,7 +15,9 @@ public class Validate {
 	
 	public static void main(String [] args)
 	{
-		
+		String regexp=args[0];
+		String input=args[1];
+		System.out.println(input.matches(regexp));
 	}
 
 }
