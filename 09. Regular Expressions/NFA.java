@@ -103,7 +103,16 @@ public class NFA {
 	
 	private Digraph buildEpsilonTransitionDigraph()
 	{
-		
+		Digraph G = new Digraph(M+1);
+		Stack<Integer> ops = new Stack<>();
+		for(int i=0; i<M; i++)
+		{
+			int lp=i;
+			
+			//left parenthesis and |
+			if(re[i]=='(' || re[i]=='|')
+				ops.push(i);
+		}
 	}
 	/*
 	 * Duality between REs and DFAs: 
