@@ -59,10 +59,22 @@ public class NFA {
 	 * @param txt
 	 * @return
 	 */
+	
+	/*
+	 * NFA Simulation : Analysis
+	 * 
+	 *  Proposition: Determining whether an N-character text is recognised by the NFA corresponding to an M-character pattern
+	 *  			 takes time proportional to MN in the worst case
+	 *  
+	 *  Proof: For each of the N-text characters, we iterate through a set of states of size no more than M and run DFS on
+	 *  	   the graph of epsilon transitions. [The NFA construction we will consider ensures the number of edges on each node
+	 *  	   <=3]
+	 * 
+	 */
 	public boolean recognizes(String txt)
 	{
 		Bag<Integer> pc = new Bag<>();		//program counter
-		DirectedDFS dfs = new DirectedDFS(G,0);
+		DirectedDFS dfs = new DirectedDFS(G,0);	//Runs proportional to E+V
 		for(int v=0; v<G.V(); v++)		//states reachable from start by epsilon transitions
 			if(dfs.hasPathTo(v))
 				pc.add(v);
