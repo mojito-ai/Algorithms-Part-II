@@ -31,10 +31,16 @@
  * 	  NFA-Nondeterministic: Can be several applicable transitions; need to select right one.
  */
 public class NFA {
+	private final int M;
+	private Digraph G;
+	private final char [] re;
+	
 	
 	NFA(String regex)
 	{
-		
+		M=regex.length();
+		re=regex.toCharArray();
+		G=buildEpsilonTransitionDigraph();
 	}
 	
 	public boolean recognizes(String txt)
