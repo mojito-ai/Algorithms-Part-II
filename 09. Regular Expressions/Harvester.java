@@ -22,6 +22,22 @@ import edu.princeton.cs.algs4.In;
 * 
 */
 
+/*
+ * Warning. Typical implementations do not guarantee performance!
+ * 
+ * % java Validate "(a|aa)*b" aaaaaaaaaaaaaaaaaaaaaaaaaaaaaac 				1.6 seconds
+ * % java Validate "(a|aa)*b" aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac 			3.7 seconds
+ * % java Validate "(a|aa)*b" aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac 			9.7 seconds
+ * % java Validate "(a|aa)*b" aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac 		23.2 seconds
+ * % java Validate "(a|aa)*b" aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac 		62.2 seconds
+ * % java Validate "(a|aa)*b" aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac 	161.6 seconds
+ * 
+ * SpamAssassin regular expression. 
+ * % java RE "[a-z]+@[a-z]+([a-z\.]+\.)+[a-z]+" spammer@x...................... 
+ * Takes exponential time on pathological email addresses.
+ * Troublemaker can use such addresses to DOS a mail server. 
+ * 
+ */
 public class Harvester {
 	
 	public static void main(String [] args)
