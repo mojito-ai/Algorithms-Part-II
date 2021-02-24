@@ -49,6 +49,16 @@ public class NFA {
 		G=buildEpsilonTransitionDigraph();
 	}
 	
+	/**
+	 * Goal: Check whether input matches pattern
+	 * <li> Read states reachable by match transitions 
+	 * <li> Find states reachable by epsilon transitions
+	 * <li> When no input characters
+	 * <li> Accept if any state reachable is an accept state.
+	 * <li> Reject otherwise
+	 * @param txt
+	 * @return
+	 */
 	public boolean recognizes(String txt)
 	{
 		Bag<Integer> pc = new Bag<>();		//program counter
