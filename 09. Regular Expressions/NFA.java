@@ -35,7 +35,6 @@ public class NFA {
 	private Digraph G;
 	private final char [] re;
 	
-	
 	NFA(String regex)
 	{
 		M=regex.length();
@@ -45,6 +44,18 @@ public class NFA {
 	
 	public boolean recognizes(String txt)
 	{
+		Bag<Integer> pc = new Bag<>();
+		DirectedDFS dfs = new DirectedDFS(G,0);
+		for(int v=0; v<G.V(); v++)
+			if(dfs.hasPathTo(v))
+				pc.add(v);
+		
+		for(int i=0; i<txt.length(); i++)
+		{
+			Bag<Integer> match = new Bag<>();
+			for(int v : pc);
+			
+		}
 		
 	}
 	
