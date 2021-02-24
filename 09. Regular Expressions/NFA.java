@@ -10,10 +10,17 @@
 * 
 * @author  Mohit Sharma
 * @version 1.0
-* @since   23-02-2021
+* @since   24-02-2021
 * 
 */
 
+/*
+ * Non determinism: 
+ * 
+ * One view: Machine can guess the proper sequence of state transitions
+ * Alternate view: Sequence is a proof that the machine accepts the text.
+ * 
+ */
 public class NFA {
 	
 	/*
