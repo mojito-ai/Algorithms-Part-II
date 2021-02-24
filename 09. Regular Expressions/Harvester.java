@@ -92,4 +92,27 @@ public class Harvester {
 	 *	simulator			DFA simulator 	NFA 			simulator JVM
 	 * 
 	 */
+	
+	/*
+	 * Summary of pattern-matching algorithms: 
+	 * 
+	 * 1. Programmer.
+	 * Implement substring search via DFA simulation.
+・	 * Implement RE pattern matching via NFA simulation.
+	 * 
+	 * 2. Theoretician.
+	 * RE is a compact description of a set of strings.
+	 * NFA is an abstract machine equivalent in power to RE.
+	 * DFAs, NFAs, and REs have limitations.
+	 * 
+	 * 3. You. Practical application of core computer science principles.
+	 * 
+	 * 4. Example of essential paradigm in computer science.
+	 * Build intermediate abstractions.
+	 * Pick the right ones!
+	 * Solve important practical problems
+	 * 
+	 * 
+	 * 
+	 */
 }
