@@ -9,7 +9,7 @@
 * <li> Accept if any sequence of transitions ends in accept state (after scanning all text characters)
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   24-02-2021
 * 
 */
@@ -31,9 +31,9 @@
  * 	  NFA-Nondeterministic: Can be several applicable transitions; need to select right one.
  */
 public class NFA {
-	private final int M;
-	private Digraph G;
-	private final char [] re;
+	private final int M;	//match transitions
+	private Digraph G;		//epsilon transitions digraph
+	private final char [] re;	//number of states
 	
 	NFA(String regex)
 	{
@@ -44,31 +44,31 @@ public class NFA {
 	
 	public boolean recognizes(String txt)
 	{
-		Bag<Integer> pc = new Bag<>();
+		Bag<Integer> pc = new Bag<>();		//program counter
 		DirectedDFS dfs = new DirectedDFS(G,0);
-		for(int v=0; v<G.V(); v++)
+		for(int v=0; v<G.V(); v++)		//states reachable from start by epsilon transitions
 			if(dfs.hasPathTo(v))
 				pc.add(v);
 		
 		for(int i=0; i<txt.length(); i++)
 		{
 			Bag<Integer> match = new Bag<>();
-			for(int v : pc)
+			for(int v : pc)			// states reachable after scanning past txt.charAt(i)
 			{
 				if(v==M)	continue;
-				if(re[v]==txt.charAt(i) || re[v]=='.')
+				if(re[v]==txt.charAt(i) || re[v]=='.')	//wildcard
 					match.add(v+1);
 			}
 			
 			dfs=new DirectedDFS(G, match);
 			pc=new Bag<>();
-			for(int v=0; v<G.V(); v++)
+			for(int v=0; v<G.V(); v++)		//follow epsilon transitions
 				if(dfs.hasPathTo(v))
 					pc.add(v);
 		}
 		
 		for(int v : pc)
-			if(v==M)	return true;
+			if(v==M)	return true;		//accept if can end in state M
 		return false;
 	}
 	
