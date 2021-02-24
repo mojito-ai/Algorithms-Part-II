@@ -56,9 +56,6 @@ import edu.princeton.cs.algs4.In;
  * Watson-Crick complemented palindromes: atttcggaaat.
  * Remark. Pattern matching with back-references is intractable.
  * 
- * 
- * 
- * 
  */
 public class Harvester {
 	
@@ -75,4 +72,19 @@ public class Harvester {
 		}
 	}
 
+	/*
+	 * Context:
+	 * 
+     * Abstract machines, languages, and nondeterminism.
+     * Basis of the theory of computation.
+     * Intensively studied since the 1930s.
+     * Basis of programming languages.
+     * 
+     * Compiler. A program that translates a program to machine code.
+     * 		KMP string -> DFA.
+     * 		grep RE -> NFA.
+  	 * 		javac Java language -> Java byte code
+	 * 
+	 * 
+	 */
 }
