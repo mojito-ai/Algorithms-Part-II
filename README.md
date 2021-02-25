@@ -26,7 +26,8 @@
 
 9. **Regular Expressions:** We complete our study of string processing by considering a number of ingenious algorithms that take full advantage of several of the fundamental methods covered earlier in the course. In the first lecture, we consider regular expression pattern matching, where the goal is to find strings from a specified set in a given text. A regular expression is a method for specifying a set of strings. Our topic for this lecture is the famous grep algorithm that determines whether a given text contains any substring from the set. We examine an efficient implementation that makes use of our digraph reachability implementation from Week 1.
 
-10. #### **Data Compression**
+10. **Data Compression:** We study and implement several classic data compression schemes, including run-length coding, Huffman compression, and LZW compression. We develop efficient implementations from first principles using a Java library for manipulating binary data that we developed for this purpose, based on priority queue and symbol table implementations from earlier lectures.
+
 11. #### **Reductions**
 12. #### **Linear Programming**
 13. #### **Intractability**
