@@ -65,7 +65,8 @@ Undecidability:
 					 	}
 					}
 				
-				
+			- The program is the most compact way to compare the data
+			- Compression amounts to finding the program that created it.				
 				
 				
 				
