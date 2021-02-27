@@ -29,5 +29,19 @@ import edu.princeton.cs.algs4.BinaryStdOut;
  */
 
 public class Huffman {
+	
+	private class Node implements Comparable<Node>
+	{
+		private final char c;
+		private final int freq;
+		private final Node left, right;
+		
+		@Override
+		public int compareTo(Node o) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+	}
 
 }
