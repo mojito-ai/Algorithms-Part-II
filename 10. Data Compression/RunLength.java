@@ -14,7 +14,7 @@ import edu.princeton.cs.algs4.BinaryStdOut;
 * <li>  15	  7    7    11
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   26-02-2021
 * 
 */
@@ -31,6 +31,17 @@ public class RunLength {
 	private static final int R = 256;	//maximum run length count
 	private static final int lgR = 8;	//no of bits per count
 	
+	/**
+	 * An application: Compress a bitmap
+	 * <li> Typical black-and-white-scanned image.
+	 * <li> 300 pixels/inch.
+	 * <li> 8.5-by-11 inches.
+	 * <li> 300 × 8.5 × 300 × 11 = 8.415 million bits.
+	 * 
+	 * <li> Observation. Bits are mostly white.
+	 * <li> Typical amount of text on a page.
+	 * <li> 40 lines × 75 chars per line = 3,000 chars.
+	 */
 	public static void compress()
 	{
 		char cnt=0;
@@ -57,6 +68,10 @@ public class RunLength {
 		BinaryStdOut.close();
 	}
 	
+	/**
+	 * Q. What is the smallest compression ratio using run length coding with 8 bit run length
+	 * <li> A. 8/255
+	 */
 	public static void expand()
 	{
 		boolean bit=false;
