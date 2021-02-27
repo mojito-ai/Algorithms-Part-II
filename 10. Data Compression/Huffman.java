@@ -70,10 +70,13 @@ public class Huffman {
 		
 	}
 	
+	/**
+	 * Running time : Linear in input size N
+	 */
 	public void expand()
 	{
-		Node root=readTrie();
-		int N=BinaryStdIn.readInt();
+		Node root=readTrie();	//read in encoding trie
+		int N=BinaryStdIn.readInt();	//read in number of chars
 		for(int i=0; i<N; i++)
 		{
 			Node x=root;
@@ -81,7 +84,7 @@ public class Huffman {
 			{
 				if(!BinaryStdIn.readBoolean())
 					x=x.left;
-				else
+				else				//expand codeword for ith character
 					x=x.right;
 			}
 			BinaryStdOut.write(x.c, 8);
