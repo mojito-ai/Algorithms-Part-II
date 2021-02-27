@@ -69,5 +69,29 @@ public class Huffman {
 		}
 		
 	}
+	
+	public void expand()
+	{
+		Node root=readTrie();
+		int N=BinaryStdIn.readInt();
+		for(int i=0; i<N; i++)
+		{
+			Node x=root;
+			while(!x.isLeaf())
+			{
+				if(!BinaryStdIn.readBoolean())
+					x=x.left;
+				else
+					x=x.right;
+			}
+			BinaryStdOut.write(x.c, 8);
+		}
+		BinaryStdOut.close();
+	}
+	
+	public Node readTrie()
+	{
+		
+	}
 
 }
