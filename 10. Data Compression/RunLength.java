@@ -18,6 +18,16 @@
 
 public class RunLength {
 
+	/*
+	 * Q. How many bits to store the counts?
+	 * A. We will use 8 bits (but 4 in the example above)
+	 * 
+	 * Q. What to do when run length exceeds max count?
+	 * A. If longer than 255, intersperse run of length 0.
+	 */
+	private static final int R = 256;
+	private static final int lgR = 8;
+	
 	public static void compress()
 	{
 		
