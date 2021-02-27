@@ -28,8 +28,8 @@ public class RunLength {
 	 * Q. What to do when run length exceeds max count?
 	 * A. If longer than 255, intersperse run of length 0.
 	 */
-	private static final int R = 256;
-	private static final int lgR = 8;
+	private static final int R = 256;	//maximum run length count
+	private static final int lgR = 8;	//no of bits per count
 	
 	public static void compress()
 	{
@@ -62,11 +62,11 @@ public class RunLength {
 		boolean bit=false;
 		while(!BinaryStdIn.isEmpty())
 		{
-			char run = BinaryStdIn.readChar(lgR);
+			char run = BinaryStdIn.readChar(lgR);	//read 8 bit count from standard input
 			for(int i=0; i<run; i++)
-				BinaryStdOut.write(bit);
+				BinaryStdOut.write(bit);	//write 1 bit to standard output
 			bit=!bit;
 		}
-		BinaryStdOut.close();
+		BinaryStdOut.close();	//pad 0s for byte alignment
 	}
 }
