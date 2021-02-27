@@ -59,6 +59,14 @@ public class RunLength {
 	
 	public static void expand()
 	{
-		
+		boolean bit=false;
+		while(!BinaryStdIn.isEmpty())
+		{
+			char run = BinaryStdIn.readChar(lgR);
+			for(int i=0; i<run; i++)
+				BinaryStdOut.write(bit);
+			bit=!bit;
+		}
+		BinaryStdOut.close();
 	}
 }
