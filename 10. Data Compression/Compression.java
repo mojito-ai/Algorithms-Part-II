@@ -63,5 +63,26 @@ public class Compression {
 	 *
 	 *2. Compression ratio: Bits in C(B)/Bits in B
 	 *
+	 *50-75% or better compression ratio for natural language.
+	 */
+	
+	/*
+	 * Food for thought: 
+	 * 
+	 * 1. Data compression has been omnipresent since antiquity:
+	 * Number systems.
+	 * Natural languages.
+	 * Mathematical notation.
+	 * 
+	 * 2. Has played a central role in communications technology,
+	 * Grade 2 Braille.
+	 * Morse code.
+	 * Telephone system.
+	 * 
+	 * 3. And is part of modern life.
+	 * MP3.
+	 * MPEG.
+	 * 
+	 * Q. What role will it play in the future?
 	 */
 }
