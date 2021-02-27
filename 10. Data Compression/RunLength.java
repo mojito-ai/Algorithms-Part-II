@@ -1,3 +1,6 @@
+import edu.princeton.cs.algs4.BinaryStdIn;
+import edu.princeton.cs.algs4.BinaryStdOut;
+
 /**
 * <h1> <b>Run-Length Coding</b> Removing simple type of redundancy in bitstream.</h1>
 * 
@@ -30,7 +33,28 @@ public class RunLength {
 	
 	public static void compress()
 	{
-		
+		char cnt=0;
+		boolean b, old = false;
+		while(!BinaryStdIn.isEmpty())
+		{
+			b=BinaryStdIn.readBoolean();
+			if(b!=old)
+			{
+				BinaryStdOut.write(cnt);
+				old=!old;
+				cnt=0;
+			}
+			
+			if(cnt==R-1)
+			{
+				BinaryStdOut.write(cnt);
+				cnt=0;
+				BinaryStdOut.write(cnt);
+			}
+			cnt++;
+		}
+		BinaryStdOut.write(cnt);
+		BinaryStdOut.close();
 	}
 	
 	public static void expand()
