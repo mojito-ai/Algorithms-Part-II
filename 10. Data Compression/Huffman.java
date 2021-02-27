@@ -40,7 +40,7 @@ public class Huffman {
 	 * <li> Compression: Method 1=Start at leaf, follow path up to the root, print bits in reverse
 	 * 					 Method 2=Create a ST of key value pairs.
 	 * 
-	 * <li>
+	 * <li> Expansion: Start at root, Go left if bit is 0, go right if 1. If leaf node, print char and return to root.
 	 * @author _CrY
 	 *
 	 */
