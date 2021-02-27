@@ -114,9 +114,34 @@ public class Compression {
 	 * @author _CrY
 	 *
 	 */
+	@SuppressWarnings("unused")
 	private class BinaryStdIn{
 		
-		
+		boolean readBoolean() //read 1 bit of data and return as a boolean value
+		{
+			return false;
+			
+		}
+		char readChar()// read 8 bits of data and return as a char value
+		{
+			return 0;
+			
+		}
+		char readChar(int r)// read r bits of data and return as a char value
+		{
+			return 0;
+			
+		}
+		//[similar methods for byte (8 bits); short (16 bits); int (32 bits); long and double (64 bits)]
+		boolean isEmpty() //is the bitstream empty?
+		{
+			return false;
+			
+		}
+		void close() //close the bitstream
+		{
+			
+		}
 	}
 	
 	private class BinaryStdOut{
