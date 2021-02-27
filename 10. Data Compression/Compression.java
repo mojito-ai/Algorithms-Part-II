@@ -85,4 +85,26 @@ public class Compression {
 	 * 
 	 * Q. What role will it play in the future?
 	 */
+	
+	/*
+	 * Genomic code:
+	 * 
+	 * Genome. String over the alphabet { A, C, T, G }.
+	 * Goal. Encode an N-character genome: ATAGATGCATAG ...
+	 * 
+	 * 
+	 * 1. Standard ASCII encoding.
+	 * 	-8 bits per char.
+	 * 	-8 N bits.
+	 *
+	 * char hex binary
+	 * A 	41 	01000001
+	 * C 	43 	01000011
+	 * T 	54 	01010100
+	 * G 	47 	01000111
+	 * 
+	 * Fixed-length code. k-bit code supports alphabet of size 2k
+	 * 
+	 * Amazing but true. Initial genomic databases in 1990s used ASCII.
+	 */
 }
