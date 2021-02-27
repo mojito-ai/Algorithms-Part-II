@@ -53,5 +53,13 @@ public class Compression {
 	 * Compress: Generates a "compressed" representation C(B) [We hope it uses fewer bits]
 	 * Expand: Reconstructs original bitstream B.
 	 * 
+	 * 1. Basic model for data compression:
+	 * 
+	 * bistream B			_______			compressed version C(B)		_______		Orignal Bitstream B
+	 * 						|	  |										|	  |
+	 * 0110110101...	-->	|	  |	-->			1101011111...		-->	|	  |	-->	1101011111...
+	 *						|_____|	  									|_____|	
+	 *						Compress									 Expand
+	 *
 	 */
 }
