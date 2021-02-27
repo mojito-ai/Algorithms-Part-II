@@ -32,11 +32,11 @@ public class Huffman {
 	
 	private class Node implements Comparable<Node>
 	{
-		private final char c;
-		private final int freq;
+		private final char c;	//used only for leaf nodes
+		private final int freq;	//used only for compress
 		private final Node left, right;
-		
-		Node(char c, int freq, Node left, Node right)
+			
+		Node(char c, int freq, Node left, Node right)	//initialising constructor
 		{
 			this.c=c;
 			this.freq=freq;
@@ -44,14 +44,14 @@ public class Huffman {
 			this.right=right;
 		}
 		
-		private boolean isLeaf()
+		public boolean isLeaf()
 		{
-			return left==null && right==null;
+			return left==null && right==null;	//is node a leaf?
 		}
+		
 		@Override
-		public int compareTo(Node o) {
-			// TODO Auto-generated method stub
-			return 0;
+		public int compareTo(Node that) {
+			return this.freq-that.freq;		//compare nodes by frequency.
 		}
 		
 	}
