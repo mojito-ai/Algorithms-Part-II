@@ -30,6 +30,15 @@ import edu.princeton.cs.algs4.BinaryStdOut;
 
 public class Huffman {
 	
+	/**
+	 * Prefix free codes: trie representation
+	 * <li> Q. How to represent the prefix free code?
+	 * <li> A. A binary trie: Chars in leaves, Codeword is path from root to leaf.
+	 * 
+	 * 
+	 * @author _CrY
+	 *
+	 */
 	private class Node implements Comparable<Node>
 	{
 		private final char c;	//used only for leaf nodes
