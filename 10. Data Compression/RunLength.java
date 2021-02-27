@@ -18,4 +18,13 @@
 
 public class RunLength {
 
+	public static void compress()
+	{
+		
+	}
+	
+	public static void expand()
+	{
+		
+	}
 }
