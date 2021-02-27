@@ -107,4 +107,19 @@ public class Compression {
 	 * 
 	 * Amazing but true. Initial genomic databases in 1990s used ASCII.
 	 */
+	
+	/**
+	 * Binary standard input and standard output. Libraries to read and write bits from standard input and to standard output.
+	 *
+	 * @author _CrY
+	 *
+	 */
+	private class BinaryStdIn{
+		
+		
+	}
+	
+	private class BinaryStdOut{
+		
+	}
 }
