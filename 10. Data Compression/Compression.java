@@ -144,7 +144,28 @@ public class Compression {
 		}
 	}
 	
+	@SuppressWarnings("unused")
 	private class BinaryStdOut{
+
+		void write(boolean b) //write the specified bit
+		{
+			
+		}
+		void write(char c) //write the specified
+		{
+			
+		}
 		
+		void write(char c, int r) //write the r least significant bits of the specified char
+		{
+			
+		}
+		
+		//[similar methods for byte (8 bits); short (16 bits); int (32 bits); long and double (64 bits)]
+		
+		void close() //close the bitstream
+		{
+			
+		}
 	}
 }
