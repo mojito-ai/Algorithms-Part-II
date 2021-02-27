@@ -92,9 +92,17 @@ public class Huffman {
 		BinaryStdOut.close();
 	}
 	
-	private static Node readTrie()
+	private Node readTrie()
 	{
+		if(BinaryStdIn.readBoolean())
+		{
+			char c=BinaryStdIn.readChar(8);
+			return new Node(c, 0 ,null, null);
+		}
 		
+		Node x=readTrie();
+		Node y=readTrie();
+		return new Node('\0', 0, x, y);
 	}
 	
 	@SuppressWarnings("unused")
