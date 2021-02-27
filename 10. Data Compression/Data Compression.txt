@@ -15,3 +15,11 @@ Date representation: Three different ways to represent 12/31/1999.
 	
 		00000000000000000000000000001100 00000000000000000000000000011111 00000000000000000000011111001111		96 bits
 					12								31									1999
+					
+	3. A 4-bit field, a 5-bit field and a 12 bit field (BinaryStdOut)
+		BinaryStdOut.write(month,4);
+		BinaryStdOut.write(day,5);
+		BinaryStdOut.write(year,12);
+		
+		1100 11111 011111001111 000		21 bits (+3 for byte alignment at close)
+		12		31		1999		
