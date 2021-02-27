@@ -92,9 +92,24 @@ public class Huffman {
 		BinaryStdOut.close();
 	}
 	
-	public Node readTrie()
+	private static Node readTrie()
 	{
 		
+	}
+	
+	@SuppressWarnings("unused")
+	private static void writeTrie(Node x)
+	{
+		if(x.isLeaf())
+		{
+			BinaryStdOut.write(true);
+			BinaryStdOut.write(x.c, 8);
+			return;
+		}
+		
+		BinaryStdOut.write(false);
+		writeTrie(x.left);
+		writeTrie(x.right);
 	}
 
 }
