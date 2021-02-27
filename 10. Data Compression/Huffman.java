@@ -12,6 +12,15 @@ import edu.princeton.cs.algs4.BinaryStdOut;
 * 
 */
 
+/*	Variable Length codes: Use different number of bits to encode different chars.
+ *	Ex. Morse code: 
+ *						. . . _ _ _ . . .
+ *
+ * Issue: Ambiguity = SOS? V7? IAMIE? EEWNI? 
+ * 
+ * 
+ */
+
 public class Huffman {
 
 }
