@@ -22,6 +22,28 @@
 * @since   26-02-2021
 * 
 */
+
+/*
+ * Applications: 
+ * 
+ * 1. Generic file compression.
+ * Files: GZIP, BZIP, 7z.
+ * Archivers: PKZIP.
+ * File systems: NTFS, HFS+, ZFS.
+ * 
+ * 2. Multimedia.
+ * Images: GIF, JPEG.
+ * Sound: MP3.
+ * Video: MPEG, DivX™, HDTV.
+ * 
+ * 3. Communication.
+ * ITU-T T4 Group 3 Fax.
+ * V.42bis modem.
+ * Skype.
+ * 
+ * 4. Databases. Google, Facebook, ....
+ * 
+ */
 public class Compression {
 
 }
