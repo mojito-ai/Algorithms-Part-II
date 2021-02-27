@@ -61,5 +61,7 @@ public class Compression {
 	 *						|_____|	  									|_____|	
 	 *						Compress									 Expand
 	 *
+	 *2. Compression ratio: Bits in C(B)/Bits in B
+	 *
 	 */
 }
