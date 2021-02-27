@@ -35,7 +35,12 @@ public class Huffman {
 	 * <li> Q. How to represent the prefix free code?
 	 * <li> A. A binary trie: Chars in leaves, Codeword is path from root to leaf.
 	 * 
+	 * Prefix free codes: Compression and expansion
 	 * 
+	 * <li> Compression: Method 1=Start at leaf, follow path up to the root, print bits in reverse
+	 * 					 Method 2=Create a ST of key value pairs.
+	 * 
+	 * <li>
 	 * @author _CrY
 	 *
 	 */
