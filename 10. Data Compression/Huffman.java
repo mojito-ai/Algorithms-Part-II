@@ -16,9 +16,16 @@ import edu.princeton.cs.algs4.BinaryStdOut;
  *	Ex. Morse code: 
  *						. . . _ _ _ . . .
  *
- * Issue: Ambiguity = SOS? V7? IAMIE? EEWNI? 
+ * 		Issue: Ambiguity = SOS? V7? IAMIE? EEWNI? 
  * 
+ * 		In practise : Use a medium gap to seperate codewords
  * 
+ * Q. How to avoid ambiguity?
+ * A. Ensure that no codeword is a perfix of another.
+ * 
+ * 		Ex1: Fixed length code
+ * 		Ex2: Append special stop char to each codeword
+ * 		Ex3: general prefix free code
  */
 
 public class Huffman {
