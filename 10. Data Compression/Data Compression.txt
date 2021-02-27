@@ -27,10 +27,10 @@ Date representation: Three different ways to represent 12/31/1999.
 		
 Universal Data compression: US Patent 5,533,051 on "Methods for Data Compression", which is capable of compression all files.
 
-				Slashdot reports of the Zero Space Tunerô and BinaryAcceleratorô.
-				ì ZeoSync has announced a breakthrough in data compression
+				Slashdot reports of the Zero Space Tuner‚Ñ¢ and BinaryAccelerator‚Ñ¢.
+				‚Äú ZeoSync has announced a breakthrough in data compression
 				that allows for 100:1 lossless compression of random data. If
-				this is true, our bandwidth problems just got a lot smaller.Ö î
+				this is true, our bandwidth problems just got a lot smaller.‚Ä¶ ‚Äù
 				
 	1. Proposition. No algorithm can compress every bitstring.
 				
@@ -41,6 +41,11 @@ Universal Data compression: US Patent 5,533,051 on "Methods for Data Compression
 				- Continue until reaching bitstring of size 0.
 				- Implication: all bitstrings can be compressed to 0 bits!
 				
+				Pf 2. [by counting]
+				- Suppose your algorithm that can compress all 1,000-bit strings.
+				- 2^1000 possible bitstrings with 1,000 bits.
+				- Only 1 + 2 + 4 + ‚Ä¶ + 2^998 + 2^999 can be encoded with ‚â§ 999 bits.
+				- Similarly, only 1 in 2^499 bitstrings can be encoded with ‚â§ 500 bits!
 				
 				
 				
