@@ -1,0 +1,11 @@
+Writing binary data
+
+Date representation: Three different ways to represent 12/31/1999.
+
+	1. A character stream (StdOut)
+		StdOut.print(month + "/" + day + "/" + year);
+
+		00110001 00110010 00101111 00110111 00110001 00101111 00110001 00111001 00111001 00111001
+			1		2		/			3		1		/		1			9		9		9
+			
+	2. 
