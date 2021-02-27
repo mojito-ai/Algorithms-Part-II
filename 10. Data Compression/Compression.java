@@ -46,4 +46,12 @@
  */
 public class Compression {
 
+	/*
+	 * Lossless compression and expansion:
+	 * 
+	 * Message: Binary data B we want to compress
+	 * Compress: Generates a "compressed" representation C(B) [We hope it uses fewer bits]
+	 * Expand: Reconstructs original bitstream B.
+	 * 
+	 */
 }
