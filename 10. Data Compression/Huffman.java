@@ -36,6 +36,18 @@ public class Huffman {
 		private final int freq;
 		private final Node left, right;
 		
+		Node(char c, int freq, Node left, Node right)
+		{
+			this.c=c;
+			this.freq=freq;
+			this.left=left;
+			this.right=right;
+		}
+		
+		private boolean isLeaf()
+		{
+			return left==null && right==null;
+		}
 		@Override
 		public int compareTo(Node o) {
 			// TODO Auto-generated method stub
