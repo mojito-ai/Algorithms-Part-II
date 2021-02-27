@@ -5,7 +5,13 @@ Date representation: Three different ways to represent 12/31/1999.
 	1. A character stream (StdOut)
 		StdOut.print(month + "/" + day + "/" + year);
 
-		00110001 00110010 00101111 00110111 00110001 00101111 00110001 00111001 00111001 00111001
+		00110001 00110010 00101111 00110111 00110001 00101111 00110001 00111001 00111001 00111001		80 bits
 			1		2		/			3		1		/		1			9		9		9
 			
-	2. 
+	2. Three ints (BinaryStdOut)
+		BinaryStdOut.write(month);
+		BinaryStdOut.write(day);
+		BinaryStdOut.write(year);
+	
+		00000000000000000000000000001100 00000000000000000000000000011111 00000000000000000000011111001111		96 bits
+					12								31									1999
