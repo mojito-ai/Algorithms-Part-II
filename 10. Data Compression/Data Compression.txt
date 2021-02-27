@@ -31,3 +31,18 @@ Universal Data compression: US Patent 5,533,051 on "Methods for Data Compression
 				“ ZeoSync has announced a breakthrough in data compression
 				that allows for 100:1 lossless compression of random data. If
 				this is true, our bandwidth problems just got a lot smaller.… ”
+				
+	1. Proposition. No algorithm can compress every bitstring.
+				
+				Pf 1. [by contradiction]
+				- Suppose you have a universal data compression algorithm U that can compress every bitstream.
+				- Given bitstring B0, compress it to get smaller bitstring B1.
+				- Compress B1 to get a smaller bitstring B2.
+				- Continue until reaching bitstring of size 0.
+				- Implication: all bitstrings can be compressed to 0 bits!
+				
+				
+				
+				
+				
+				
