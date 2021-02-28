@@ -142,5 +142,16 @@ public class Huffman {
 		
 		return pq.delMin();
 	}
+	
+	/*
+	 * Shannon-Fano codes
+	 * Q. How to find best prefix-free code?
+	 * 
+	 * 		Shannon-Fano algorithm:
+	 * 			-Partition symbols S into two subsets S0 and S1 of (roughly) equal freq.
+	 * 			-Codewords for symbols in S0 start with 0; for symbols in S1 start with 1.
+	 * 			-Recur in S0 and S1.
+	 * 
+	 */
 
 }
