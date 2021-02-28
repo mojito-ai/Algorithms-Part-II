@@ -243,5 +243,11 @@ public class Huffman {
 	 *    Problem 2. Not optimal!
 	 */										
 	
+	/*
+	 * Q. Suppose you have a n-byte input stream consisting of n 7-bit ASCII characters. Find compression ratio if each
+	 * 	  ASCII character appears with equal frequency & we will use Huffman compression
+	 * A. 7/8	The Huffman Trie will be complete binary trie of height 7 (with the 128 characters in leaves)
+	 * 
+	 */
 
 }
