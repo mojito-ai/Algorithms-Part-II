@@ -1,5 +1,6 @@
 import edu.princeton.cs.algs4.BinaryStdIn;
 import edu.princeton.cs.algs4.BinaryStdOut;
+import edu.princeton.cs.algs4.MinPQ;
 
 /**
 * <h1> <b>Huffman Compression</b> By David Huffman</h1>
@@ -123,9 +124,23 @@ public class Huffman {
 		writeTrie(x.right);
 	}
 	
+	@SuppressWarnings("unused")
 	private static Node buildTrie(int [] freq)
 	{
+		MinPQ<Node> pq = new MinPQ<>();
+		for(char i=0; i<R; i++)
+			if(freq[i]>0)
+				pq.insert(new Node(i, freq[i], null, null));
 		
+		while(pq.size()>1)
+		{
+			Node x=pq.delMin();
+			Node y=pq.delMin();
+			Node parent=new Node('\0', x.freq+y.freq, x, y);
+			pq.insert(x);
+		}
+		
+		return pq.delMin();
 	}
 
 }
