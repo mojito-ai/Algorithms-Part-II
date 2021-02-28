@@ -21,7 +21,7 @@ import edu.princeton.cs.algs4.BinaryStdOut;
  * 		In practise : Use a medium gap to seperate codewords
  * 
  * Q. How to avoid ambiguity?
- * A. Ensure that no codeword is a perfix of another.
+ * A. Ensure that no codeword is a prefix of another.
  * 
  * 		Ex1: Fixed length code
  * 		Ex2: Append special stop char to each codeword
@@ -29,6 +29,9 @@ import edu.princeton.cs.algs4.BinaryStdOut;
  */
 
 public class Huffman {
+	
+	// alphabet size of extended ASCII
+    private static final int R = 256;
 	
 	/**
 	 * Prefix free codes: trie representation
@@ -44,7 +47,7 @@ public class Huffman {
 	 * @author _CrY
 	 *
 	 */
-	private class Node implements Comparable<Node>
+	private static class Node implements Comparable<Node>
 	{
 		private final char c;	//used only for leaf nodes
 		private final int freq;	//used only for compress
@@ -73,7 +76,7 @@ public class Huffman {
 	/**
 	 * Running time : Linear in input size N
 	 */
-	public void expand()
+	public static void expand()
 	{
 		Node root=readTrie();	//read in encoding trie
 		int N=BinaryStdIn.readInt();	//read in number of chars
@@ -92,7 +95,7 @@ public class Huffman {
 		BinaryStdOut.close();
 	}
 	
-	private Node readTrie()
+	private static Node readTrie()
 	{
 		if(BinaryStdIn.readBoolean())
 		{
@@ -118,6 +121,11 @@ public class Huffman {
 		BinaryStdOut.write(false);
 		writeTrie(x.left);
 		writeTrie(x.right);
+	}
+	
+	private static Node buildTrie(int [] freq)
+	{
+		
 	}
 
 }
