@@ -1,6 +1,7 @@
 import edu.princeton.cs.algs4.BinaryStdIn;
 import edu.princeton.cs.algs4.BinaryStdOut;
 import edu.princeton.cs.algs4.MinPQ;
+import edu.princeton.cs.algs4.Huffman.Node;
 
 /**
 * <h1> <b>Huffman Compression</b> By David Huffman</h1>
@@ -80,6 +81,49 @@ public class Huffman {
 		}
 		
 	}
+	
+	public static void compress() {
+        // read the input
+        String s = BinaryStdIn.readString();
+        char[] input = s.toCharArray();
+
+        // tabulate frequency counts
+        int[] freq = new int[R];
+        for (int i = 0; i < input.length; i++)
+            freq[input[i]]++;
+
+        // build Huffman trie
+        Node root = buildTrie(freq);
+
+        // build code table
+        String[] st = new String[R];
+        buildCode(st, root, "");
+
+        // print trie for decoder
+        writeTrie(root);
+
+        // print number of bytes in original uncompressed message
+        BinaryStdOut.write(input.length);
+
+        // use Huffman code to encode input
+        for (int i = 0; i < input.length; i++) {
+            String code = st[input[i]];
+            for (int j = 0; j < code.length(); j++) {
+                if (code.charAt(j) == '0') {
+                    BinaryStdOut.write(false);
+                }
+                else if (code.charAt(j) == '1') {
+                    BinaryStdOut.write(true);
+                }
+                else throw new IllegalStateException("Illegal state");
+            }
+        }
+
+        // close output stream
+        BinaryStdOut.close();
+    }
+
+	
 	
 	/**
 	 * Running time : Linear in input size N
