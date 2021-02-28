@@ -10,6 +10,10 @@ import edu.princeton.cs.algs4.MinPQ;
 * <li> Select two tries with min weight
 * <li> Merge into single trie with cumulative weight.
 * 
+* <li> Running time: N+RlogR; 		N=Input size		R=Alphabet size
+* <li> Proposition. [Huffman 1950s] Huffman algorithm produces an optimal prefix-free code. (optimal in the sense that no prefix free code uses fewer bits
+* <li> Pf. See textbook.
+* 
 * @author  Mohit Sharma
 * @version 2.0
 * @since   27-02-2021
