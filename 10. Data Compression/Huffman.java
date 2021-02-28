@@ -5,7 +5,10 @@ import edu.princeton.cs.algs4.MinPQ;
 /**
 * <h1> <b>Huffman Compression</b> By David Huffman</h1>
 * 
-* <li> 
+* <li> Count frequency for each character in input
+* <li> Start with one node corresponding to each character with weight equal to frequency
+* <li> Select two tries with min weight
+* <li> Merge into single trie with cumulative weight.
 * 
 * @author  Mohit Sharma
 * @version 1.0
