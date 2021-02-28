@@ -11,7 +11,7 @@ import edu.princeton.cs.algs4.MinPQ;
 * <li> Merge into single trie with cumulative weight.
 * 
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   27-02-2021
 * 
 */
@@ -145,14 +145,14 @@ public class Huffman {
 	{
 		MinPQ<Node> pq = new MinPQ<>();
 		for(char i=0; i<R; i++)
-			if(freq[i]>0)
+			if(freq[i]>0)			//initialize PQ with singleton tries
 				pq.insert(new Node(i, freq[i], null, null));
 		
 		while(pq.size()>1)
 		{
-			Node x=pq.delMin();
+			Node x=pq.delMin();		//merge two smallest tries
 			Node y=pq.delMin();
-			Node parent=new Node('\0', x.freq+y.freq, x, y);
+			Node parent=new Node('\0', x.freq+y.freq, x, y);	//not used for internal nodes
 			pq.insert(x);
 		}
 		
