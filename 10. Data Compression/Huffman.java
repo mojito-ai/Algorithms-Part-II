@@ -1,7 +1,6 @@
 import edu.princeton.cs.algs4.BinaryStdIn;
 import edu.princeton.cs.algs4.BinaryStdOut;
 import edu.princeton.cs.algs4.MinPQ;
-import edu.princeton.cs.algs4.Huffman.Node;
 
 /**
 * <h1> <b>Huffman Compression</b> By David Huffman</h1>
@@ -123,7 +122,17 @@ public class Huffman {
         BinaryStdOut.close();
     }
 
-	
+	 // make a lookup table from symbols and their encodings
+    private static void buildCode(String[] st, Node x, String s) {
+        if (!x.isLeaf()) {
+            buildCode(st, x.left,  s + '0');
+            buildCode(st, x.right, s + '1');
+        }
+        else {
+            st[x.c] = s;
+        }
+    }
+
 	
 	/**
 	 * Running time : Linear in input size N
