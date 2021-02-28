@@ -103,6 +103,12 @@ public class Huffman {
 		BinaryStdOut.close();
 	}
 	
+	/**
+	 * <li> Implementation.
+	 * <li> Pass 1: tabulate char frequencies and build trie.
+	 * <li> Pass 2: encode file by traversing trie or lookup table.
+	 * @return
+	 */
 	private static Node readTrie()
 	{
 		if(BinaryStdIn.readBoolean())
