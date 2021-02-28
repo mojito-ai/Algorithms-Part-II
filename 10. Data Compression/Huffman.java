@@ -127,6 +127,19 @@ public class Huffman {
 		writeTrie(x.right);
 	}
 	
+	/**
+	 * Q. How to find best prefix-free code?
+	 * 
+	 * <li> Huffman algorithm:
+	 * <li> Count frequency freq[i] for each char i in input.
+	 * <li> Start with one node corresponding to each char i (with weight freq[i]).
+	 * 
+	 * <li> Repeat until single trie formed:
+	 * <li>		– select two tries with min weight freq[i] and freq[j]
+	 * <li>		– merge into single trie with weight freq[i] + freq[j]
+	 * @param freq
+	 * @return
+	 */
 	@SuppressWarnings("unused")
 	private static Node buildTrie(int [] freq)
 	{
