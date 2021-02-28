@@ -152,6 +152,17 @@ public class Huffman {
 	 * 			-Codewords for symbols in S0 start with 0; for symbols in S1 start with 1.
 	 * 			-Recur in S0 and S1.
 	 * 
-	 */
+	 * char freq encoding				char	freq	encoding
+	 * A 	5	 0...					B		2		1...
+	 * C 	1 	 0...					D		1		1...
+	 *									R		2		1...
+	 * S0=codewords starting 			!		1		1...
+	 *    with 0
+	 *    								S1=codewords starting with 1
+	 *    
+	 *    Problem 1. How to divide up symbols?
+	 *    Problem 2. Not optimal!
+	 */										
+	
 
 }
