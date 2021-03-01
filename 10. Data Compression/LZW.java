@@ -36,9 +36,12 @@ import edu.princeton.cs.algs4.TST;
  * 		Represent variable-length symbols with fixed-length codes. [LZW]
  * 
  * 2. Lossy compression. [not covered in this course]
- * 		JPEG, MPEG, MP3, …
- * 		FFT, wavelets, fractals, …
+ * 		JPEG, MPEG, MP3, â€¦
+ * 		FFT, wavelets, fractals, â€¦
  * 
+ * 3. Theoretical limits on compression. Shannon entropy: H(x)= -âˆ‘p(xi)lg(p(xi))
+ *
+ * 4. Practical compression. Use extra knowledge whenever possible.
  */
 public class LZW {
 
