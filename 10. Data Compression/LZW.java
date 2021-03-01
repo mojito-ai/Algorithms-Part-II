@@ -136,7 +136,9 @@ public class LZW {
 	 *     3. LZW.											LZW patent #4,558,302 expired in U.S. on June 20, 2003
 	 *     4. Deflate / zlib = LZ77 variant + Huffman.
      * 
-     * 
+     * Unix compress, GIF, TIFF, V.42bis modem: LZW.
+     * zip, 7zip, gzip, jar, png, pdf: deflate / zlib.
+     * iPhone, Sony Playstation 3, Apache HTTP server: deflate / zlib.
      * 
      */
 }
