@@ -51,20 +51,20 @@ public class LZW {
 		 */
 		TST<Integer> st = new TST<>();
 		for(int i=0; i<R; i++)
-			st.put(""+(char)i, i);
+			st.put(""+(char)i, i);	//codewords for single char, radix R keys
 		int code = R+1;
 		
-		while(input.length()>0)
+		while(input.length()>0)	
 		{
-			String s=st.longestPrefixOf(input);
-			BinaryStdOut.write(st.get(s),W);
+			String s=st.longestPrefixOf(input);	//find longest prefix match s
+			BinaryStdOut.write(st.get(s),W);	//write W-bit codeword for s
 			int t=s.length();
 			if(t<input.length() && code<L)
-				st.put(input.substring(0,t+1), code++);
-			input=input.substring(t);
+				st.put(input.substring(0,t+1), code++);	//add new codeword
+			input=input.substring(t);	//scan past s in input
 		}
 		
-		BinaryStdOut.write(R,W);
+		BinaryStdOut.write(R,W);	//write stop codeword & close input stream
 		BinaryStdOut.close();
 	}
 }
