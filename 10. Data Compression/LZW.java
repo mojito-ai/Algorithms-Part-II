@@ -30,6 +30,15 @@ import edu.princeton.cs.algs4.TST;
 
 public class LZW {
 
+	/*
+	 * LZW Implementation Details
+	 * 
+	 * 1. How big to make ST?
+	 * 		How long is message?
+	 * 		Whole message similar model?
+	 * 		[many other variations]
+	 * 
+	 */
 	private static final int R=256; //extended ASCII
 	private static final int W=8;	//fixed length W-bit codewords
 	private static final int L=999;
