@@ -28,7 +28,8 @@
 
 10. **Data Compression:** We study and implement several classic data compression schemes, including run-length coding, Huffman compression, and LZW compression. We develop efficient implementations from first principles using a Java library for manipulating binary data that we developed for this purpose, based on priority queue and symbol table implementations from earlier lectures.
 
-11. #### **Reductions**
+11. **Reductions:** Our goal is to develop ways to classify problems according to their computational requirements. We introduce the concept of reduction as a technique for studying the relationship among problems. People use reductions to design algorithms, establish lower bounds, and classify problems in terms of their computational requirements.
+
 12. #### **Linear Programming**
 13. #### **Intractability**
 
