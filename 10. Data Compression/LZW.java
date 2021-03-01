@@ -16,6 +16,11 @@ import edu.princeton.cs.algs4.BinaryStdOut;
 * <li> Must transmit the model.
 * <li> Ex: Huffman code.
 * 
+* <li> 3. Adaptive model. Progressively learn and update model as you read text.
+* <li> More accurate modeling produces better compression.
+* <li> Decoding must start from beginning.
+* <li> Ex: LZW
+* 
 * @author  Mohit Sharma
 * @version 1.0
 * @since   1-03-2021
