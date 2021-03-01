@@ -45,6 +45,10 @@ public class LZW {
 	public static void compress()
 	{
 		String input = BinaryStdIn.readString();
+		/*
+		 * Q. How to represent LZW compression code table?
+		 * A. A trie to support longest prefix match.
+		 */
 		TST<Integer> st = new TST<>();
 		for(int i=0; i<R; i++)
 			st.put(""+(char)i, i);
