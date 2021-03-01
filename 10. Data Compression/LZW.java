@@ -127,4 +127,16 @@ public class LZW {
         }
         BinaryStdOut.close();
     }
+    
+    /*
+     * LZW in the real world
+     * Lempel-Ziv and friends.
+	 *     1. LZ77.											LZ77 not patented widely used in open source
+	 *     2. LZ78.
+	 *     3. LZW.											LZW patent #4,558,302 expired in U.S. on June 20, 2003
+	 *     4. Deflate / zlib = LZ77 variant + Huffman.
+     * 
+     * 
+     * 
+     */
 }
