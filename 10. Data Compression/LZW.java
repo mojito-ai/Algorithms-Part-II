@@ -28,6 +28,18 @@ import edu.princeton.cs.algs4.TST;
 * 
 */
 
+/*
+ * Data compression summary
+ *
+ * 1. Lossless compression.
+ * 		Represent fixed-length symbols with variable-length codes. [Huffman]
+ * 		Represent variable-length symbols with fixed-length codes. [LZW]
+ * 
+ * 2. Lossy compression. [not covered in this course]
+ * 		JPEG, MPEG, MP3, …
+ * 		FFT, wavelets, fractals, …
+ * 
+ */
 public class LZW {
 
 	/*
