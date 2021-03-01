@@ -86,6 +86,10 @@ public class LZW {
         String[] st = new String[L];
         int i; // next available codeword value
 
+        /*
+         * Q. How to represent LZW expansion code table?
+         * A. An array of size 2W.
+         */
         // initialise symbol table with all 1-character strings
         for (i = 0; i < R; i++)
             st[i] = "" + (char) i;
