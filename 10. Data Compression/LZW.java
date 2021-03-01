@@ -73,11 +73,20 @@ public class LZW {
      * 12-bit codewords from standard input; expands them; and writes
      * the results to standard output.
      */
+	/*
+	 * LZW expansion.
+	 * Create ST associating string values with W-bit keys.
+	 * Initialize ST to contain single-char values.
+	 * Read a W-bit key.
+	 * Find associated string value in ST and write it out.
+	 * Update ST.
+	 * 
+	 */
     public static void expand() {
         String[] st = new String[L];
         int i; // next available codeword value
 
-        // initialize symbol table with all 1-character strings
+        // initialise symbol table with all 1-character strings
         for (i = 0; i < R; i++)
             st[i] = "" + (char) i;
         st[i++] = "";                        // (unused) lookahead for EOF
