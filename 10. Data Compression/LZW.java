@@ -34,6 +34,14 @@ public class LZW {
 	private static final int W=8;	//fixed length W-bit codewords
 	private static final int L=999;
 	
+	/**
+	 * LZW compression.
+	 * <li> Create ST associating W-bit codewords with string keys.
+	 * <li> Initialize ST with codewords for single-char keys.
+	 * <li> Find longest string s in ST that is a prefix of unscanned part of input.
+	 * <li> Write the W-bit codeword associated with s.
+	 * <li> Add s + c to ST, where c is next char in the input.
+	 */
 	public static void compress()
 	{
 		String input = BinaryStdIn.readString();
