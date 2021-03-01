@@ -29,4 +29,11 @@ import edu.princeton.cs.algs4.BinaryStdOut;
 
 public class LZW {
 
+	private static final int R=256; //extended ASCII
+	private static final int W=8;	//fixed length W-bit codewords
+	
+	public static void compress()
+	{
+		
+	}
 }
