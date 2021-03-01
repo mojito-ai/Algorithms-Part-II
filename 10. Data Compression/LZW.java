@@ -141,4 +141,25 @@ public class LZW {
      * iPhone, Sony Playstation 3, Apache HTTP server: deflate / zlib.
      * 
      */
+    
+    /*
+     * Lossless data compression benchmarks
+     * 
+     * year 			scheme 			bits / char
+     * 1967 			ASCII 			7.00
+     * 1950 			Huffman			4.70
+     * 1977 			LZ77 			3.94
+     * 1984 			LZMW 			3.32
+     * 1987 			LZH 			3.30
+     * 1987 		move-to-front 		3.24
+     * 1987 			LZB 			3.18
+     * 1987 			gzip 			2.71
+     * 1988 			PPMC 			2.48
+     * 1994 			SAKDC 			2.47
+     * 1994 			PPM 			2.34
+     * 1995 		Burrows-Wheeler 	2.29
+     * 1997 			BOA 			1.99
+     * 1999 			RK 				1.89
+     * 
+     */
 }
