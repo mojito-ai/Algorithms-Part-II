@@ -11,6 +11,11 @@ import edu.princeton.cs.algs4.BinaryStdOut;
 * <li> Not optimal: different texts have different statistical properties.
 * <li> Ex: ASCII, Morse code.
 * 
+* <li> 2. Dynamic model. Generate model based on text.
+* <li> Preliminary pass needed to generate model.
+* <li> Must transmit the model.
+* <li> Ex: Huffman code.
+* 
 * @author  Mohit Sharma
 * @version 1.0
 * @since   1-03-2021
