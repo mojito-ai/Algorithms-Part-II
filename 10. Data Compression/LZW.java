@@ -67,4 +67,34 @@ public class LZW {
 		BinaryStdOut.write(R,W);	//write stop codeword & close input stream
 		BinaryStdOut.close();
 	}
+	
+	/**
+     * Reads a sequence of bit encoded using LZW compression with
+     * 12-bit codewords from standard input; expands them; and writes
+     * the results to standard output.
+     */
+    public static void expand() {
+        String[] st = new String[L];
+        int i; // next available codeword value
+
+        // initialize symbol table with all 1-character strings
+        for (i = 0; i < R; i++)
+            st[i] = "" + (char) i;
+        st[i++] = "";                        // (unused) lookahead for EOF
+
+        int codeword = BinaryStdIn.readInt(W);
+        if (codeword == R) return;           // expanded message is empty string
+        String val = st[codeword];
+
+        while (true) {
+            BinaryStdOut.write(val);
+            codeword = BinaryStdIn.readInt(W);
+            if (codeword == R) break;
+            String s = st[codeword];
+            if (i == codeword) s = val + val.charAt(0);   // special case hack
+            if (i < L) st[i++] = val + s.charAt(0);
+            val = s;
+        }
+        BinaryStdOut.close();
+    }
 }
