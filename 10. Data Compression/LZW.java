@@ -38,6 +38,14 @@ public class LZW {
 	 * 		Whole message similar model?
 	 * 		[many other variations]
 	 * 
+	 * 2. What to do when ST fills up?
+	 * 		Throw away and start over. [GIF]
+	 * 		Throw away when not effective. [Unix compress]
+	 * 		[many other variations]
+	 * 
+	 * 3. Why not put longer substrings in ST?
+	 * 		[many variations have been developed]
+	 * 
 	 */
 	private static final int R=256; //extended ASCII
 	private static final int W=8;	//fixed length W-bit codewords
