@@ -37,3 +37,18 @@ Designing Algorithms
 		
 		Caveat. Reduction is invalid for edge-weighted graphs with negative weights (even if no negative cycles).
 		Remark. Can still solve shortest-paths problem in undirected graphs (if no negative cycles), but need more sophisticated techniques.
+		
+		
+		4. Linear time reductions involving familiar problems
+		
+		Sorting - finding the median, SPT scheduling, Element distinctness, Convex hull
+		
+		Shortest paths in digraph - Arbitrage, 												
+									Parallel scheduling (precedence constrained)
+									Shortest paths in undirected graphs (no negative weights)
+						
+								Linear Programming
+									
+		Maxflow - Bipartite matching 
+				  network reliability
+				  product distribution
