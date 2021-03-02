@@ -23,3 +23,8 @@ Designing Algorithms
 		Pf. Graham scan algorithm (see next slide).
 		Cost of convex hull. N log N + N.
 		
+		
+		Graham scan algorithm
+		・Choose point p with smallest (or largest) y-coordinate.
+		・Sort points by polar angle with p to get simple polygon.
+		・Consider points in order, and discard those that would create a clockwise turn. 
