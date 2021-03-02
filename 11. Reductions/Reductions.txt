@@ -55,3 +55,9 @@
 							
 	- Cost of solving X = total cost of solving Y + cost of reduction.
 													(preprocessing and postprocessing)
+													
+													
+	 Ex1.[finding the median reduces to sorting]
+			To find the median of N items:
+			・Sort N items.
+			・Return item in the middle.
