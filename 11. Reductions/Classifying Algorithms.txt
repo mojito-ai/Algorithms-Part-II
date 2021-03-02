@@ -62,9 +62,9 @@ Integer arithmetic reductions
 			1966 			Toom-Cook 						N^1 + ε
 			1971 			Schönhage–Strassen 				NlogNloglogN
 			2007 			Fürer						    NlogN 2^log*N
-			? 					? 							N
+			? 				? 								N
 			
 			number of bit operations to multiply two N-bit integers
 			
-			emark. GNU Multiple Precision Library uses one of five
-			different algorithm depending on size of operands.
+			Remark. GNU Multiple Precision Library uses one of five different algorithm depending on size of operands.
+			        (used in Maple, Mathematica, gcc, cryptography, ...)
