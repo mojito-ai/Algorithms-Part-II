@@ -52,3 +52,12 @@ Designing Algorithms
 		Maxflow - Bipartite matching 
 				  network reliability
 				  product distribution
+				  
+				  
+Establishing Lower Bounds
+
+		Goal. Prove that a problem requires a certain number of steps.
+		Ex. In decision tree model, any compare-based sorting algorithm requires Ω(N log N) compares in the worst case.
+		
+		Bad news. Very difficult to establish lower bounds from scratch.
+		Good news. Spread Ω(N log N) lower bound to Y by reducing sorting to Y.
