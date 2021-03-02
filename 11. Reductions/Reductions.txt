@@ -19,9 +19,9 @@
 	
 	2. Bird’s-eye view
 	
-	Desiderata: Classify problems according to computational requirements.
+	-Desiderata: Classify problems according to computational requirements.
 	
-	complexity 		order of growth 		examples
+	-complexity 		order of growth 		examples
 	
 	linear 				N 					min, max, median,
 											Burrows-Wheeler transform, ...
@@ -32,3 +32,13 @@
 	quadratic 			N2 					?
 		⋮				 ⋮ 					⋮
 	exponential 		cN 					?
+	
+	-Frustrating news. Huge number of problems have defied classification.
+	
+	-Desiderata. Classify problems according to computational requirements.
+	-Desiderata'.
+		Suppose we could (could not) solve problem X efficiently.
+		What else could (could not) we solve efficiently?
+		
+		“ Give me a lever long enough and a fulcrum on which to
+ 		  place it, and I shall move the world. ” — Archimedes
