@@ -28,3 +28,17 @@ Integer arithmetic reductions
 
 		Integer multiplication. Given two N-bit integers, compute their product.
 		Brute force. N^2 bit operations.
+		
+							1 1 0 1 0 1 0 1
+					    ×   0 1 1 1 1 1 0 1
+					    _____________________
+							1 1 0 1 0 1 0 1
+						  0 0 0 0 0 0 0 0
+					    1 1 0 1 0 1 0 1
+					  1 1 0 1 0 1 0 1
+				    1 1 0 1 0 1 0 1
+				  1 1 0 1 0 1 0 1
+				1 1 0 1 0 1 0 1
+			  0 0 0 0 0 0 0 0
+			  ______________________________
+			0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1
