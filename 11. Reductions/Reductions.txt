@@ -70,3 +70,8 @@
 			・Check adjacent pairs for equality
 			
 			Cost of solving element distinctness. N log N + N.
+			
+	 Ex3.[Mincut reduces to maxflow]
+	 		We can use hasAugmentingPath() method to find forward edges(not full) and backward edges(not empty)
+	 		-We can use BFS or DFS.
+	 		-Cost of solving mincut - V+E
