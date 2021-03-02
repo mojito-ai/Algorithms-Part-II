@@ -1,0 +1,12 @@
+Designing Algorithms
+
+		Def. Problem X reduces to problem Y if you can use an algorithm that solves Y to help solve X.
+		Design algorithm. Given algorithm for Y, can also solve X.
+		
+		Ex.
+			・3-collinear reduces to sorting. [assignment]
+			・Finding the median reduces to sorting.
+			・Element distinctness reduces to sorting.
+			・CPM reduces to topological sort. [shortest paths lecture]
+			・Arbitrage reduces to shortest paths. [shortest paths lecture]
+			・Burrows-Wheeler transform reduces to suffix sort. [assignment]
