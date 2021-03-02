@@ -93,3 +93,7 @@ Establishing Lower Bounds
 		Proposition. Sorting linear-time reduces to convex hull.
 			・Sorting instance: x1, x2, ... , xN.
 			・Convex hull instance: (x1, x1^2), (x2, x2^2), ... , (xN, xN^2).
+
+		Pf.
+		・Region { x : x2 ≥ x } is convex ⇒ all points are on hull.
+		・Starting at point with most negative x, counterclockwise order of hull points yields integers in ascending order.
