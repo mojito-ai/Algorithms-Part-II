@@ -6,3 +6,13 @@
 	-Reduction: design algorithms, establish lower bounds, classify problems.
 	-Linear programming: the ultimate practical problem-solving model.
 	-Intractability: problems beyond our reach.
+	
+	Shifting gears.
+	-From individual problems to problem-solving models.
+	-From linear/quadratic to polynomial/exponential scale.
+	-From details of implementation to conceptual framework.
+	
+	Goals.
+	-Place algorithms we've studied in a larger context.
+	-Introduce you to important and essential ideas.
+	-Inspire you to learn more about algorithms!
