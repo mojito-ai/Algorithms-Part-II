@@ -7,3 +7,19 @@ Classifying Algorithms Summary
 			・First, show that problem X linear-time reduces to Y.
 			・Second, show that Y linear-time reduces to X.
 			・Conclude that X and Y have the same complexity.
+			
+Caveat
+
+		SORT. Given N distinct integers, rearrange them in ascending order.
+		CONVEX HULL. Given N points in the plane, identify the extreme points of the convex hull (in counterclockwise order).
+		
+		Proposition. SORT linear-time reduces to CONVEX HULL.
+		Proposition. CONVEX HULL linear-time reduces to SORT.
+		Conclusion. SORT and CONVEX HULL have the same complexity.
+		
+		A possible real-world scenario.
+			・System designer specs the APIs for project.
+			・Alice implements sort() using convexHull().
+			・Bob implements convexHull() using sort().
+			・Infinite reduction loop!
+			・Who's fault?
