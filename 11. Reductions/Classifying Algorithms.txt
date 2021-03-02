@@ -42,3 +42,12 @@ Integer arithmetic reductions
 			  0 0 0 0 0 0 0 0
 			  ______________________________
 			0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1
+			
+			
+			problem 						arithmetic 				order of growth
+			integer multiplication 				a × b 					M(N)
+			integer division 					a / b, a mod b 			M(N)
+			integer square 						a^2 					M(N)
+			integer square root 				⎣√a ⎦ 					M(N)
+			
+		integer arithmetic problems with the same complexity as integer multiplication
