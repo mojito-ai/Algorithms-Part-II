@@ -89,3 +89,21 @@ Linear algebra reductions
 		least squares 					min ||Ax – b||2 				MM(N)
 		
 		numerical linear algebra problems with the same complexity as matrix multiplication
+		
+		1. Complexity of matrix multiplication history
+		
+		year 				algorithm 						order of growth
+		? 					brute force 					N^3
+		1969 				Strassen 						N^2.808
+		1978 				Pan 							N^2.796
+		1979 				Bini 							N^2.780
+		1981 				Schönhage						N^2.522
+		1982 				Romani 							N^2.517
+		1982 				Coppersmith-Winograd 			N^2.496
+		1986 				Strassen 						N^2.479
+		1989 				Coppersmith-Winograd 			N^2.376
+		2010 				Strother 						N^2.3737
+		2011			    Williams 						N^2.3727
+		? 						? 							N^2 + ε
+		
+		number of floating-point operations to multiply two N-by-N matrices
