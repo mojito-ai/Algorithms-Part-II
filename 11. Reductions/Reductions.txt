@@ -1,0 +1,8 @@
+1. Introduction
+
+	Overview: introduction to advanced topics
+	
+	a. Main topics. [next 3 lectures]
+	-Reduction: design algorithms, establish lower bounds, classify problems.
+	-Linear programming: the ultimate practical problem-solving model.
+	-Intractability: problems beyond our reach.
