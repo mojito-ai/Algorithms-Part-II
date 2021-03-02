@@ -1,6 +1,6 @@
 1. Introduction
 
-	Overview: introduction to advanced topics
+	1. Overview: introduction to advanced topics
 	
 	a. Main topics. [next 3 lectures]
 	-Reduction: design algorithms, establish lower bounds, classify problems.
@@ -16,3 +16,7 @@
 	-Place algorithms we've studied in a larger context.
 	-Introduce you to important and essential ideas.
 	-Inspire you to learn more about algorithms!
+	
+	2. Bird’s-eye view
+	
+	Desiderata: Classify problems according to computational requirements.
