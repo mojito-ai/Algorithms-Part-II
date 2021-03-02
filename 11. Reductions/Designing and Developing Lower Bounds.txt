@@ -33,3 +33,7 @@ Designing Algorithms
 		
 		Proposition. Undirected shortest paths (with nonnegative weights) reduces to directed shortest path.
 		Pf. Replace each undirected edge by two directed edges.
+		Cost of undirected shortest paths. E log V + E.
+		
+		Caveat. Reduction is invalid for edge-weighted graphs with negative weights (even if no negative cycles).
+		Remark. Can still solve shortest-paths problem in undirected graphs (if no negative cycles), but need more sophisticated techniques.
