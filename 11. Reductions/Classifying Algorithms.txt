@@ -23,3 +23,8 @@ Caveat
 			・Bob implements convexHull() using sort().
 			・Infinite reduction loop!
 			・Who's fault?
+			
+Integer arithmetic reductions
+
+		Integer multiplication. Given two N-bit integers, compute their product.
+		Brute force. N^2 bit operations.
