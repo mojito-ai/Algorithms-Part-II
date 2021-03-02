@@ -68,3 +68,13 @@ Integer arithmetic reductions
 			
 			Remark. GNU Multiple Precision Library uses one of five different algorithm depending on size of operands.
 			        (used in Maple, Mathematica, gcc, cryptography, ...)
+			        
+Linear algebra reductions
+
+		Matrix multiplication. Given two N-by-N matrices, compute their product.
+		Brute force. N^3 flops.
+		
+		0.1 0.2 0.8 0.1				0.4 0.3 0.1 0.1    0.16 0.11 0.34 0.62
+		0.5 0.3 0.9 0.6				0.2 0.2 0.0 0.6	   0.74 0.45 0.47 1.22
+		0.1 0.0 0.7 0.4		* 	
+		0.0 0.3 0.3 0.1
