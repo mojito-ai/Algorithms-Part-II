@@ -125,4 +125,9 @@ Summary
 		Complexity zoo
 		Complexity class. Set of problems sharing some computational property.
 		Bad news. Lots of complexity classes
+		
+		Reductions are important in theory to:
+				・Design algorithms.
+				・Establish lower bounds.
+				・Classify problems according to their computational requirements.
 			
