@@ -78,3 +78,13 @@ Establishing Lower Bounds
 				・If I could easily solve Y, then I could easily solve X.
 				・I can’t easily solve X.
 				・Therefore, I can’t easily solve Y 
+				
+		2. Lower bound for convex hull
+		
+		Proposition. In quadratic decision tree model, any algorithm for sorting N integers requires Ω(N log N) steps. [xi<xj or (xj–xi)(xk–xi)–(xj)(xj–xi)<0]
+		Proposition. Sorting linear-time reduces to convex hull. (linear or quadratic tests lower-bound mentality: if I can solve convex hull efficiently, I can sort efficiently)
+
+		Pf. [see next slide]
+		Implication. Any ccw-based convex hull algorithm requires Ω(N log N) ops.
+		allows linear or quadratic tests:
+		
