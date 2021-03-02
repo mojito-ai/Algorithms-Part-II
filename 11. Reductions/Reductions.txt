@@ -61,3 +61,12 @@
 			To find the median of N items:
 			・Sort N items.
 			・Return item in the middle.
+			
+			Cost of solving finding the median. N log N + 1 .
+
+	 Ex2.[element distinctness reduces to sorting]
+			To solve element distinctness on N items:
+			・Sort N items.
+			・Check adjacent pairs for equality
+			
+			Cost of solving element distinctness. N log N + N.
