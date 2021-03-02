@@ -130,4 +130,11 @@ Summary
 				・Design algorithms.
 				・Establish lower bounds.
 				・Classify problems according to their computational requirements.
-			
+		
+		Reductions are important in practice to:
+				・Design algorithms.
+				・Design reusable software modules.
+						– stacks, queues, priority queues, symbol tables, sets, graphs
+						– sorting, regular expressions, Delaunay triangulation
+						– MST, shortest path, maxflow, linear programming
+				・Determine difficulty of your problem and choose the right tool
