@@ -20,3 +20,15 @@
 	2. Bird’s-eye view
 	
 	Desiderata: Classify problems according to computational requirements.
+	
+	complexity 		order of growth 		examples
+	
+	linear 				N 					min, max, median,
+											Burrows-Wheeler transform, ...
+											
+	linearithmic 		NlogN 				sorting, convex hull,
+											closest pair, farthest pair, ...
+											
+	quadratic 			N2 					?
+		⋮				 ⋮ 					⋮
+	exponential 		cN 					?
