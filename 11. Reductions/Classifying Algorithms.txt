@@ -1,0 +1,9 @@
+Classifying Algorithms Summary
+
+		Desiderata. Problem with algorithm that matches lower bound.
+		Ex. Sorting and convex hull have complexity N log N.
+		
+		Desiderata'. Prove that two problems X and Y have the same complexity.
+			・First, show that problem X linear-time reduces to Y.
+			・Second, show that Y linear-time reduces to X.
+			・Conclude that X and Y have the same complexity.
