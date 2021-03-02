@@ -107,3 +107,16 @@ Linear algebra reductions
 		? 						? 							N^2 + ε
 		
 		number of floating-point operations to multiply two N-by-N matrices
+		
+Summary
+
+		Desiderata. Classify problems according to computational requirements.
+		Good news. Can put many problems into equivalence classes.
+		
+			complexity 						order of growth 					examples
+			linear 								N 								min, max, median,
+			linearithmic 						N log N 						sorting, convex hull,
+			M(N) 								?								integer multiplication, division, square root, ...
+			MM(N) 								? 								matrix multiplication, Ax = b, least square, determinant, ...
+			⋮									 ⋮								 ⋮
+			NP-complete 					probably not N^b 					SAT, IND-SET, ILP, ..
