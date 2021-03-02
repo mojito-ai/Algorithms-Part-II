@@ -28,3 +28,8 @@ Designing Algorithms
 		・Choose point p with smallest (or largest) y-coordinate.
 		・Sort points by polar angle with p to get simple polygon.
 		・Consider points in order, and discard those that would create a clockwise turn. 
+
+		3. Shortest paths on edge-weighted graphs and digraphs
+		
+		Proposition. Undirected shortest paths (with nonnegative weights) reduces to directed shortest path.
+		Pf. Replace each undirected edge by two directed edges.
