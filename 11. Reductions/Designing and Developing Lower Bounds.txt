@@ -13,3 +13,13 @@ Designing Algorithms
 			
 		Mentality. Since I know how to solve Y, can I use that algorithm to solve X ?
 					programmer’s version: I have code for Y. Can I use it for X?
+					
+		2. Convex Hull reduces to sorting: 			
+		
+		Sorting. Given N distinct integers, rearrange them in ascending order.
+		Convex hull. Given N points in the plane, identify the extreme points of the convex hull (in counterclockwise order).
+		
+		Proposition. Convex hull reduces to sorting.
+		Pf. Graham scan algorithm (see next slide).
+		Cost of convex hull. N log N + N.
+		
