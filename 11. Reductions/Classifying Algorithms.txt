@@ -51,3 +51,20 @@ Integer arithmetic reductions
 			integer square root 				⎣√a ⎦ 					M(N)
 			
 		integer arithmetic problems with the same complexity as integer multiplication
+		
+		
+		1. History of complexity of integer multiplication
+
+			year 			algorithm 				order of growth
+			? 				brute force 					N^2
+			1962 			Karatsuba-Ofman 				N^1.585
+			1963 			Toom-3, Toom-4					N^1.465 , N^1.404
+			1966 			Toom-Cook 						N^1 + ε
+			1971 			Schönhage–Strassen 				NlogNloglogN
+			2007 			Fürer						    NlogN 2^log*N
+			? 					? 							N
+			
+			number of bit operations to multiply two N-bit integers
+			
+			emark. GNU Multiple Precision Library uses one of five
+			different algorithm depending on size of operands.
