@@ -55,14 +55,14 @@ Integer arithmetic reductions
 		
 		1. History of complexity of integer multiplication
 
-			year 			algorithm 				order of growth
-			? 				brute force 					N^2
-			1962 			Karatsuba-Ofman 				N^1.585
-			1963 			Toom-3, Toom-4					N^1.465 , N^1.404
-			1966 			Toom-Cook 						N^1 + ε
-			1971 			Schönhage–Strassen 				NlogNloglogN
-			2007 			Fürer						    NlogN 2^log*N
-			? 				? 								N
+			year 			algorithm 							order of growth
+			? 				brute force 							N^2
+			1962 			Karatsuba-Ofman (Divide and conquer)	N^1.585
+			1963 			Toom-3, Toom-4							N^1.465 , N^1.404
+			1966 			Toom-Cook 								N^1 + ε
+			1971 			Schönhage–Strassen 						NlogNloglogN
+			2007 			Fürer						    		NlogN 2^log*N
+			? 				? 										N
 			
 			number of bit operations to multiply two N-bit integers
 			
@@ -94,7 +94,7 @@ Linear algebra reductions
 		
 		year 				algorithm 						order of growth
 		? 					brute force 					N^3
-		1969 				Strassen 						N^2.808
+		1969 				Strassen (Divide and conquer)	N^2.808
 		1978 				Pan 							N^2.796
 		1979 				Bini 							N^2.780
 		1981 				Schönhage						N^2.522
