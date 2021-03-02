@@ -10,3 +10,6 @@ Designing Algorithms
 			・CPM reduces to topological sort. [shortest paths lecture]
 			・Arbitrage reduces to shortest paths. [shortest paths lecture]
 			・Burrows-Wheeler transform reduces to suffix sort. [assignment]
+			
+		Mentality. Since I know how to solve Y, can I use that algorithm to solve X ?
+					programmer’s version: I have code for Y. Can I use it for X?
