@@ -59,5 +59,22 @@ Establishing Lower Bounds
 		Goal. Prove that a problem requires a certain number of steps.
 		Ex. In decision tree model, any compare-based sorting algorithm requires Ω(N log N) compares in the worst case.
 		
-		Bad news. Very difficult to establish lower bounds from scratch.
-		Good news. Spread Ω(N log N) lower bound to Y by reducing sorting to Y.
+		Bad news. Very difficult to establish lower bounds from scratch. (argument must apply to all conceivable algorithms)
+		Good news. Spread Ω(N log N) lower bound to Y by reducing sorting to Y. (assuming cost of reduction is not too high)
+		
+		1. Linear time reductions
+		
+		Linear-time reductions
+			Def. Problem X linear-time reduces to problem Y if X can be solved with:
+				・Linear number of standard computational steps.
+				・Constant number of calls to Y.
+				
+			Ex. Almost all of the reductions we've seen so far. [Which ones weren't?]
+			Establish lower bound:
+				・If X takes Ω(N log N) steps, then so does Y.
+				・If X takes Ω(N^2) steps, then so does Y.
+				
+			Mentality.
+				・If I could easily solve Y, then I could easily solve X.
+				・I can’t easily solve X.
+				・Therefore, I can’t easily solve Y 
