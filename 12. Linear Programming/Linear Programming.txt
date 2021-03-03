@@ -83,4 +83,20 @@ Standard form linear program
 				⋮		⋮		 ⋮ 		⋮		 ⋮
 				am1 x1 + am2 x2 + … + amn xn = bm
 					 x1 , x2 , … , xn ≥ 0
+					 
+					 
+Converting the brewer’s problem to the standard form
+
+		Original formulation
+		
+		maximize 13A + 23B				profits
+		sub to	  5A + 15B ≤ 480		corn
+				  4A + 4B ≤ 160			hops
+				  35A + 20B ≤ 1190		malt
+				  A , B ≥ 0
+				  
+		Standard form.
+			・Add variable Z and equation corresponding to objective function.
+			・Add slack variable to convert each inequality to an equality.
+			・Now a 6-dimensional problem
 				  
