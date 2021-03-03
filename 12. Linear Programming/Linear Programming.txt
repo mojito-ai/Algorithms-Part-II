@@ -73,4 +73,14 @@ Standard form linear program
 		subject to m linear equations.
 			・Input: real numbers aij, cj, bi.
 			・Output: real numbers xj.
+			
+			Primal Problem
+			
+		maximize c1 x1 + c2 x2 + … + cn xn
+		
+	sub to		a11 x1 + a12 x2 + … + a1n xn = b1
+				a21 x1 + a22 x2 + … + a2n xn = b2
+				⋮		⋮		 ⋮ 		⋮		 ⋮
+				am1 x1 + am2 x2 + … + amn xn = bm
+					 x1 , x2 , … , xn ≥ 0
 				  
