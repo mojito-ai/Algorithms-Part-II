@@ -1,0 +1,6 @@
+Linear programming
+
+	What is it? Problem-solving model for optimal allocation of scarce resources, among a number of competing (can take entire course on LP)
+	activities that encompasses: 
+		・Shortest paths, maxflow, MST, matching, assignment, ...
+		・A x = b, 2-person zero-sum games, ...
