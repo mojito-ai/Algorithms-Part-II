@@ -49,3 +49,16 @@ Brewer's problem
 	19.5 	20.5 	405 	160 	1092.5 	$725
 	12 		28 		480 	160 	980		$800
 	? 		? 								>$800 ?
+	
+Brewer’s problem: linear programming formulation 
+	
+	Linear programming formulation.
+		・Let A be the number of barrels of ale.
+		・Let B be the number of barrels of beer.
+		
+		maximize 13A + 23B				profits
+		sub to	  5A + 15B ≤ 480		corn
+				  4A + 4B ≤ 160			hops
+				  35A + 20B ≤ 1190		malt
+				  A , B ≥ 0
+				  
