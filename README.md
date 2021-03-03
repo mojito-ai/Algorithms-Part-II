@@ -30,7 +30,8 @@
 
 11. **Reductions:** Our goal is to develop ways to classify problems according to their computational requirements. We introduce the concept of reduction as a technique for studying the relationship among problems. People use reductions to design algorithms, establish lower bounds, and classify problems in terms of their computational requirements.
 
-12. #### **Linear Programming**
+12. **Linear Programming:** The quintessential problem-solving model is known as linear programming, and the simplex method for solving it is one of the most widely used algorithms. In this lecture, we given an overview of this central topic in operations research and describe its relationship to algorithms that we have considered.
+
 13. #### **Intractability**
 
 ## **Author: Mohit Sharma**
