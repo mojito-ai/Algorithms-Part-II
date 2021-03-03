@@ -99,4 +99,11 @@ Converting the brewer’s problem to the standard form
 			・Add variable Z and equation corresponding to objective function.
 			・Add slack variable to convert each inequality to an equality.
 			・Now a 6-dimensional problem
+			
+		maximize  Z
+				  13A + 23B					-Z	=0
+		sub to	  5A + 15B + SC 				= 480
+				  4A + 4B 		+ SH 			= 160
+				  35A + 20B 			+ SM 	= 1190
+				   A , B , SC , SC , SM ≥ 0
 				  
