@@ -9,3 +9,13 @@ Linear programming
 		・Fast commercial solvers available.
 		・Widely applicable problem-solving model. (Delta claims that LP saves $100 million per year)
 		・Key subroutine for integer programming solvers.
+		
+	Applications
+		Agriculture. Diet problem.
+		Computer science. Compiler register allocation, data mining.
+		Electrical engineering. VLSI design, optimal clocking.
+		Energy. Blending petroleum products.
+		Economics. Equilibrium theory, two-person zero-sum games.
+		Environment. Water quality management.
+		Finance. Portfolio optimization.
+		Logistics. Supply-chain management
