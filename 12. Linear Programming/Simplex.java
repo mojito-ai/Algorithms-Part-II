@@ -52,6 +52,17 @@ public class Simplex {
 	 *
 	 *4. Simplex algorithm: pivot 2
 	 *substitute A = (3/8) (32 + (4/15) SC – SH ) and add A into the basis (rewrite 3rd equation, eliminate A in 1st, 2nd, and 4th equations
+	 *
+	 *5. Simplex algorithm: optimality
+	 *
+	 *Q. When to stop pivoting?
+	 *A. When no objective function coefficient is positive.
+	 *
+	 *Q. Why is resulting solution optimal?
+	 *A. Any feasible solution satisfies current system of equations.
+	 *		In particular: Z = 800 – SC – 2 SH
+	 *		Thus, optimal objective value Z* ≤ 800 since SC , SH ≥ 0.
+	 *		Current BFS has value 800 ⇒ optimal.
 	 */
 
 }
