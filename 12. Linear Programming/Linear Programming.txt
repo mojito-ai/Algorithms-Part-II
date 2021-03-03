@@ -27,3 +27,18 @@ Linear programming
 		Physics. Ground states of 3-D Ising spin glasses.
 		Telecommunication. Network design, Internet routing.
 		Sports. Scheduling ACC basketball, handicapping horse races.
+		
+Brewer's problem
+
+	Small brewery produces ale and beer.
+		・Production limited by scarce resources: corn (480lbs) , hops (160oz) , barley malt (1190lbs)
+	
+	Recipes for ale and beer require different proportions of resources.
+	Ale						Beer
+	5 pounds corn			15 pounds corn
+	4 ounce hops			4 ounce hops
+	35 pounds malt			20 pounds malt
+	
+	$13 profit per barrel 	$23 profit per barrel
+	
+	Brewer’s problem: choose product mix to maximize profits.
