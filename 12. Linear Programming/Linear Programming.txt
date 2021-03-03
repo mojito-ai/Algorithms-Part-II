@@ -121,3 +121,7 @@ Geometry
 		Extreme point property. If there exists an optimal solution to (P), then there exists one that is an extreme point.
 			・Good news: number of extreme points to consider is finite.
 			・Bad news : number of extreme points can be exponential!
+			
+		local optima are global optima (follows because objective function is linear and feasible region is convex)
+		
+		Greedy property. Extreme point optimal iff no better adjacent extreme point.
