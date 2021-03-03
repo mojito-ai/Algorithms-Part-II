@@ -115,3 +115,9 @@ Geometry
 		
 		An extreme point of a set is a point in the set that can't be written as
 		½ (a + b), where a and b are two distinct points in the set.
+		
+		Warning. Don't always trust intuition in higher dimensions.
+		
+		Extreme point property. If there exists an optimal solution to (P), then there exists one that is an extreme point.
+			・Good news: number of extreme points to consider is finite.
+			・Bad news : number of extreme points can be exponential!
