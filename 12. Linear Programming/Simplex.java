@@ -19,7 +19,7 @@
 public class Simplex {
 	
 	/*
-	 *Simplex algorithm: basis
+	 *1. Simplex algorithm: basis
 	 *A basis is a subset of m of the n variables.
 	 *
 	 *Basic feasible solution (BFS).
@@ -28,6 +28,14 @@ public class Simplex {
 	 *		If unique and feasible ⇒ BFS.
 	 *		BFS ⇔ extreme point. 
 	 * 
+	 *
+	 *2. Simplex algorithm: initialization 
+	 *
+	 *Initial basic feasible solution.
+	 *		Start with slack variables { SC , SH , SM } as the basis.
+	 *		Set non-basic variables A and B to 0.
+	 *		3 equations in 3 unknowns yields SC = 480, SH = 160, SM = 1190.
+
 	 */
 
 }
