@@ -66,4 +66,11 @@ Brewer’s problem: feasible region
 
 		Inequalities define halfplanes; feasible region is a convex polygon.
 		Optimal solution occurs at an extreme point.
+		
+Standard form linear program
+
+		Goal. Maximize linear objective function of n nonnegative variables, (linear means no x2, xy, arccos(x), etc.)
+		subject to m linear equations.
+			・Input: real numbers aij, cj, bi.
+			・Output: real numbers xj.
 				  
