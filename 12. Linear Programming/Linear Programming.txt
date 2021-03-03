@@ -62,3 +62,8 @@ Brewer’s problem: linear programming formulation
 				  35A + 20B ≤ 1190		malt
 				  A , B ≥ 0
 				  
+Brewer’s problem: feasible region
+
+		Inequalities define halfplanes; feasible region is a convex polygon.
+		Optimal solution occurs at an extreme point.
+				  
