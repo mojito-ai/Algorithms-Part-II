@@ -42,3 +42,10 @@ Brewer's problem
 	$13 profit per barrel 	$23 profit per barrel
 	
 	Brewer’s problem: choose product mix to maximize profits.
+	
+	ale 	beer 	corn 	hops 	malt 	profit
+	34 		0 		179 	136 	1190 	$442
+	0 		32 		480 	128 	640 	$736
+	19.5 	20.5 	405 	160 	1092.5 	$725
+	12 		28 		480 	160 	980		$800
+	? 		? 								>$800 ?
