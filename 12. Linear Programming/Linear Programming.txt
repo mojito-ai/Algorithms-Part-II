@@ -19,3 +19,11 @@ Linear programming
 		Environment. Water quality management.
 		Finance. Portfolio optimization.
 		Logistics. Supply-chain management
+		Management. Hotel yield management.
+		Marketing. Direct mail advertising.
+		Manufacturing. Production line balancing, cutting stock.
+		Medicine. Radioactive seed placement in cancer treatment.
+		Operations research. Airline crew assignment, vehicle routing.
+		Physics. Ground states of 3-D Ising spin glasses.
+		Telecommunication. Network design, Internet routing.
+		Sports. Scheduling ACC basketball, handicapping horse races.
