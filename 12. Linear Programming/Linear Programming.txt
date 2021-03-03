@@ -4,3 +4,8 @@ Linear programming
 	activities that encompasses: 
 		・Shortest paths, maxflow, MST, matching, assignment, ...
 		・A x = b, 2-person zero-sum games, ...
+		
+	Why significant?
+		・Fast commercial solvers available.
+		・Widely applicable problem-solving model. (Delta claims that LP saves $100 million per year)
+		・Key subroutine for integer programming solvers.
