@@ -107,3 +107,11 @@ Converting the brewer’s problem to the standard form
 				  35A + 20B 			+ SM 	= 1190
 				   A , B , SC , SC , SM ≥ 0
 				  
+Geometry
+
+		Inequalities define halfspaces; feasible region is a convex polyhedron.
+		
+		A set is convex if for any two points a and b in the set, so is ½ (a + b).
+		
+		An extreme point of a set is a point in the set that can't be written as
+		½ (a + b), where a and b are two distinct points in the set.
