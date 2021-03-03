@@ -9,6 +9,7 @@
 * <li> Pivot from one extreme point to an adjacent one. (never decreasing objective function)
 * <li> Repeat until optimal.
 * 
+* <li> How to implement? Linear algebra
 * @author  Mohit Sharma
 * @version 1.0
 * @since   03-03-2021
@@ -16,5 +17,17 @@
 */
 
 public class Simplex {
+	
+	/*
+	 *Simplex algorithm: basis
+	 *A basis is a subset of m of the n variables.
+	 *
+	 *Basic feasible solution (BFS).
+	 *		Set n – m nonbasic variables to 0, solve for remaining m variables.
+	 *		Solve m equations in m unknowns.
+	 *		If unique and feasible ⇒ BFS.
+	 *		BFS ⇔ extreme point. 
+	 * 
+	 */
 
 }
