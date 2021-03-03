@@ -40,6 +40,18 @@ public class Simplex {
  	 *3. Simplex algorithm: pivot 1
  	 *
  	 *substitute B = (1/15) (480 – 5A – SC) and add B into the basis (rewrite 2nd equation, eliminate B in 1st, 3rd, and 4th equations)
+	 *
+	 *Q. Why pivot on column 2 (corresponding to variable B)?
+	 *		Its objective function coefficient is positive.
+	 *		(each unit increase in B from 0 increases objective value by $23)
+	 *		Pivoting on column 1 (corresponding to A) also OK.
+	 *
+	 *Q. Why pivot on row 2?
+	 *		Preserves feasibility by ensuring RHS ≥ 0.
+	 *		Minimum ratio rule: min { 480/15, 160/4, 1190/20 }.
+	 *
+	 *4. Simplex algorithm: pivot 2
+	 *substitute A = (3/8) (32 + (4/15) SC – SH ) and add A into the basis (rewrite 3rd equation, eliminate A in 1st, 2nd, and 4th equations
 	 */
 
 }
