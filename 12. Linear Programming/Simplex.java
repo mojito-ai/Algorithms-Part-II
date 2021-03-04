@@ -86,4 +86,11 @@ public class Simplex {
 		for(int j=0; j<n; j++)		a[m][j]=c[j];	//put c[] into tableau
 		for(int i=0; i<m; i++)		a[i][m+n]=b[i];	//put b[] into tableau
 	}
+	
+	private int bland()
+	{
+		for(int q=0; q<m+n; q++)
+			if(a[m][q]>0)	return q;
+		return -1;
+	}
 }
