@@ -118,4 +118,21 @@ public class Simplex {
 		}
 		return p;
 	}
+	
+	public void pivot(int p, int q)
+	{
+		 for (int i = 0; i <= m; i++)
+			 for (int j = 0; j <= m+n; j++)
+				 if (i != p && j != q)
+					 	a[i][j] -= a[p][j] * a[i][q] / a[p][q];
+			 
+		 for (int i = 0; i <= m; i++)
+			 if (i != p) a[i][q] = 0.0;
+			 
+		 for (int j = 0; j <= m+n; j++)
+			 if (j != q) a[p][j] /= a[p][q];
+			 	
+		 a[p][q] = 1.0;
+	}
+
 }
