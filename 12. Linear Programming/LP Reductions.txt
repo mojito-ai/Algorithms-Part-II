@@ -10,3 +10,22 @@ Non-standard form							Standard form
 			 35A + 20B = 1190								35A+20B0-20B1=1190
 				A ≥ 0										A,B0, B1, Sc, Sh>=0
 				B Unrestricted 
+
+Modelling 
+
+		Linear “programming” (1950s term) = reduction to LP (modern term).
+				・Process of formulating an LP model for a problem.
+				・Solution to LP for a specific problem gives solution to the problem.
+		
+			1. Identify variables.
+			2. Define constraints (inequalities and equations).
+			3. Define objective function.
+			4. Convert to standard form.
+		
+		Examples.
+			・Maxflow.
+			・Shortest paths.
+			・Bipartite matching.
+			・Assignment problem.
+			・2-person zero-sum games.
+			...
