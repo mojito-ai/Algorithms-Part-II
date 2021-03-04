@@ -12,7 +12,7 @@
 * <li> How to implement? Linear algebra
 * @author  Mohit Sharma
 * @version 1.0
-* @since   03-03-2021
+* @since   04-03-2021
 * 
 */
 
@@ -75,6 +75,15 @@ public class Simplex {
 
 	public Simplex(double [] [] A, double [] b, double [] c)
 	{
+		m=b.length;
+		n=c.length;
+		a=new double [m+1][m+n+1];
+		for(int i=0; i<m; i++)
+			for(int j=0; j<n; j++)
+				a[i][j]=A[i][j];
 		
+		for(int j=n; j<m+n; j++)	a[j-n][j]=1.0;
+		for(int j=0; j<n; j++)		a[m][j]=c[j];
+		for(int i=0; i<m; i++)		a[i][m+n]=b[i];
 	}
 }
