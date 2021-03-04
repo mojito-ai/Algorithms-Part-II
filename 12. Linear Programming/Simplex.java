@@ -203,5 +203,15 @@ public class Simplex {
 	 * Basic implementations. Available in many programming environments.
 	 * Industrial-strength solvers. Routinely solve LPs with millions of variables.
 	 * Modeling languages. Simplify task of modeling problem as LP.
+	 * 
+	 * 4. LP solvers: industrial strength
+	 * 
+	 * “ a benchmark production planning model solved using linear programming would have
+ 	 * taken 82 years to solve in 1988, using the computers and the linear programming
+ 	 * algorithms of the day. Fifteen years later—in 2003—this same model could be solved
+ 	 * in roughly 1 minute, an improvement by a factor of roughly 43 million. Of this, a factor
+ 	 * of roughly 1,000 was due to increased processor speed, whereas a factor of roughly
+ 	 * 43,000 was due to improvements in algorithms! ”
+ 	 * — Designing a Digital Future ( Report to the President and Congress, 2010 )
 	 */
 }
