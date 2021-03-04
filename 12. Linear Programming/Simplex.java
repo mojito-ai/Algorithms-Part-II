@@ -199,5 +199,9 @@ public class Simplex {
 	 * 		Detect infeasibility. --> run "phase I" simplex algorithm
 	 * 		Detect unboundedness. --> no leaving row
 	 * 
+	 * Best practice. Don't implement it yourself!
+	 * Basic implementations. Available in many programming environments.
+	 * Industrial-strength solvers. Routinely solve LPs with millions of variables.
+	 * Modeling languages. Simplify task of modeling problem as LP.
 	 */
 }
