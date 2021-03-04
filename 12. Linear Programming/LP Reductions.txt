@@ -114,3 +114,21 @@ Linear programming perspective
 			・Might be slower than specialized solution (but you might not care).
 		
 		Got an LP solver? Learn to use it!
+		
+Universal problem-solving model (in theory)
+
+	Is there a universal problem-solving model?
+		・Maxflow.
+		・Shortest paths.
+		・Bipartite matching.
+		・Assignment problem.
+		・Multicommodity flow.
+		…
+		・Two-person zero-sum games.
+		・Linear programming.
+		…
+		・Factoring
+		・NP-complete problems.
+		…
+		
+		Does P = NP? No universal problem-solving model exists unless P = NP.
