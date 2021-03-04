@@ -66,4 +66,11 @@ Maxflow problem (revisited)
 		x02=x23+x24
 		x13+x23=x35
 		x14+x24=x45
-M
+
+Maximum cardinality bipartite matching problem
+
+	Input. Bipartite graph.
+	Goal. Find a matching of maximum cardinality. (set of edges with no vertex appearing twice)
+	Interpretation. Mutual preference constraints. 
+		・People to jobs.
+		・Students to writing seminars.
