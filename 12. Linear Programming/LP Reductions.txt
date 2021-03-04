@@ -94,3 +94,7 @@ Maximum cardinality bipartite matching problem
 	xF2 + xF4 + xF5 ≤ 1 
 	xB5 + xE5 + xF5 ≤ 1
 	all xij ≥ 0
+	
+Theorem. [Birkhoff 1946, von Neumann 1953]
+All extreme points of the above polyhedron have integer (0 or 1) coordinates.
+Corollary. Can solve matching problem by solving LP.
