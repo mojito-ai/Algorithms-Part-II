@@ -18,6 +18,8 @@
 
 public class Simplex {
 	
+	private double [][] a;	//simplex tableau
+	private int m, n;		//M constraints, N variables
 	/*
 	 *1. Simplex algorithm: basis
 	 *A basis is a subset of m of the n variables.
