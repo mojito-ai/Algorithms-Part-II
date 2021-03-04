@@ -100,15 +100,21 @@ public class Simplex {
 		return -1;		//optimal
 	}
 	
+	/**
+	 * Min-Ratio rule
+	 * <li> Find leaving row p using min ratio rule. (Bland's rule: if a tie, choose first such row)
+	 * @param q
+	 * @return
+	 */
 	private int minRatioRule(int q)
 	{
 		int p=-1;
-		for(int i=0; i<m; i++)
+		for(int i=0; i<m; i++)		//leaving row
 		{
-			if(a[i][q]<=0)	continue;
+			if(a[i][q]<=0)	continue;		//consider only positive entries
 			else if(p==-1)	p=i;
 			else if(a[i][m+n]/a[i][q] < a[p][m+n]/a[p][q])
-				p=i;
+				p=i;		//row p has min ratio so far
 		}
 		return p;
 	}
