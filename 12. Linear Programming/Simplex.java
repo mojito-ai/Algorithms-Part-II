@@ -182,5 +182,9 @@ public class Simplex {
 		}
 	}
 	
-	
+	/*
+	 * Simplex algorithm: degeneracy
+	 * 		Degeneracy. New basis, same extreme point ("stalling" is common in practice)
+	 * 
+	 */
 }
