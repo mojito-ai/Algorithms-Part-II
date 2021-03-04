@@ -87,10 +87,16 @@ public class Simplex {
 		for(int i=0; i<m; i++)		a[i][m+n]=b[i];	//put b[] into tableau
 	}
 	
+	/**
+	 * Bland's Rule
+	 * <li> Find entering column q using Bland's rule:
+	 * <li> index of first column whose objective function coefficient is positive.
+	 * @return
+	 */
 	private int bland()
 	{
 		for(int q=0; q<m+n; q++)
-			if(a[m][q]>0)	return q;
-		return -1;
+			if(a[m][q]>0)	return q;		//entering column q has positive objective function coefficient
+		return -1;		//optimal
 	}
 }
