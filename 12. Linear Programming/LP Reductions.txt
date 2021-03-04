@@ -2,11 +2,11 @@ Reductions to standard form
 		Minimization problem. Replace min 13A + 15B with max – 13A – 15B.
 		≥ constraints. Replace 4A + 4B ≥ 160 with 4A + 4B – SH = 160, SH ≥ 0.
 		Unrestricted variables. Replace B with B = B0 – B1, B0 ≥ 0 , B1 ≥ 0.
-
-Non-standard form		
-	maximize 13A + 15B
-	sub to   5A + 15B ≤ 480
-			 4A + 4B ≥ 160
-			 35A + 20B = 1190
-				A ≥ 0
+	
+Non-standard form							Standard form
+	maximize 13A + 15B						maximize 		-13A-15B0+15B1
+	sub to   5A + 15B ≤ 480					sub to			5A+15B0-15B1+Sc=480
+			 4A + 4B ≥ 160									4A+4B0-4B1	-Sh=160
+			 35A + 20B = 1190								35A+20B0-20B1=1190
+				A ≥ 0										A,B0, B1, Sc, Sh>=0
 				B Unrestricted 
