@@ -98,3 +98,19 @@ Maximum cardinality bipartite matching problem
 Theorem. [Birkhoff 1946, von Neumann 1953]
 All extreme points of the above polyhedron have integer (0 or 1) coordinates.
 Corollary. Can solve matching problem by solving LP.
+
+Linear programming perspective
+
+		Q. Got an optimization problem?
+		Ex. Maxflow, bipartite matching, shortest paths, … [many, many, more]
+		
+		Approach 1: Use a specialized algorithm to solve it.
+			・Algorithms 4/e.
+			・Vast literature on algorithms.
+		
+		Approach 2: Use linear programming.
+			・Many problems are easily modeled as LPs.
+			・Commercial solvers can solve those LPs.
+			・Might be slower than specialized solution (but you might not care).
+		
+		Got an LP solver? Learn to use it!
