@@ -141,4 +141,18 @@ public class Simplex {
 		 a[p][q] = 1.0;
 	}
 
+	public void solve()
+	{
+		while(true)
+		{
+			int q=bland();
+			if(q==-1)	break;
+			
+			int p=minRatioRule(q);
+			if(p==-1)
+				break;
+			
+			pivot(p,q);
+		}
+	}
 }
