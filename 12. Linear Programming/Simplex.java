@@ -99,4 +99,17 @@ public class Simplex {
 			if(a[m][q]>0)	return q;		//entering column q has positive objective function coefficient
 		return -1;		//optimal
 	}
+	
+	private int minRatioRule(int q)
+	{
+		int p=-1;
+		for(int i=0; i<m; i++)
+		{
+			if(a[i][q]<=0)	continue;
+			else if(p==-1)	p=i;
+			else if(a[i][m+n]/a[i][q] < a[p][m+n]/a[p][q])
+				p=i;
+		}
+		return p;
+	}
 }
