@@ -76,6 +76,17 @@ public class Simplex {
 	/**
 	 * Simplex Algorithm: Running time 
 	 * <li> Remarkable property. In typical practical applications, simplex algorithm terminates after at most 2 (m + n) pivots.
+	 * 
+	 * <li> “ Yes. Most of the time it solved problems with m equations in 2m or 3m steps—
+ 	 * <li> that was truly amazing. I certainly did not anticipate that it would turn out to
+	 * <li> be so terrific. I had had no experience at the time with problems in higher
+ 	 * <li> dimensions, and I didn't trust my geometrical intuition. For example, my
+ 	 * <li> intuition told me that the procedure would require too many steps wandering
+ 	 * <li> from one adjacent vertex to the next. In practice it takes few steps. In brief,
+ 	 * <li> one's intuition in higher dimensional space is not worth a damn! Only now,
+ 	 * <li> almost forty years from the time when the simplex method was first proposed,
+ 	 * <li> are people beginning to get some insight into why it works as well as it does. ” — George Dantzig 1984
+ 	 * 
 	 * @param A
 	 * @param b
 	 * @param c
