@@ -186,5 +186,8 @@ public class Simplex {
 	 * Simplex algorithm: degeneracy
 	 * 		Degeneracy. New basis, same extreme point ("stalling" is common in practice)
 	 * 
+	 * Cycling. Get stuck by cycling through different bases that all correspond to same extreme point.
+	 * 		Doesn't occur in the wild.
+	 *		Bland's rule guarantees finite # of pivots. (choose lowest valid index for entering and leaving columns)
 	 */
 }
