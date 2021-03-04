@@ -183,11 +183,21 @@ public class Simplex {
 	}
 	
 	/*
-	 * Simplex algorithm: degeneracy
+	 * 1. Simplex algorithm: degeneracy
 	 * 		Degeneracy. New basis, same extreme point ("stalling" is common in practice)
 	 * 
-	 * Cycling. Get stuck by cycling through different bases that all correspond to same extreme point.
+	 * 2. Cycling. Get stuck by cycling through different bases that all correspond to same extreme point.
 	 * 		Doesn't occur in the wild.
 	 *		Bland's rule guarantees finite # of pivots. (choose lowest valid index for entering and leaving columns)
+	 *
+	 * 3. Simplex algorithm: implementation issues
+	 * 
+	 * To improve the bare-bones implementation.
+	 * 		Avoid stalling. --> requires artful engineering
+	 * 		Maintain sparsity. --> requires fancy data structures
+	 * 		Numerical stability. --> requires advanced math
+	 * 		Detect infeasibility. --> run "phase I" simplex algorithm
+	 * 		Detect unboundedness. --> no leaving row
+	 * 
 	 */
 }
