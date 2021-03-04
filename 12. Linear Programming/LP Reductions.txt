@@ -74,3 +74,23 @@ Maximum cardinality bipartite matching problem
 	Interpretation. Mutual preference constraints. 
 		・People to jobs.
 		・Students to writing seminars.
+		
+	LP formulation. One variable per pair.
+	Interpretation. xij = 1 if person i assigned to job j.
+	
+	maximize
+	xA0 + xA1 + xA2 + xB0 + xB1 + xD0 + xD1 + xD1 + xE3 + xE3 + xE4 + xB1 + xB5 + xC2 + xC3 + E4 + xE5 + xF2 + xF4 + xC3 + xC4 + xF5
+
+	xA0 + xA1 + xA2 ≤ 1 
+	xA0 + xB0 + xD0 ≤ 1
+	xB0 + xB1 + xB5 ≤ 1 
+	xA1 + xB1 + xD1 ≤ 1
+	xC2 + xC3 + xC4 ≤ 1 
+	xA2 + xC2 + xF2 ≤ 1
+	xD0 + xD1 ≤ 1 
+	xC3 + xE3 ≤ 1
+	xE3 + xE4 + xE5 ≤ 1 
+	xC4 + xE4 + xF4 ≤ 1
+	xF2 + xF4 + xF5 ≤ 1 
+	xB5 + xE5 + xF5 ≤ 1
+	all xij ≥ 0
