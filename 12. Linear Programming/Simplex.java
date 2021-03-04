@@ -213,5 +213,17 @@ public class Simplex {
  	 * of roughly 1,000 was due to increased processor speed, whereas a factor of roughly
  	 * 43,000 was due to improvements in algorithms! ”
  	 * — Designing a Digital Future ( Report to the President and Congress, 2010 )
+ 	 * 
+ 	 * 5. Brief history
+ 	 * 1939. Production, planning. [Kantorovich]
+ 	 * 1947. Simplex algorithm. [Dantzig]
+ 	 * 1947. Duality. [von Neumann, Dantzig, Gale-Kuhn-Tucker]
+ 	 * 1947. Equilibrium theory. [Koopmans]
+ 	 * 1948. Berlin airlift. [Dantzig]
+ 	 * 1975. Nobel Prize in Economics. [Kantorovich and Koopmans]
+ 	 * 1979. Ellipsoid algorithm. [Khachiyan]
+ 	 * 1984. Projective-scaling algorithm. [Karmarkar]
+ 	 * 1990. Interior-point methods. [Nesterov-Nemirovskii, Mehorta, ...]
+ 	 * 
 	 */
 }
