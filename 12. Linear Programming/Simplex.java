@@ -18,6 +18,12 @@
 
 public class Simplex {
 	
+	/*
+	 * Simplex tableau
+	 * 1. Encode standard form LP in a single Java 2D array
+	 * 2. Simplex algorithm transforms initial 2D array into solution.
+	 * 
+	 */
 	private double [][] a;	//simplex tableau
 	private int m, n;		//M constraints, N variables
 	/*
@@ -67,4 +73,8 @@ public class Simplex {
 	 *		Current BFS has value 800 ⇒ optimal.
 	 */
 
+	public Simplex(double [] [] A, double [] b, double [] c)
+	{
+		
+	}
 }
