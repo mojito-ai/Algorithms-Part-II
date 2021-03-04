@@ -11,7 +11,7 @@
 * 
 * <li> How to implement? Linear algebra
 * @author  Mohit Sharma
-* @version 2.0
+* @version 3.0
 * @since   04-03-2021
 * 
 */
@@ -73,6 +73,13 @@ public class Simplex {
 	 *		Current BFS has value 800 ⇒ optimal.
 	 */
 
+	/**
+	 * Simplex Algorithm: Running time 
+	 * <li> Remarkable property. In typical practical applications, simplex algorithm terminates after at most 2 (m + n) pivots.
+	 * @param A
+	 * @param b
+	 * @param c
+	 */
 	public Simplex(double [] [] A, double [] b, double [] c)
 	{
 		m=b.length;
@@ -159,4 +166,6 @@ public class Simplex {
 			pivot(p,q);		//pivot on row p, column q
 		}
 	}
+	
+	
 }
