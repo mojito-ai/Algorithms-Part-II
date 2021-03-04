@@ -141,18 +141,22 @@ public class Simplex {
 		 a[p][q] = 1.0;
 	}
 
+	/**
+	 * Bare-bones implementation
+	 * <li> Execute the simplex algorithm.
+	 */
 	public void solve()
 	{
 		while(true)
 		{
-			int q=bland();
-			if(q==-1)	break;
-			
-			int p=minRatioRule(q);
+			int q=bland();		
+			if(q==-1)	break;		//entering column q (optimal if -1)
+				
+			int p=minRatioRule(q);	//leaving row p (unbounded if -1)
 			if(p==-1)
 				break;
 			
-			pivot(p,q);
+			pivot(p,q);		//pivot on row p, column q
 		}
 	}
 }
