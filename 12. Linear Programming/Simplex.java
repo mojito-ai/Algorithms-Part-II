@@ -119,18 +119,24 @@ public class Simplex {
 		return p;
 	}
 	
+	/**
+	 * Pivot on leaving variable
+	 * <li> Pivot on element row p, column q.
+	 * @param p
+	 * @param q
+	 */
 	public void pivot(int p, int q)
 	{
 		 for (int i = 0; i <= m; i++)
 			 for (int j = 0; j <= m+n; j++)
 				 if (i != p && j != q)
-					 	a[i][j] -= a[p][j] * a[i][q] / a[p][q];
+					 	a[i][j] -= a[p][j] * a[i][q] / a[p][q];		//scale all entries but row p and column q
 			 
 		 for (int i = 0; i <= m; i++)
-			 if (i != p) a[i][q] = 0.0;
+			 if (i != p) a[i][q] = 0.0;		//zero out column q
 			 
 		 for (int j = 0; j <= m+n; j++)
-			 if (j != q) a[p][j] /= a[p][q];
+			 if (j != q) a[p][j] /= a[p][q];		//scale row p
 			 	
 		 a[p][q] = 1.0;
 	}
