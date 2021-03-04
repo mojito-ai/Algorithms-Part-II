@@ -10,6 +10,7 @@
 * <li> Repeat until optimal.
 * 
 * <li> How to implement? Linear algebra
+* 
 * @author  Mohit Sharma
 * @version 3.0
 * @since   04-03-2021
@@ -140,6 +141,9 @@ public class Simplex {
 	/**
 	 * Pivot on leaving variable
 	 * <li> Pivot on element row p, column q.
+	 * <li> Pivoting rules. Carefully balance the cost of finding an entering variable with the number of pivots needed.
+	 * <li> No pivot rule is known that is guaranteed to be polynomial.
+	 * <li> Most pivot rules are known to be exponential (or worse) in worst-case.
 	 * @param p
 	 * @param q
 	 */
