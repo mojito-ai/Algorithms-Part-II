@@ -35,7 +35,7 @@ Maxflow problem (revisited)
 		Input. Weighted digraph G, single source s and single sink t.
 		Goal. Find maximum flow from s to t.
 		
-		6 -> V
+		6 -> V		
 		8 -> E
 		0 1 2.0
 		0 2 3.0
@@ -45,3 +45,25 @@ Maxflow problem (revisited)
 		2 4 1.0
 		3 5 2.0
 		4 5 3.0 -> capacities
+		
+		Modeling the maxflow problem as a linear program
+			Variables. xvw = flow on edge v→w.
+			Constraints. Capacity and flow conservation.
+			Objective function. Net flow into t.
+			
+		Maximize x35+x45
+		
+		0 <= x01 <= 2
+		0 <= x02 <= 3
+		0 <= x13 <= 3
+		0 <= x14 <= 1
+		0 <= x23 <= 1
+		0 <= x24 <= 1
+		0 <= x35 <= 2
+		0 <= x45 <= 3
+		
+		x01=x13+x14
+		x02=x23+x24
+		x13+x23=x35
+		x14+x24=x45
+M
