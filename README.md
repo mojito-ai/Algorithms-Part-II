@@ -32,7 +32,7 @@
 
 12. **Linear Programming:** The quintessential problem-solving model is known as linear programming, and the simplex method for solving it is one of the most widely used algorithms. In this lecture, we given an overview of this central topic in operations research and describe its relationship to algorithms that we have considered.
 
-13. #### **Intractability**
+13. **Intractability:** Is there a universal problem-solving model to which all problems that we would like to solve reduce and for which we know an efficient algorithm? You may be surprised to learn that we do no know the answer to this question. In this lecture we introduce the complexity classes P, NP, and NP-complete, pose the famous P = NP question, and consider implications in the context of algorithms that we have treated in this course.
 
 ## **Author: Mohit Sharma**
 ## **Email: msharma3@me.iitr.ac.in**
