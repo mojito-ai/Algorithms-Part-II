@@ -98,3 +98,11 @@ Introduction:
 		age of universe in seconds † 				10^17
 		
 		Will not help solve 1,000 city TSP problem via brute force
+		
+	8. Questions about problems
+	
+		Q. Which problems can we solve in practice?
+		A. Those with poly-time algorithms.
+		
+		Q. Which problems have poly-time algorithms?
+		A. Not so easy to know. Focus of today's lecture.
