@@ -30,3 +30,9 @@
 		LP. Given a system of linear inequalities, find a solution.
 		ILP. Given a system of linear inequalities, find a 0-1 solution.
 		SAT. Given a system of boolean equations, find a binary solution.
+		
+		Q. Which of these problems have poly-time algorithms?
+			・LSOLVE. Yes. Gaussian elimination solves N-by-N system in N 3 time.
+			・LP. Yes. Ellipsoid algorithm is poly-time.
+			・ILP, SAT. No poly-time algorithm known or believed to exist!
+			
