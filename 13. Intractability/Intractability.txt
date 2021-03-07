@@ -77,3 +77,9 @@ Introduction:
 		Q. Which algorithms are useful in practice?
 			・Measure running time as a function of input size N.
 			・Useful in practice ("efficient") = polynomial time for all inputs.
+			
+		Ex 1. Sorting N items takes N log N compares using mergesort.
+		Ex 2. Finding best TSP tour on N points takes N! steps using brute search.
+		
+		Theory. Definition is broad and robust.
+		Practice. Poly-time algorithms scale to huge problems.
