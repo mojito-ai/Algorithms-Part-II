@@ -38,3 +38,7 @@ Introduction:
 			
 		Q. Is there a more powerful model of computation?
 		A. No!
+		
+	4. Church-Turing thesis (1936)
+	
+		Turing machines can compute any function that can be computed by a physically harnessable process of the natural world.
