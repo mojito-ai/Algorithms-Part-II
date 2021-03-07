@@ -6,4 +6,16 @@ Introduction:
 		Q. Are there limits on the power of digital computers?
 		Q. Are there limits on the power of machines we can build?
 		
-		David Hilbert, Kurt G�del, Alan Turing, Alonzo Church, John von Neumann
+		David Hilbert, Kurt Gödel, Alan Turing, Alonzo Church, John von Neumann
+		
+	2. A simple model of computation: DFAs
+	
+		Tape.
+			・Stores input.
+			・One arbitrarily long strip, divided into cells.
+			・Finite alphabet of symbols.
+		
+		Tape head.
+			・Points to one cell of tape.
+			・Reads a symbol from active cell.
+			・Moves one cell at a time.
