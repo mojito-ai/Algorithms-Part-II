@@ -1,0 +1,9 @@
+Introduction:
+
+	1. Questions about computations
+	
+		Q. What is a general-purpose computer?
+		Q. Are there limits on the power of digital computers?
+		Q. Are there limits on the power of machines we can build?
+		
+		David Hilbert, Kurt Gödel, Alan Turing, Alonzo Church, John von Neumann
