@@ -106,3 +106,13 @@ Introduction:
 		
 		Q. Which problems have poly-time algorithms?
 		A. Not so easy to know. Focus of today's lecture.
+		
+	9. Bird's-eye view
+
+		Def. A problem is intractable if it can't be solved in polynomial time.
+		Desiderata. Prove that a problem is intractable.
+		
+		Two problems that provably require exponential time.
+			・Given a constant-size program, does it halt in at most K steps?
+			・Given N-by-N checkers board position, can the first player force a win? 
+	
