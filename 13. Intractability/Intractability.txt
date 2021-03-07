@@ -59,3 +59,15 @@ Introduction:
 	
 		・8 decades without a counterexample.
 		・Many, many models of computation that turned out to be equivalent.
+		
+		model of computation 			description
+		enhanced Turing machines 		multiple heads, multiple tapes, 2D tape, nondeterminism
+		untyped lambda calculus 		method to define and manipulate functions
+		recursive functions 			functions dealing with computation on integers
+		unrestricted grammars 			iterative string replacement rules used by linguists
+		extended L-systems 				parallel string replacement rules that model plant growth
+		programming languages 			Java, C, C++, Perl, Python, PHP, Lisp, PostScript, Excel
+		random access machines 			registers plus main memory, e.g., TOY, Pentium
+		cellular automata 				cells which change state based on local interactions
+		quantum computer 				compute using superposition of quantum states
+		DNA computer 					compute using biological operations on DNA
