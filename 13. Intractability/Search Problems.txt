@@ -5,3 +5,10 @@
 			0x0 + 1x1 + 1x2 = 4					x0=-1
 			2x0 + 4x1 − 2x2 = 2					x1=2		--> Variables are real numbers
 			0x0 + 3x1 + 15x2 = 36				x2=2
+			
+	LP. Given a system of linear inequalities, find a solution.
+	
+			48x0 + 16x1 + 119x2 ≤ 88			x0=1			
+			5x0 + 4x1 + 35x2 ≥ 13				x1=1		--> Variables are real numbers
+			15x0 + 4x1 + 20x2 ≥ 23				x2=1/5
+			x0 , x1 , x2 ≥ 0
