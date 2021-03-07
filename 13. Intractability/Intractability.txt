@@ -71,3 +71,9 @@ Introduction:
 		cellular automata 				cells which change state based on local interactions
 		quantum computer 				compute using superposition of quantum states
 		DNA computer 					compute using biological operations on DNA
+		
+	6. A question about algorithms
+	
+		Q. Which algorithms are useful in practice?
+			・Measure running time as a function of input size N.
+			・Useful in practice ("efficient") = polynomial time for all inputs.
