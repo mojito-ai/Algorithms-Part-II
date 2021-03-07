@@ -54,3 +54,8 @@ Introduction:
 			・Enables rigorous study of computation (in this universe).
 			
 		Bottom line. Turing machine is a simple and universal model of computation.
+		
+	5. Church-Turing thesis: evidence
+	
+		・8 decades without a counterexample.
+		・Many, many models of computation that turned out to be equivalent.
