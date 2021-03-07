@@ -1,0 +1,7 @@
+1. Four fundamental problems
+
+	LSOLVE. Given a system of linear equations, find a solution.
+	
+			0x0 + 1x1 + 1x2 = 4					x0=-1
+			2x0 + 4x1 − 2x2 = 2					x1=2		--> Variables are real numbers
+			0x0 + 3x1 + 15x2 = 36				x2=2
