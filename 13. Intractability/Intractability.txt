@@ -91,3 +91,10 @@ Introduction:
 			・With as many processors as electrons in the universe…
 			・And each processor has power of today's supercomputers…
 			・And each processor works for the life of the universe…
+			
+		quantity 									value
+		electrons in universe † 					10^79
+		supercomputer instructions per second † 	10^13
+		age of universe in seconds † 				10^17
+		
+		Will not help solve 1,000 city TSP problem via brute force
