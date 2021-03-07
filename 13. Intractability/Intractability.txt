@@ -19,3 +19,22 @@ Introduction:
 			・Points to one cell of tape.
 			・Reads a symbol from active cell.
 			・Moves one cell at a time.
+			
+		Q. Is there a more powerful model of computation?
+		A. Yes.
+		
+	3. A universal model of computation: Turing machines
+	
+		Tape.
+			・Stores input, output, and intermediate results.
+			・One arbitrarily long strip, divided into cells.
+			・Finite alphabet of symbols.
+			
+		Tape head.
+			・Points to one cell of tape.
+			・Reads a symbol from active cell.
+			・Writes a symbol to active cell.
+			・Moves one cell at a time.
+			
+		Q. Is there a more powerful model of computation?
+		A. No!
