@@ -74,3 +74,5 @@
 			Ex. Wiles proves a deep theorem; a colleague referees it.
 			Ex. Boeing designs an efficient airfoil; a simulator verifies it.
 			Ex. Einstein proposes a theory; an experimentalist validates it.
+			
+		Computational analog. Does P = NP?
