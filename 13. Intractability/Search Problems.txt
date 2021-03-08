@@ -3,21 +3,21 @@
 	LSOLVE. Given a system of linear equations, find a solution.
 	
 			0x0 + 1x1 + 1x2 = 4					x0=-1
-			2x0 + 4x1 − 2x2 = 2					x1=2		--> Variables are real numbers
+			2x0 + 4x1 - 2x2 = 2					x1=2		--> Variables are real numbers
 			0x0 + 3x1 + 15x2 = 36				x2=2
 			
 	LP. Given a system of linear inequalities, find a solution.
 	
-			48x0 + 16x1 + 119x2 ≤ 88			x0=1			
-			5x0 + 4x1 + 35x2 ≥ 13				x1=1		--> Variables are real numbers
-			15x0 + 4x1 + 20x2 ≥ 23				x2=1/5
+			48x0 + 16x1 + 119x2 = 88			x0=1			
+			5x0 + 4x1 + 35x2 = 13				x1=1		--> Variables are real numbers
+			15x0 + 4x1 + 20x2 = 23				x2=1/5
 			x0 , x1 , x2 ≥ 0
 			
 	ILP. Given a system of linear inequalities, find a 0-1 solution.
 	
-				 x1 + x2 ≥ 1					x0=0
-			x0 + 	  x2 ≥ 1					x1=1		--> Variables are 0 or 1
-			x0 + x1 + x2 ≤ 2					x2=1
+				 x1 + x2 = 1					x0=0
+			x0 + 	  x2 = 1					x1=1		--> Variables are 0 or 1
+			x0 + x1 + x2 = 2					x2=1
 			
 	SAT. Given a system of boolean equations, find a binary solution
 		
@@ -32,7 +32,11 @@
 		SAT. Given a system of boolean equations, find a binary solution.
 		
 		Q. Which of these problems have poly-time algorithms?
-			・LSOLVE. Yes. Gaussian elimination solves N-by-N system in N 3 time.
-			・LP. Yes. Ellipsoid algorithm is poly-time.
-			・ILP, SAT. No poly-time algorithm known or believed to exist!
+			LSOLVE. Yes. Gaussian elimination solves N-by-N system in N 3 time.
+			LP. Yes. Ellipsoid algorithm is poly-time.
+			ILP, SAT. No poly-time algorithm known or believed to exist!
 			
+2. Search Problems
+
+		Search problem. Given an instance I of a problem, find a solution S.
+		Requirement. Must be able to efficiently check that S is a solution.
