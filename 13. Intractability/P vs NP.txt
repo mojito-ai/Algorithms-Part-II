@@ -76,3 +76,10 @@
 			Ex. Einstein proposes a theory; an experimentalist validates it.
 			
 		Computational analog. Does P = NP?
+		
+		P. Class of search problems solvable in poly-time.
+		NP. Class of all search problems.
+
+		Two worlds.
+			If P = NP… Poly-time algorithms for SAT, ILP, TSP, FACTOR, …
+			If P ≠ NP… Would learn something fundamental about our universe.
