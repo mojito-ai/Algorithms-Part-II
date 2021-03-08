@@ -107,3 +107,7 @@
 				Q. Can we do anything substantially more clever?
 				Conjecture. No poly-time algorithm for SAT.
 
+		Classifying problems
+		
+				Q. Which search problems are in P?
+				A. No easy answers (we don't even know whether P = NP).
