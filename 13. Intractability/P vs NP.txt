@@ -99,3 +99,11 @@
 			・Electronic design automation (EDA) for hardware.
 			・Mean field diluted spin glass model in physics.
 			・...
+	
+		Exhaustive Search			
+				Q. How to solve an instance of SAT with n variables?
+				A. Exhaustive search: try all 2n truth assignments.
+				
+				Q. Can we do anything substantially more clever?
+				Conjecture. No poly-time algorithm for SAT.
+
