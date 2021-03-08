@@ -83,3 +83,19 @@
 		Two worlds.
 			If P = NP… Poly-time algorithms for SAT, ILP, TSP, FACTOR, …
 			If P ≠ NP… Would learn something fundamental about our universe.
+			
+6. Classifying Problems
+
+		A key problem: satisfiability
+		SAT. Given a system of boolean equations, find a solution.
+		
+		x'1 or x2 or x3 = true
+		x1 or x'2 or x3 = true
+		x'1 or x'2 or x'3 = true
+		x'1 or x'2 or x4 = true
+		
+		Key applications.
+			・Automatic verification systems for software.
+			・Electronic design automation (EDA) for hardware.
+			・Mean field diluted spin glass model in physics.
+			・...
