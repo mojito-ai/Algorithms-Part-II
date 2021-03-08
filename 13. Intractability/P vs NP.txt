@@ -49,3 +49,9 @@
 		Ex. int[] a = new int[N];
 			・Java: initializes entries to 0.
 			・Nondeterministic machine: initializes entries to the solution!
+			
+		Ex. Turing machine.
+			・Deterministic: state, input determines next state.
+			・Nondeterministic: more than one possible next state.
+			
+		NP. Search problems solvable in poly time on a nondeterministic TM.
