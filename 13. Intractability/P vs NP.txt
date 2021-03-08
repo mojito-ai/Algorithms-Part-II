@@ -55,3 +55,8 @@
 			・Nondeterministic: more than one possible next state.
 			
 		NP. Search problems solvable in poly time on a nondeterministic TM.
+		
+4. Extended Church-Turing thesis
+
+		P = search problems solvable in poly-time in the natural world.
+		Evidence supporting thesis. True for all physical computers.
