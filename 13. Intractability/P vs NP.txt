@@ -23,3 +23,9 @@
 		
 
 		Significance. What scientists and engineers aspire to compute feasibly.
+		
+2. P: P is the class of search problems solvable in poly-time.
+
+
+		Significance. What scientists and engineers do compute feasibly.
+
