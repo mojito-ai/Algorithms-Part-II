@@ -64,3 +64,5 @@
 		Natural computers? No successful attempts (yet).
 		Ex. Computing Steiner trees with soap bubbles
 		STEINER: Find set of lines of minimal length connecting N given points
+		
+		Implication. To make future computers more efficient, suffices to focus on improving implementation of existing designs.
