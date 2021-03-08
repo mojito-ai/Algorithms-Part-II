@@ -40,3 +40,8 @@
 
 		Search problem. Given an instance I of a problem, find a solution S.
 		Requirement. Must be able to efficiently check that S is a solution.
+		
+		LSOLVE: To check solution S, plug in values and verify each equation.
+		LP: To check solution S, plug in values and verify each inequality. 
+		ILP: To check solution S, plug in values and verify each inequality.
+		SAT: To check solution S, plug in values and verify each equation.
