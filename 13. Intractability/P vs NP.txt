@@ -66,3 +66,11 @@
 		STEINER: Find set of lines of minimal length connecting N given points
 		
 		Implication. To make future computers more efficient, suffices to focus on improving implementation of existing designs.
+		
+5. P vs. NP
+
+		Q. Being creative vs. appreciating creativity?
+			Ex. Mozart composes a piece of music; our neurons appreciate it.
+			Ex. Wiles proves a deep theorem; a colleague referees it.
+			Ex. Boeing designs an efficient airfoil; a simulator verifies it.
+			Ex. Einstein proposes a theory; an experimentalist validates it.
