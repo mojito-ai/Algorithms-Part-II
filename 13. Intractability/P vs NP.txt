@@ -26,21 +26,21 @@
 		
 2. P: P is the class of search problems solvable in poly-time.
 
-		problem 		description 					poly-time algorithm 		instance I 			solution S
+		problem 		description 					poly-time algorithm 
 		
 		LSOLVE			Find a vector x that			Gaussian elimination
 		( A, b )		satisfies Ax = b				(Edmonds 1967)
 			
 		LP				Find a vector x that			Ellipsoid
-		( A, b )		satisfies Ax ≤ b ellipsoid
+		( A, b )		satisfies Ax ≤ b ellipsoid		(Khachiyan 1979)
 		
 
-		SORT			Find a permutation that
-		( a )			puts array a in order
+		SORT			Find a permutation that			mergesort
+		( a )			puts array a in order			(von Neumann 1945)
 		
 		
-		STCONN			Find a path in a
-		( G, s, t )		graph G from s to t
+		STCONN			Find a path in a				Depth-First search
+		( G, s, t )		graph G from s to t				(Thesus)
 		
 		
 		Significance. What scientists and engineers do compute feasibly.
