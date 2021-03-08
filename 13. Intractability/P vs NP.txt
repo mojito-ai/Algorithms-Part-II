@@ -60,3 +60,7 @@
 
 		P = search problems solvable in poly-time in the natural world.
 		Evidence supporting thesis. True for all physical computers.
+		
+		Natural computers? No successful attempts (yet).
+		Ex. Computing Steiner trees with soap bubbles
+		STEINER: Find set of lines of minimal length connecting N given points
