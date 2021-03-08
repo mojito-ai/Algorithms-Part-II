@@ -45,3 +45,6 @@
 		LP: To check solution S, plug in values and verify each inequality. 
 		ILP: To check solution S, plug in values and verify each inequality.
 		SAT: To check solution S, plug in values and verify each equation.
+		
+		FACTOR. Given an n-bit integer x, find a nontrivial factor.
+		To check solution S, long divide 193707721 into 147573952589676412927. 
