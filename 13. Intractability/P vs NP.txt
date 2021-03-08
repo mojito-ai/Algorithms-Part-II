@@ -9,18 +9,16 @@
 		( A, b )		satisfies Ax ≤ b ellipsoid
 		
 
-		ILP				Find a binary vector x
+		ILP				Find a binary vector x			???
 		( A, b )		that satisfies Ax ≤ b
 		
+	
+		SAT				Find a boolean vector x			???
+		( Φ, b )		that satisfies Φ(x) = b
+		
 
-???
-SAT
-( Φ, b )
-Find a boolean vector x
-that satisfies Φ(x) = b
-???
-FACTOR
-( x )
-Find a nontrivial factor
-of the integer x
-??? 147573952589676412927 193707721
+
+		FACTOR			Find a nontrivial factor		??? 						147573952589676412927 193707721
+		( x )			of the integer x
+		
+
