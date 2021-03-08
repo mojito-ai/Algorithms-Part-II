@@ -1,0 +1,26 @@
+1. NP: NP is the class of all search problems. (Note: classic definition limits NP to yes-no problems)
+
+		problem 		description 					poly-time algorithm 		instance I 			solution S
+		
+		LSOLVE			Find a vector x that			Gaussian elimination
+		( A, b )		satisfies Ax = b
+			
+		LP				Find a vector x that			Ellipsoid
+		( A, b )		satisfies Ax ≤ b ellipsoid
+		
+
+		ILP				Find a binary vector x
+		( A, b )		that satisfies Ax ≤ b
+		
+
+???
+SAT
+( Φ, b )
+Find a boolean vector x
+that satisfies Φ(x) = b
+???
+FACTOR
+( x )
+Find a nontrivial factor
+of the integer x
+??? 147573952589676412927 193707721
