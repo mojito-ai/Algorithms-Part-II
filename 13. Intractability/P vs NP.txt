@@ -111,3 +111,8 @@
 		
 				Q. Which search problems are in P?
 				A. No easy answers (we don't even know whether P = NP).
+				
+				Problem X poly-time reduces to problem Y if X can be solved with:
+				・Polynomial number of standard computational steps.
+				・Polynomial number of calls to Y.
+				
