@@ -42,6 +42,10 @@
 		STCONN			Find a path in a				Depth-First search
 		( G, s, t )		graph G from s to t				(Thesus)
 		
-		
 		Significance. What scientists and engineers do compute feasibly.
 
+3. Nondeterminism: Nondeterministic machine can guess the desired solution.
+
+		Ex. int[] a = new int[N];
+			・Java: initializes entries to 0.
+			・Nondeterministic machine: initializes entries to the solution!
