@@ -4,7 +4,7 @@
 * <li> Also called longest simple path in a graph
 *  
 * @author  Mohit Sharma
-* @version 1.0
+* @version 2.0
 * @since   09-03-2021
 * 
 */
@@ -36,6 +36,7 @@ public class HamiltonPath {
 	 */
 	
 	private boolean [] marked;	//vertices on current path
+	@SuppressWarnings("unused")
 	private int count=0;		//number of Hamiltonian path
 	
 	public HamiltonPath(Graph G)
@@ -45,16 +46,16 @@ public class HamiltonPath {
 			dfs(G,v,1);
 	}
 	
-	private void dfs(Graph G, int v, int depth)
+	private void dfs(Graph G, int v, int depth)	//length of current path (depth of recursion)
 	{
 		marked[v]=true;
 		if(depth==G.V())
-			count++;
+			count++; //found one
 		
 		for(int w: G.adj(v))
 			if(!marked[w])
-				dfs(G,w,depth+1);
+				dfs(G,w,depth+1);	//backtrack if w is already a part of path
 		
-		marked[v]=false;
+		marked[v]=false;	//clean up (for all possible paths)
 	}
 }
