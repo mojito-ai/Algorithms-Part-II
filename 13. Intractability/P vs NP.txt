@@ -170,3 +170,7 @@ KNAPSACK	BIN-PACKING
 
 		Def. An NP problem is NP-complete if every problem in NP poly-time reduce to it.
 		Proposition. [Cook 1971, Levin 1973] SAT is NP-complete. (every NP problem is a SAT problem in disguise)
+		
+		Extremely brief proof sketch:
+			・Convert non-deterministic TM notation to SAT notation.
+			・If you can solve SAT, you can solve any problem in NP.
