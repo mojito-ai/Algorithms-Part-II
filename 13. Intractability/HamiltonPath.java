@@ -9,4 +9,16 @@
 
 public class HamiltonPath {
 
+	/*
+	 * Exploiting intractability
+	 * Modern cryptography.
+	 * 		Ex. Send your credit card to Amazon.
+	 * 		Ex. Digitally sign an e-document.
+	 * 			Enables freedom of privacy, speech, press, political association.
+	 * 
+	 * RSA cryptosystem.
+	 * To use: multiply two n-bit integers. [poly-time]
+	 * To break: factor a 2 n-bit integer. [unlikely poly-time]
+	 * 
+	 */
 }
