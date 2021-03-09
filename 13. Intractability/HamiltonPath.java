@@ -2,7 +2,9 @@
 * <h1> Hamilton Path: Find a simple path that visits every vertex exactly once </h1> 
 * 
 * <li> Also called longest simple path in a graph
-*  
+* <li> Proposition. [Shor 1994] Can factor an n-bit integer in n3 steps on a "quantum computer.”
+* <li> Q. Do we still believe the extended Church-Turing thesis???
+* 
 * @author  Mohit Sharma
 * @version 2.0
 * @since   09-03-2021
