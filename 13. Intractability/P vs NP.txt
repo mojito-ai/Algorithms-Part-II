@@ -174,3 +174,6 @@ KNAPSACK	BIN-PACKING
 		Extremely brief proof sketch:
 			・Convert non-deterministic TM notation to SAT notation.
 			・If you can solve SAT, you can solve any problem in NP.
+			
+			Corollary. Poly-time algorithm for SAT iff P = NP.
+			You NP-complete me
