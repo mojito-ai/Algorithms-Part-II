@@ -192,3 +192,12 @@ KNAPSACK	BIN-PACKING
 			・1944: Onsager finds closed form solution to 2D version in tour de force.
 			・19xx: Feynman and other top minds seek 3D solution.
 			・2000: 3D-ISING proved NP-complete.
+			
+		Two worlds (more detail)
+		Overwhelming consensus (still). P ≠ NP.
+		Why we believe P ≠ NP.
+		
+		“ We admire Wiles' proof of Fermat's last theorem, the scientific theories of Newton,
+		Einstein, Darwin, Watson and Crick, the design of the Golden Gate bridge and the
+		Pyramids, precisely because they seem to require a leap which cannot be made by
+		everyone, let alone a by simple mechanical device. ” — Avi Wigderson
