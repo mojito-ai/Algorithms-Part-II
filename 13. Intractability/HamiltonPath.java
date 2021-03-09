@@ -60,4 +60,14 @@ public class HamiltonPath {
 		
 		marked[v]=false;	//clean up (for all possible paths)
 	}
+	
+	/*
+	 * Coping with intractability
+	 * 1. Relax one of desired features.
+	 * 
+	 *	  Special cases may be tractable.
+	 *	  Ex: Linear time algorithm for 2-SAT.		--> at most two variables per equation
+	 *	  Ex: Linear time algorithm for Horn-SAT.	--> at most one un-negated variable per equation
+	 * 
+	 */
 }
