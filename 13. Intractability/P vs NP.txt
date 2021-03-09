@@ -142,7 +142,8 @@
 	PARTITION
 KNAPSACK	BIN-PACKING
 
-
+		Conjecture. SAT is intractable. (Dick Karp '85 Turing Award)
+		Implication. All of these problems are intractable.
 
 				
 				
