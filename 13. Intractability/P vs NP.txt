@@ -186,3 +186,9 @@ KNAPSACK	BIN-PACKING
 			・No poly-time algorithm for some NP problem ⇒ none for SAT.
 			
 			Remark. Can replace SAT with any of Karp's problems.
+			
+		Proving a problem NP-complete guides scientific inquiry.
+			・1926: Ising introduces simple model for phase transitions.
+			・1944: Onsager finds closed form solution to 2D version in tour de force.
+			・19xx: Feynman and other top minds seek 3D solution.
+			・2000: 3D-ISING proved NP-complete.
