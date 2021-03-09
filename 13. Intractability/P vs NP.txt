@@ -207,3 +207,13 @@ KNAPSACK	BIN-PACKING
 			NP. Class of all search problems, some of which seem wickedly hard.
 			NP-complete. Hardest problems in NP.
 			Intractable. Problem with no poly-time algorithm.
+			
+			Many fundamental problems are NP-complete.
+				・SAT, ILP, HAMILTON-PATH, …
+				・3D-ISING, …
+			
+			Use theory a guide:
+				・A poly-time algorithm for an NP-complete problem would be a stunning breakthrough (a proof that P = NP).
+				・You will confront NP-complete problems in your career.
+				・Safe to assume that P ≠ NP and that such problems are intractable.
+				・Identify these situations and proceed accordingly.
