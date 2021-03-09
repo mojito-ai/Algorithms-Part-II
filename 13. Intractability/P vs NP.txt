@@ -177,3 +177,5 @@ KNAPSACK	BIN-PACKING
 			
 			Corollary. Poly-time algorithm for SAT iff P = NP.
 			You NP-complete me
+			
+		Implications of Cook-Levin theorem: All of above problems (and many, many more) poly-time reduce to SAT.
