@@ -166,4 +166,7 @@ KNAPSACK	BIN-PACKING
 			Recreation. Versions of Sudoko, Checkers, Minesweeper, Tetris.
 			Statistics. Optimal experimental design.
 				
-				
+7. NP-Completeness
+
+		Def. An NP problem is NP-complete if every problem in NP poly-time reduce to it.
+		Proposition. [Cook 1971, Levin 1973] SAT is NP-complete. (every NP problem is a SAT problem in disguise)
