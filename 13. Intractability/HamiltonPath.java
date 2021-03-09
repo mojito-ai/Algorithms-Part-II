@@ -20,5 +20,16 @@ public class HamiltonPath {
 	 * To use: multiply two n-bit integers. [poly-time]
 	 * To break: factor a 2 n-bit integer. [unlikely poly-time]
 	 * 
+	 * 
+	 * Challenge. Factor this number.
+	 * 
+	 * 740375634795617128280467960974295731425931888892312890849362
+	 * 326389727650340282662768919964196251178439958943305021275853
+	 * 701189680982867331732731089309005525051168770632990723963807
+	 * 86710086096962537934650563796359
+	 * RSA-704
+	 * ($30,000 prize if you can factor)
+	 * 
+	 * Can't do it? Create a company based on the difficulty of factoring.
 	 */
 }
