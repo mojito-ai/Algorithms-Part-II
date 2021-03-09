@@ -179,3 +179,10 @@ KNAPSACK	BIN-PACKING
 			You NP-complete me
 			
 		Implications of Cook-Levin theorem: All of above problems (and many, many more) poly-time reduce to SAT.
+		
+		Implications of NP-Completeness
+			Implication. [SAT captures difficulty of whole class NP]
+			・Poly-time algorithm for SAT iff P = NP.
+			・No poly-time algorithm for some NP problem ⇒ none for SAT.
+			
+			Remark. Can replace SAT with any of Karp's problems.
