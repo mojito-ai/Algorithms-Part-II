@@ -145,5 +145,17 @@ KNAPSACK	BIN-PACKING
 		Conjecture. SAT is intractable. (Dick Karp '85 Turing Award)
 		Implication. All of these problems are intractable.
 
+
+		Still more reductions from SAT
+			Aerospace engineering. Optimal mesh partitioning for finite elements.
+			Biology. Phylogeny reconstruction.
+			Chemical engineering. Heat exchanger network synthesis.
+			Chemistry. Protein folding.
+			Civil engineering. Equilibrium of urban traffic flow.
+			Economics. Computation of arbitrage in financial markets with friction.
+			Electrical engineering. VLSI layout.
+			Environmental engineering. Optimal placement of contaminant sensors.
+			Financial engineering. Minimum risk portfolio of given return.
+			Game theory. Nash equilibrium that maximizes social welfare.
 				
 				
