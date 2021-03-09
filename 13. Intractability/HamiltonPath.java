@@ -1,6 +1,8 @@
 /**
 * <h1> Hamilton Path: Find a simple path that visits every vertex exactly once </h1> 
 * 
+* <li> Also called longest simple path in a graph
+*  
 * @author  Mohit Sharma
 * @version 1.0
 * @since   09-03-2021
@@ -32,4 +34,17 @@ public class HamiltonPath {
 	 * 
 	 * Can't do it? Create a company based on the difficulty of factoring.
 	 */
+	
+	private boolean [] marked;	//vertices on current path
+	private int count=0;		//number of Hamiltonian path
+	
+	public HamiltonPath(Graph G)
+	{
+		
+	}
+	
+	private void dfs(Graph G, int v, int depth)
+	{
+		
+	}
 }
