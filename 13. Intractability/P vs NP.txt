@@ -157,5 +157,13 @@ KNAPSACK	BIN-PACKING
 			Environmental engineering. Optimal placement of contaminant sensors.
 			Financial engineering. Minimum risk portfolio of given return.
 			Game theory. Nash equilibrium that maximizes social welfare.
+			Mathematics. Given integer a1, …, an, compute
+			Mechanical engineering. Structure of turbulence in sheared flows.
+			Medicine. Reconstructing 3d shape from biplane angiocardiogram.
+			Operations research. Traveling salesperson problem.
+			Physics. Partition function of 3d Ising model.
+			Politics. Shapley-Shubik voting power.
+			Recreation. Versions of Sudoko, Checkers, Minesweeper, Tetris.
+			Statistics. Optimal experimental design.
 				
 				
