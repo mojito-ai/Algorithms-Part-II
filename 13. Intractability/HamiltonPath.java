@@ -78,5 +78,11 @@ public class HamiltonPath {
 	 * 
 	 * 	  Approximation algorithm. Find solution of provably good quality.
 	 * 	  Ex. MAX-3SAT: provably satisfy 87.5% as many clauses as possible.	
+	 * 
+	 * 3. Solve the problem in poly-time.
+	 * 
+	 * 	  Complexity theory deals with worst case behavior.
+	 * 	  Instance(s) you want to solve may be "easy."
+	 * 	  Chaff solves real-world SAT instances with ~ 10K variable.
 	 */
 }
