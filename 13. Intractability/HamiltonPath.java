@@ -69,5 +69,14 @@ public class HamiltonPath {
 	 *	  Ex: Linear time algorithm for 2-SAT.		--> at most two variables per equation
 	 *	  Ex: Linear time algorithm for Horn-SAT.	--> at most one un-negated variable per equation
 	 * 
+	 * 2. Solve the problem to optimality
+	 * 
+	 * 	  Develop a heuristic, and hope it produces a good solution.
+	 * 	  No guarantees on quality of solution.
+	 * 	  Ex. TSP assignment heuristics.
+	 * 	  Ex. Metropolis algorithm, simulating annealing, genetic algorithms.
+	 * 
+	 * 	  Approximation algorithm. Find solution of provably good quality.
+	 * 	  Ex. MAX-3SAT: provably satisfy 87.5% as many clauses as possible.	
 	 */
 }
