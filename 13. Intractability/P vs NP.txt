@@ -201,3 +201,9 @@ KNAPSACK	BIN-PACKING
 		Einstein, Darwin, Watson and Crick, the design of the Golden Gate bridge and the
 		Pyramids, precisely because they seem to require a leap which cannot be made by
 		everyone, let alone a by simple mechanical device. ” — Avi Wigderson
+		
+		Summary
+			P. Class of search problems solvable in poly-time.
+			NP. Class of all search problems, some of which seem wickedly hard.
+			NP-complete. Hardest problems in NP.
+			Intractable. Problem with no poly-time algorithm.
